@@ -1,4 +1,9 @@
 const isPageFolder = window.location.pathname.includes("/page/");
+
+// =====================================================
+// script.js chỉ dùng để: load page + load header/footer
+// newsData + renderNewsDetail phải nằm trong ./js/news.js
+// =====================================================
 const basePath = isPageFolder ? "../" : "./";
 
 /* Sửa đường dẫn ảnh/link khi load header footer */
@@ -41,11 +46,16 @@ function loadPage(url, saveHistory = true, target = null) {
                         behavior: "smooth",
                         block: "start"
                     });
+                } else {
+                    content.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start"
+                    });
                 }
             } else {
-                window.scrollTo({
-                    top: 0,
-                    behavior: "smooth"
+                content.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
                 });
             }
 
@@ -66,7 +76,7 @@ function loadPage(url, saveHistory = true, target = null) {
             console.log("Lỗi load page:", error);
 
             content.innerHTML = `
-                <section style="padding: 40px; text-align: center;">
+                <section style="padding:40px;text-align:center;">
                     <h2>Không tải được nội dung</h2>
                     <p>Kiểm tra lại đường dẫn file hoặc chạy bằng Live Server.</p>
                 </section>
@@ -74,7 +84,7 @@ function loadPage(url, saveHistory = true, target = null) {
         });
 }
 
-/* Bắt sự kiện click menu */
+/* Bắt sự kiện click menu / link */
 function setupPageLinks() {
     document.addEventListener("click", function (e) {
         const link = e.target.closest("a[data-page]");
@@ -85,11 +95,28 @@ function setupPageLinks() {
 
         const page = link.getAttribute("data-page");
         const target = link.getAttribute("data-target");
+        const newsId = link.getAttribute("data-id");
 
+        /* Trang giới thiệu */
         if (page === "about") {
-            loadPage("./page/gioithieu-content.html", true, target);
+            loadPage("./page/gioithieu-content.html", true, target || "about");
         }
 
+        /* Trang hoạt động / tin tức */
+        if (page === "activity") {
+            loadPage("./page/hoatdong-content.html", true, "hoat-dong");
+        }
+
+        /* Trang chi tiết tin tức */
+        if (page === "news-detail") {
+            if (typeof renderNewsDetail === "function") {
+                renderNewsDetail(newsId, true);
+            } else {
+                console.log("Không tìm thấy renderNewsDetail. Kiểm tra file ./js/news.js");
+            }
+        }
+
+        /* Đóng menu mobile sau khi bấm */
         const navMenu = document.getElementById("navMenu");
         const menuToggle = document.getElementById("menuToggle");
 
@@ -162,27 +189,44 @@ function loadFooter() {
         });
 }
 
-/* Xử lý nút Back/Forward */
+/* Xử lý nút Back / Forward */
 window.addEventListener("popstate", function (event) {
-    if (event.state && event.state.page) {
+    if (!event.state) return;
+
+    if (event.state.page === "news-detail") {
+        if (typeof renderNewsDetail === "function") {
+            renderNewsDetail(event.state.newsId, false);
+        }
+
+        return;
+    }
+
+    if (event.state.page) {
         loadPage(event.state.page, false, event.state.target);
     }
 });
 
 /* Load theo hash khi mở link trực tiếp */
 function loadPageFromHash() {
-    const hash = window.location.hash;
+    const hash = window.location.hash.replace("#", "");
 
-    if (hash === "#about") {
-        loadPage("./page/gioithieu-content.html", false);
+    if (hash === "about") {
+        loadPage("./page/gioithieu-content.html", false, "about");
+        return;
     }
 
-    if (hash === "#hoat-dong") {
-        loadPage("./page/gioithieu-content.html", false, "hoat-dong");
-    }
-
-    if (hash === "#tuyen-dung") {
+    if (hash === "tuyen-dung") {
         loadPage("./page/gioithieu-content.html", false, "tuyen-dung");
+        return;
+    }
+
+    if (hash === "hoat-dong") {
+        loadPage("./page/hoatdong-content.html", false, "hoat-dong");
+        return;
+    }
+
+    if (typeof newsData !== "undefined" && newsData[hash]) {
+        renderNewsDetail(hash, false);
     }
 }
 
