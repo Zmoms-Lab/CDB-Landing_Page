@@ -1,14 +1,30 @@
 /* ================= FOOTER ================= */
 
-.footer {
-width: 100%;
-background: #fff;
-color: #222;
-position: relative;
-font-family: "Times New Roman", Times, serif;
+.footer,
+.footer * {
+box-sizing: border-box;
 }
 
-/* Chỉ áp font chữ cho text, không phá icon Font Awesome */
+.footer {
+width: 100%;
+position: relative;
+
+
+color: #fff;
+background:
+    linear-gradient(rgba(0, 0, 0, 0.84), rgba(0, 0, 0, 0.92)),
+    url("../images/footer-bg.png");
+
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
+font-family: "Times New Roman", Times, serif;
+overflow: hidden;
+
+
+}
+
 .footer a,
 .footer p,
 .footer span,
@@ -23,7 +39,6 @@ font-family: "Times New Roman", Times, serif;
 font-family: "Times New Roman", Times, serif !important;
 }
 
-/* Khôi phục Font Awesome */
 .footer .fa,
 .footer .fas,
 .footer .fa-solid {
@@ -47,199 +62,143 @@ font-weight: 400 !important;
 font-style: normal;
 }
 
-/* ================= FOOTER TOP ================= */
+/* ================= MAIN ================= */
 
-.footer-top {
-width: 100%;
-background: #ec008c;
-
-
-display: flex;
-align-items: center;
-justify-content: space-between;
-
-gap: 35px;
-padding: 25px 60px;
-
-border-top: 1px solid #eee;
-border-bottom: 1px solid #eee;
-
-
-}
-
-/* Social icons */
-
-.social-icons {
-display: flex;
-align-items: center;
-gap: 16px;
-}
-
-.social-icons a {
-width: 44px;
-height: 44px;
-
-background: rgba(255, 255, 255, 0.35);
-border-radius: 50%;
-
-display: inline-flex;
-align-items: center;
-justify-content: center;
-
-color: #fff;
-text-decoration: none;
-
-transition: 0.3s ease;
-
-
-}
-
-.social-icons a i {
-font-size: 20px !important;
-line-height: 1;
-}
-
-.social-icons a:hover {
-transform: translateY(-3px);
-background: #fff;
-color: #ec008c;
-}
-
-/* Newsletter */
-
-.newsletter {
-display: flex;
-align-items: center;
-justify-content: flex-end;
-gap: 32px;
-flex-wrap: wrap;
-}
-
-.newsletter-title {
-display: flex;
-align-items: center;
-gap: 16px;
-}
-
-.newsletter-title i,
-.newsletter-icon {
-color: #fff;
-font-size: 42px !important;
-line-height: 1;
-}
-
-.newsletter-title span {
-color: #111;
-font-size: clamp(14px, 1vw, 18px);
-font-weight: 800;
-white-space: nowrap;
-}
-
-.newsletter form,
-.newsletter-form {
-display: flex;
-align-items: center;
-}
-
-.newsletter input {
-width: 340px;
-height: 50px;
-
-
-border: none;
-outline: none;
-background: #fff;
-
-padding: 0 16px;
-
-color: #222;
-font-size: 16px;
-
-
-}
-
-.newsletter button {
-width: 120px;
-height: 50px;
-
-
-border: none;
-cursor: pointer;
-background: #f5f5f5;
-
-color: #8d3d2c;
-font-size: 17px;
-font-weight: 700;
-
-transition: 0.25s ease;
-
-
-}
-
-.newsletter button:hover {
-background: #fff;
-color: #ec008c;
-}
-
-/* ================= FOOTER CONTENT ================= */
-
-.footer-content {
-max-width: 1400px;
+.footer-main {
+width: min(1280px, 92%);
 margin: 0 auto;
-padding: 42px 45px 65px;
+padding: 70px 0 56px;
 
 
 display: grid;
-grid-template-columns: 1.7fr 1fr 1fr 1.2fr;
-gap: 50px;
-
-background-image:
-    linear-gradient(rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.84)),
-    url("../images/footer-bg.png");
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
+grid-template-columns: 1.5fr 0.9fr 0.9fr 1.3fr;
+gap: 46px;
+align-items: start;
 
 
 }
 
-/* Logo */
+/* ================= BRAND ================= */
 
 .footer-logo {
-width: 120px;
+width: 115px;
 max-width: 100%;
 height: auto;
 
 
 display: block;
 object-fit: contain;
-
-margin-bottom: 24px;
+margin-bottom: 18px;
 
 
 }
 
-/* Cột footer */
+.footer-brand h2 {
+margin: 0 0 16px;
 
-.footer-col h3 {
+
+color: #fff;
+font-size: 24px;
+font-weight: 900;
+letter-spacing: 2px;
+text-transform: uppercase;
+
+
+}
+
+.footer-brand p {
+max-width: 420px;
 margin: 0 0 24px;
 
-color: #ec008c;
-font-size: clamp(15px, 1vw, 19px);
-font-weight: 800;
-letter-spacing: 1px;
+
+color: rgba(255, 255, 255, 0.78);
+font-size: 16px;
+line-height: 1.75;
+
+
+}
+
+/* ================= SOCIAL ================= */
+
+.social-icons {
+display: flex;
+align-items: center;
+gap: 14px;
+}
+
+.social-icons a {
+width: 42px;
+height: 42px;
+
+
+display: inline-flex;
+align-items: center;
+justify-content: center;
+
+color: #fff;
+background: rgba(255, 255, 255, 0.12);
+border: 1px solid rgba(255, 255, 255, 0.22);
+border-radius: 50%;
+
+text-decoration: none;
+transition: 0.28s ease;
+
+
+}
+
+.social-icons a i {
+font-size: 18px !important;
+line-height: 1;
+}
+
+.social-icons a:hover {
+transform: translateY(-4px);
+color: #fff;
+background: #ec008c;
+border-color: #ec008c;
+}
+
+/* ================= COLUMNS ================= */
+
+.footer-col h3 {
+position: relative;
+
+
+margin: 0 0 26px;
+padding-bottom: 12px;
+
+color: #fff;
+font-size: 18px;
+font-weight: 900;
+letter-spacing: 1.2px;
 text-transform: uppercase;
+
+
+}
+
+.footer-col h3::after {
+content: "";
+
+
+position: absolute;
+left: 0;
+bottom: 0;
+
+width: 44px;
+height: 3px;
+
+background: #ec008c;
 
 
 }
 
 .footer-col a {
 display: block;
-margin-bottom: 15px;
+margin-bottom: 14px;
 
 
-color: #222;
-font-size: clamp(13px, 0.9vw, 16px);
+color: rgba(255, 255, 255, 0.78);
+font-size: 16px;
 line-height: 1.5;
 text-decoration: none;
 
@@ -250,271 +209,401 @@ transition: 0.25s ease;
 
 .footer-col a:hover {
 color: #ec008c;
+transform: translateX(4px);
 }
 
 .footer-col p {
-margin: 0;
+margin: 0 0 10px;
 
-color: #222;
-font-size: clamp(13px, 0.9vw, 16px);
+
+color: rgba(255, 255, 255, 0.78);
+font-size: 16px;
 line-height: 1.65;
 
 
 }
 
 .footer-subtitle {
-margin-top: 34px !important;
+margin-top: 32px !important;
 }
 
-/* ================= CONTACT ICON ================= */
+/* ================= CONTACT ================= */
 
 .contact-item {
 display: flex;
-align-items: center;
+align-items: flex-start;
 gap: 14px;
 
 
-margin-bottom: 20px;
+margin-bottom: 18px;
 
 
 }
 
-/* Dùng cho HTML mới có span.contact-icon */
 .contact-icon {
-width: 28px;
-min-width: 28px;
-height: 28px;
+width: 34px;
+min-width: 34px;
+height: 34px;
 
 
 display: inline-flex;
 align-items: center;
 justify-content: center;
 
-color: #ec008c;
+color: #fff;
+background: rgba(236, 0, 140, 0.24);
+border: 1px solid rgba(236, 0, 140, 0.5);
+border-radius: 50%;
 
 
 }
 
 .contact-icon i {
-color: #ec008c;
-font-size: 18px !important;
+color: #fff;
+font-size: 15px !important;
 line-height: 1;
 }
 
-/* Dự phòng nếu HTML cũ còn để i trực tiếp trong contact-item */
-.contact-item > i {
-width: 28px;
-min-width: 28px;
-height: 28px;
+.contact-item p {
+margin: 0;
+
+
+color: rgba(255, 255, 255, 0.8);
+font-size: 16px;
+line-height: 1.65;
+
+
+}
+
+/* ================= NEWSLETTER ================= */
+
+.newsletter-box {
+margin-top: 28px;
+padding: 22px;
+
+
+background: rgba(255, 255, 255, 0.08);
+border: 1px solid rgba(255, 255, 255, 0.16);
+border-left: 4px solid #ec008c;
+
+
+}
+
+.newsletter-box h4 {
+margin: 0 0 14px;
+
+
+color: #fff;
+font-size: 17px;
+font-weight: 900;
+
+
+}
+
+.newsletter-form {
+display: flex;
+align-items: center;
+width: 100%;
+}
+
+.newsletter-form input {
+width: 100%;
+height: 46px;
+
+
+border: none;
+outline: none;
+
+padding: 0 14px;
+
+color: #222;
+background: #fff;
+font-size: 15px;
+
+
+}
+
+.newsletter-form button {
+width: 52px;
+min-width: 52px;
+height: 46px;
+
 
 display: inline-flex;
 align-items: center;
 justify-content: center;
 
-color: #ec008c;
-font-size: 18px !important;
-line-height: 1;
+border: none;
+cursor: pointer;
 
+color: #fff;
+background: #ec008c;
+
+transition: 0.25s ease;
+
+
+}
+
+.newsletter-form button i {
+font-size: 15px !important;
+}
+
+.newsletter-form button:hover {
+background: #111;
+}
+
+/* ================= BOTTOM ================= */
+
+.footer-bottom {
+width: min(1280px, 92%);
+margin: 0 auto;
+
+
+padding: 20px 0;
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 18px;
+
+border-top: 1px solid rgba(255, 255, 255, 0.14);
+
+
+}
+
+.footer-bottom p {
 margin: 0;
 
-}
 
-.contact-item p {
-margin: 0;
-color: #111;
-font-size: clamp(13px, 0.9vw, 16px);
-line-height: 1.65;
-}
+color: rgba(255, 255, 255, 0.66);
+font-size: 15px;
 
-/* Icon địa chỉ nhiều dòng */
-.footer-contact .contact-item:first-of-type {
-align-items: center;
-}
 
-.footer-contact .contact-item:first-of-type .contact-icon,
-.footer-contact .contact-item:first-of-type > i {
-transform: translateY(2px);
 }
-
-/* Cột chăm sóc khách hàng */
-.footer-col .contact-item {
-align-items: center;
-}
-
-.footer-col .contact-item .contact-icon i,
-.footer-col .contact-item > i {
-font-size: 19px !important;
-}
-
-/* ================= BACK TOP ================= */
 
 .back-top {
-position: absolute;
-right: 40px;
-bottom: 25px;
-
 display: inline-flex;
-flex-direction: column;
 align-items: center;
-gap: 7px;
+gap: 8px;
 
-color: #8d5a40;
-font-weight: 500;
+
+color: rgba(255, 255, 255, 0.76);
+font-size: 15px;
+font-weight: 700;
 text-decoration: none;
+
+transition: 0.25s ease;
 
 
 }
 
 .back-top i {
 color: #ec008c;
-font-size: 24px !important;
-line-height: 1;
+font-size: 18px !important;
 }
 
-.back-top span {
-margin: 0;
-font-size: 16px;
-}
-
-/* ================= COPYRIGHT ================= */
-
-.footer-bottom {
-padding: 16px 20px;
-
-
-text-align: center;
-border-top: 1px solid #eee;
-
-color: #555;
-font-size: 14px;
-
-
+.back-top:hover {
+color: #ec008c;
 }
 
 /* ================= TABLET ================= */
 
-@media (max-width: 992px) {
-.footer-top {
-flex-direction: column;
-justify-content: center;
-text-align: center;
-
-
-    padding: 25px 30px;
+@media (max-width: 1024px) {
+.footer-main {
+grid-template-columns: 1fr 1fr;
+gap: 40px;
+padding: 60px 0 48px;
 }
-
-.newsletter {
-    justify-content: center;
-}
-
-.newsletter-title span {
-    white-space: normal;
-}
-
-.footer-content {
-    grid-template-columns: 1fr 1fr;
-    padding: 50px 35px 80px;
-}
-
-
 }
 
 /* ================= MOBILE ================= */
 
 @media (max-width: 576px) {
-.footer-top {
-padding: 22px 20px;
+.footer-main {
+width: 90%;
+grid-template-columns: 1fr;
+gap: 34px;
+padding: 48px 0 38px;
 }
 
-
-.social-icons {
-    justify-content: center;
-    width: 100%;
-    flex-wrap: wrap;
-}
-
-.social-icons a {
-    width: 40px;
-    height: 40px;
-}
-
-.social-icons a i {
-    font-size: 18px !important;
-}
-
-.newsletter {
-    width: 100%;
-    flex-direction: column;
-    gap: 18px;
-}
-
-.newsletter-title {
-    flex-direction: column;
-    text-align: center;
-}
-
-.newsletter-title i,
-.newsletter-icon {
-    font-size: 34px !important;
-}
-
-.newsletter-title span {
-    font-size: 18px;
-    text-align: center;
-}
-
-.newsletter form,
-.newsletter-form {
-    width: 100%;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.newsletter input,
-.newsletter button {
-    width: 100%;
-}
-
-.footer-content {
-    grid-template-columns: 1fr;
-    padding: 42px 22px 90px;
-    gap: 32px;
-}
 
 .footer-logo {
     width: 105px;
 }
 
-.footer-col h3 {
-    font-size: 20px;
+.footer-brand h2 {
+    font-size: 21px;
 }
 
+.footer-brand p,
 .footer-col a,
 .footer-col p,
 .contact-item p {
     font-size: 15px;
 }
 
-.contact-icon,
-.contact-item > i {
-    width: 24px;
-    min-width: 24px;
-    height: 24px;
+.footer-col h3 {
+    font-size: 17px;
+    margin-bottom: 22px;
 }
 
-.contact-icon i,
-.contact-item > i {
-    font-size: 17px !important;
+.social-icons {
+    flex-wrap: wrap;
 }
 
+.newsletter-box {
+    padding: 18px;
+}
+
+.newsletter-form {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.newsletter-form input,
+.newsletter-form button {
+    width: 100%;
+}
+
+.footer-bottom {
+    width: 90%;
+
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 18px 0 24px;
+}
+
+
+}
+/* ================= FOOTER NỀN TRẮNG ================= */
+
+.footer {
+background: #fff !important;
+color: #222 !important;
+}
+
+/* Tắt lớp phủ nền tối nếu có */
+.footer::before {
+display: none !important;
+}
+
+/* Chữ chính */
+.footer-brand h2,
+.footer-col h3,
+.newsletter-box h4 {
+color: #111 !important;
+}
+
+.footer-brand p,
+.footer-col a,
+.footer-col p,
+.contact-item p,
+.footer-bottom p,
 .back-top {
-    right: 20px;
-    bottom: 22px;
+color: #333 !important;
 }
 
-.back-top i {
-    font-size: 22px !important;
+/* Link hover */
+.footer-col a:hover,
+.back-top:hover {
+color: #ec008c !important;
 }
+
+/* Đường gạch dưới tiêu đề */
+.footer-col h3::after {
+background: #ec008c !important;
+}
+
+/* Icon mạng xã hội */
+.social-icons a {
+color: #ec008c !important;
+background: #fff4fb !important;
+border: 1px solid #f3c9e2 !important;
+}
+
+.social-icons a:hover {
+color: #fff !important;
+background: #ec008c !important;
+border-color: #ec008c !important;
+}
+
+/* Icon liên hệ */
+.contact-icon {
+color: #fff !important;
+background: #ec008c !important;
+border-color: #ec008c !important;
+box-shadow: none !important;
+}
+
+.contact-icon i {
+color: #fff !important;
+}
+
+/* Newsletter */
+.newsletter-box {
+background: #fff6fb !important;
+border: 1px solid #f3c9e2 !important;
+border-left: 5px solid #ec008c !important;
+box-shadow: none !important;
+}
+
+.newsletter-form input {
+color: #222 !important;
+background: #fff !important;
+border: 1px solid #eee !important;
+}
+
+.newsletter-form button {
+color: #fff !important;
+background: #ec008c !important;
+}
+
+.newsletter-form button:hover {
+background: #111 !important;
+}
+
+/* Logo không cần đổ bóng hồng nữa */
+.footer-logo {
+filter: none !important;
+}
+
+/* Đường cuối footer */
+.footer-bottom {
+border-top: 1px solid #eee !important;
+}
+
+/* Nền vùng chứa footer */
+#footer {
+background: #fff !important;
+}
+
+#footer {
+position: relative;
+background: #fff;
+}
+
+#footer::before {
+content: "";
+
+
+display: block;
+width: 100%;
+height: 26px;
+
+background: linear-gradient(
+    180deg,
+    rgba(236, 0, 140, 0.10),
+    rgba(236, 0, 140, 0.03),
+    #fff
+);
+
+border-top: 1px solid #f4cfe5;
 
 
 }
+
+.footer {
+border-top: 1px solid #f1d9e8;
+}
+
