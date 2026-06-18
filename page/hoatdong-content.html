@@ -10,37 +10,60 @@
 
     <div class="news-container news-layout">
 
-        <!-- DANH MỤC BÊN TRÁI -->
+        <!-- CỘT TRÁI -->
         <aside class="news-sidebar">
             <h2>DANH MỤC TIN TỨC</h2>
 
             <ul class="news-category">
-                <li>
-                    <a href="#about" data-page="about">Giới thiệu</a>
-                    <span>⌄</span>
+
+                <li class="category-item">
+                    <button class="category-toggle" type="button">
+                        <span>Giới thiệu</span>
+                        <span class="category-arrow">▾</span>
+                    </button>
+
+                    <ul class="category-submenu">
+                        <li><a href="#about" data-page="about">Về chúng tôi</a></li>
+                        <li><a href="#tuyen-dung" data-page="about" data-target="tuyen-dung">Tuyển dụng</a></li>
+                    </ul>
                 </li>
 
                 <li>
-                    <a href="#">Thẻ CĐB</a>
+                    <a href="#" class="category-link">Thẻ CĐB</a>
                 </li>
 
                 <li>
-                    <a href="#hoat-dong" data-page="activity">Hội thảo</a>
+                    <a href="#hoat-dong" data-page="activity" class="category-link">Hội thảo</a>
                 </li>
 
                 <li>
-                    <a href="#">Thành viên</a>
+                    <a href="#" class="category-link">Thành viên</a>
                 </li>
 
-                <li>
-                    <a href="#">Nhãn hàng</a>
-                    <span>⌄</span>
+                <li class="category-item">
+                    <button class="category-toggle" type="button">
+                        <span>Nhãn hàng</span>
+                        <span class="category-arrow">▾</span>
+                    </button>
+
+                    <ul class="category-submenu">
+                        <li><a href="#">Đối tác thương hiệu</a></li>
+                        <li><a href="#">Chương trình nhãn hàng</a></li>
+                    </ul>
                 </li>
 
-                <li>
-                    <a href="#">Kênh phân phối</a>
-                    <span>⌄</span>
+                <li class="category-item">
+                    <button class="category-toggle" type="button">
+                        <span>Kênh phân phối</span>
+                        <span class="category-arrow">▾</span>
+                    </button>
+
+                    <ul class="category-submenu">
+                        <li><a href="#">Hệ thống phân phối</a></li>
+                        <li><a href="#">Điểm bán liên kết</a></li>
+                    </ul>
                 </li>
+
             </ul>
         </aside>
 
@@ -71,7 +94,7 @@
                 <article class="news-card">
                     <a href="#news-2" data-page="news-detail" data-id="news-2" class="news-card-link">
                         <div class="news-thumb">
-                            <img src="./images/news-2.jpg" alt="5 phòng khám đã hợp tác cùng Cộng Đồng Bầu">
+                            <img src="../images/banner.png" alt="5 phòng khám đã hợp tác cùng Cộng Đồng Bầu">
                         </div>
 
                         <span class="news-date">Thứ Sáu, 02/01/2026</span>
@@ -86,26 +109,9 @@
                 </article>
 
                 <article class="news-card">
-                    <a href="#news-3" data-page="news-detail" data-id="news-3" class="news-card-link">
-                        <div class="news-thumb">
-                            <img src="./images/news-3.jpg" alt="Ra mắt 12 thẻ Digital">
-                        </div>
-
-                        <span class="news-date">Thứ Sáu, 02/01/2026</span>
-
-                        <h2>RA MẮT 12 THẺ DIGITAL DẠY KỸ NĂNG PHÁT TRIỂN 8 LOẠI HÌNH...</h2>
-                    </a>
-
-                    <p>
-                        Để hành trình 1.000 ngày vàng đầu đời của con được phát triển toàn diện,
-                        ba mẹ hãy tham khảo những thẻ học...
-                    </p>
-                </article>
-
-                <article class="news-card">
                     <a href="#news-4" data-page="news-detail" data-id="news-4" class="news-card-link">
                         <div class="news-thumb">
-                            <img src="./images/news-4.jpg" alt="Một thập kỷ đồng hành">
+                            <img src="../images/news-7.png" alt="Một thập kỷ đồng hành">
                         </div>
 
                         <span class="news-date">Thứ Hai, 10/11/2025</span>
@@ -122,7 +128,7 @@
                 <article class="news-card">
                     <a href="#news-5" data-page="news-detail" data-id="news-5" class="news-card-link">
                         <div class="news-thumb">
-                            <img src="./images/news-5.jpg" alt="Ra mắt Trung tâm 1.000 ngày vàng">
+                            <img src="../images/news-10.png" alt="Ra mắt Trung tâm 1.000 ngày vàng">
                         </div>
 
                         <span class="news-date">Thứ Sáu, 27/06/2025</span>
@@ -138,7 +144,7 @@
                 <article class="news-card">
                     <a href="#news-6" data-page="news-detail" data-id="news-6" class="news-card-link">
                         <div class="news-thumb">
-                            <img src="./images/news-6.jpg" alt="Hội thảo khởi động dự án">
+                            <img src="../images/news-13.png" alt="Hội thảo khởi động dự án">
                         </div>
 
                         <span class="news-date">Thứ Tư, 25/06/2025</span>

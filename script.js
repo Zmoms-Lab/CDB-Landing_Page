@@ -87,6 +87,23 @@ function loadPage(url, saveHistory = true, target = null) {
 /* Bắt sự kiện click menu / link */
 function setupPageLinks() {
     document.addEventListener("click", function (e) {
+        const categoryToggle = e.target.closest(".category-toggle");
+
+        if (categoryToggle) {
+            e.preventDefault();
+
+            const currentItem = categoryToggle.closest(".category-item");
+
+            document.querySelectorAll(".category-item.open").forEach(item => {
+                if (item !== currentItem) {
+                    item.classList.remove("open");
+                }
+            });
+
+            currentItem.classList.toggle("open");
+            return;
+        }
+
         const link = e.target.closest("a[data-page]");
 
         if (!link) return;
@@ -97,35 +114,28 @@ function setupPageLinks() {
         const target = link.getAttribute("data-target");
         const newsId = link.getAttribute("data-id");
 
-        /* Trang giới thiệu */
         if (page === "about") {
             loadPage("./page/gioithieu-content.html", true, target || "about");
         }
 
-        /* Trang hoạt động / tin tức */
         if (page === "activity") {
             loadPage("./page/hoatdong-content.html", true, "hoat-dong");
         }
 
-        /* Trang chi tiết tin tức */
         if (page === "news-detail") {
             if (typeof renderNewsDetail === "function") {
                 renderNewsDetail(newsId, true);
             } else {
-                console.log("Không tìm thấy renderNewsDetail. Kiểm tra file ./js/news.js");
+                console.log("Chưa có renderNewsDetail. Kiểm tra file ./js/news.js");
             }
         }
 
-        /* Đóng menu mobile sau khi bấm */
         const navMenu = document.getElementById("navMenu");
         const menuToggle = document.getElementById("menuToggle");
 
         if (navMenu && navMenu.classList.contains("show")) {
             navMenu.classList.remove("show");
-
-            if (menuToggle) {
-                menuToggle.textContent = "☰";
-            }
+            if (menuToggle) menuToggle.textContent = "☰";
         }
     });
 }
