@@ -154,6 +154,37 @@ console.log("Chưa có renderRecruitDetail. Kiểm tra file ./js/tuyendung.js");
 
     });
 }
+let heroSliderTimer = null;
+
+function initHeroSlider() {
+const slides = document.querySelectorAll(".hero-header .slide");
+
+
+if (!slides || slides.length === 0) {
+    console.log("Không tìm thấy slide banner");
+    return;
+}
+
+let currentSlide = 0;
+
+slides.forEach((slide, index) => {
+    slide.classList.toggle("active", index === 0);
+});
+
+if (heroSliderTimer) {
+    clearInterval(heroSliderTimer);
+}
+
+heroSliderTimer = setInterval(() => {
+    slides[currentSlide].classList.remove("active");
+
+    currentSlide = (currentSlide + 1) % slides.length;
+
+    slides[currentSlide].classList.add("active");
+}, 4000);
+
+
+}
 
 /* Load Header */
 function loadHeader() {
@@ -171,6 +202,8 @@ function loadHeader() {
             if (!header) return;
 
             header.innerHTML = fixPath(data);
+            initHeroSlider();
+
 
             const menuToggle = document.getElementById("menuToggle");
             const navMenu = document.getElementById("navMenu");

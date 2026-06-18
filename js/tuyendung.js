@@ -3,95 +3,210 @@ const recruitData = {
 title: "Cộng Đồng Bầu Tuyển Dụng Nhiều Vị Trí Năm 2026 - Ra Tết Đi Làm",
 date: "Thứ Năm, 15/01/2026",
 author: "Cộng Đồng Bầu",
-thumbnail: "./images/news-1.png",
-excerpt: "Cộng Đồng Bầu (CDB) thành lập năm 2015, hiện có 2 trụ sở chính tại TP. Hồ Chí Minh và Hà Nội. Năm 2026, CĐB mở rộng đội ngũ vận hành, truyền thông và chăm sóc khách hàng...",
+thumbnail: "./images/tuyendung1.png",
+excerpt: "Cộng Đồng Bầu mở rộng đội ngũ Sales, Digital và Business Development, chào đón ứng viên yêu thích lĩnh vực Giáo dục, Mẹ & Bé, Digital và Kinh doanh.",
 blocks: [
 {
+type: "highlight",
+value: "Cộng Đồng Bầu đang tìm kiếm những cộng sự nhiệt huyết, trách nhiệm và mong muốn tạo giá trị tích cực cho mẹ và bé Việt Nam."
+},
+{
 type: "text",
-value: "Cộng Đồng Bầu tuyển dụng nhiều vị trí trong năm 2026 nhằm mở rộng đội ngũ vận hành, truyền thông và chăm sóc khách hàng."
+value: "<strong>Cộng Đồng Bầu (CDB)</strong> thành lập năm <strong>2015</strong>, hiện có 2 trụ sở chính tại <strong>TP. Hồ Chí Minh và Hà Nội</strong>, hoạt động với sứ mệnh đồng hành cùng bố mẹ trong hành trình mang thai và nuôi con trong <strong>1.000 ngày vàng đầu đời</strong>."
+},
+{
+type: "text",
+value: "Với thông điệp <strong>“Cho con điều tuyệt vời nhất mỗi ngày”</strong>, CDB phát triển <strong>Trung tâm 1.000 Ngày Đầu Đời</strong> cùng sản phẩm cốt lõi là <strong>Bộ Thẻ Digital</strong> dạy kỹ năng phát triển 8 loại hình thông minh của trẻ trong 1.000 ngày đầu đời."
+},
+{
+type: "text",
+value: "Sản phẩm hiện được phân phối rộng rãi qua kênh <strong>Bệnh viện – Phòng khám – Mầm non</strong> và <strong>TikTok Shop Cộng Đồng Bầu</strong>."
+},
+{
+type: "text",
+value: "Chúng tôi trân trọng mời các ứng viên tâm huyết với lĩnh vực <strong>Giáo dục – Mẹ & Bé – Digital – Kinh doanh</strong> cùng đồng hành và phát triển bền vững."
 },
 {
 type: "image",
-src: "./images/news-1.png",
+src: "./images/tuyendung1.png",
 alt: "Cộng Đồng Bầu tuyển dụng",
 caption: "Gia nhập Cộng Đồng Bầu để cùng đồng hành với mẹ và bé."
 },
-{
-type: "text",
-value: "<strong>Vị trí tuyển dụng:</strong> Chuyên viên Chăm sóc Khách hàng, Nhân viên Content Marketing, Cộng tác viên Truyền thông và Thực tập sinh Sự kiện."
-},
-{
-type: "text",
-value: "<strong>Yêu cầu chung:</strong> Có tinh thần trách nhiệm, giao tiếp tốt, yêu thích lĩnh vực mẹ và bé, có khả năng làm việc nhóm và chủ động trong công việc."
-},
-{
-type: "text",
-value: "<strong>Thông tin ứng tuyển:</strong> Ứng viên gửi CV về <a href='mailto:cskh@congdongbau.com'>[cskh@congdongbau.com](mailto:cskh@congdongbau.com)</a> với tiêu đề <strong>[Vị trí ứng tuyển] - Họ và tên</strong>."
-}
-]
-},
 
-/*"recruit-2": {
-    title: "Tuyển Dụng Thực Tập Sinh Sự Kiện - Góp Phần Kiến Tạo Trải Nghiệm Cho Mẹ",
-    date: "Thứ Sáu, 20/01/2026",
-    author: "Cộng Đồng Bầu",
-    thumbnail: "./images/news-2.png",
-    excerpt: "Bạn yêu thích sự kiện, thích làm việc cùng team và muốn tích lũy kinh nghiệm thực chiến trong môi trường chuyên nghiệp...",
-    blocks: [
+
         {
-            type: "text",
-            value: "Cộng Đồng Bầu đang tìm kiếm các bạn Thực tập sinh Sự kiện để hỗ trợ lên kế hoạch, triển khai hoạt động và đồng hành trong các buổi offline/online."
+            type: "heading",
+            value: "🔥 Vị trí tuyển dụng"
         },
         {
-            type: "image",
-            src: "./images/news-2.png",
-            alt: "Thực tập sinh sự kiện",
-            caption: "Từ khâu chuẩn bị đến vận hành sự kiện - học hỏi mỗi ngày."
+            type: "subheading",
+            value: "Khối Kinh Doanh - Sales Khu Vực"
+        },
+
+        {
+            type: "job",
+            title: "1. Nhân Viên Sales Khu Vực – Kênh Bệnh Viện",
+            meta: [
+                "Thời gian: 07:00 – 16:30 | Thứ 2 – Thứ 7",
+                "Làm Chủ nhật được nghỉ bù, nhân viên chủ động sắp xếp"
+            ],
+            areas: [
+                "Quận 1",
+                "TP. Thủ Đức",
+                "Bình Thạnh",
+                "Quận 7",
+                "Đồng Nai: BV Shing Mark, BV Hoàn Hảo và khu vực lân cận",
+                "Khu vực Đồng Nai phụ trách cả Bệnh viện và Phòng khám"
+            ],
+            tasks: [
+                "Quản lý, tuyển dụng và giám sát CTV tặng quà, chăm sóc thành viên CDB tại bệnh viện.",
+                "Tổ chức hội thảo, bán hàng theo lịch bệnh viện.",
+                "Mở mới kênh bệnh viện, đưa sản phẩm vào shop hoặc quầy bệnh viện.",
+                "Chịu trách nhiệm chỉ tiêu doanh thu, mở kênh và tiếp cận bà mẹ tại bệnh viện."
+            ]
+        },
+
+        {
+            type: "job",
+            title: "2. Nhân Viên Sales Khu Vực – Kênh Phòng Khám & Mầm Non",
+            meta: [
+                "Thời gian: 13:00 – 21:00 | Thứ 2 – Thứ 7",
+                "Làm Chủ nhật được nghỉ bù, nhân viên chủ động sắp xếp"
+            ],
+            areas: [
+                "Quận 1",
+                "TP. Thủ Đức",
+                "Bình Thạnh",
+                "Quận 7"
+            ],
+            tasks: [
+                "Quản lý, tuyển dụng và giám sát CTV tại phòng khám và mầm non.",
+                "Tổ chức hội thảo, bán hàng theo lịch đối tác.",
+                "Mở mới kênh phòng khám, đưa sản phẩm vào shop hoặc quầy.",
+                "Chịu trách nhiệm chỉ tiêu doanh thu và chỉ tiêu tiếp cận bà mẹ tại phòng khám."
+            ]
+        },
+
+        {
+            type: "subheading",
+            value: "Phòng Digital"
+        },
+
+        {
+            type: "job",
+            title: "3. Nhân Viên Thiết Kế & Dựng Video Clip",
+            tasks: [
+                "Thiết kế ấn phẩm truyền thông cho Facebook, TikTok, Website và sàn thương mại điện tử.",
+                "Dựng video ngắn cho TikTok, Reels, video sản phẩm và sự kiện.",
+                "Phối hợp cùng team Digital phát triển nội dung hình ảnh và video theo kế hoạch."
+            ]
+        },
+
+        {
+            type: "job",
+            title: "4. Nhân Viên Quản Lý Platform & Chăm Sóc Khách Hàng Online",
+            tasks: [
+                "Quản lý và vận hành các nền tảng Facebook, TikTok, Shopee, Website và Zalo OA.",
+                "Trả lời inbox, tư vấn và chăm sóc khách hàng online.",
+                "Quản lý dữ liệu khách hàng.",
+                "Phối hợp với team Sales và Marketing.",
+                "Có khả năng sử dụng tiếng Anh cơ bản."
+            ]
+        },
+
+        {
+            type: "job",
+            title: "5. Nhân Viên Livestream – Seeding – MC Sự Kiện",
+            tasks: [
+                "Livestream bán hàng, giới thiệu sản phẩm trên TikTok và Facebook.",
+                "Thực hiện seeding, tương tác trong livestream.",
+                "Dẫn chương trình, làm MC hoặc Host cho các sự kiện online và offline của công ty.",
+                "Phối hợp xây dựng kịch bản và nội dung tương tác."
+            ]
+        },
+
+        {
+            type: "heading",
+            value: "Business Development Executive - Account Executive"
         },
         {
-            type: "text",
-            value: "<strong>Người phù hợp:</strong> Chủ động, có trách nhiệm, cẩn thận trong checklist, yêu thích hoạt động cộng đồng."
+            type: "subheading",
+            value: "Mô tả công việc"
         },
         {
-            type: "text",
-            value: "<strong>Quyền lợi:</strong> Được hướng dẫn quy trình, tham gia vận hành cùng đội ngũ, có cơ hội tuyển dụng chính thức theo năng lực."
+            type: "list",
+            items: [
+                "Tìm kiếm, phát triển và mở rộng tệp khách hàng doanh nghiệp B2B, đặc biệt là các thương hiệu, nhãn hàng và đối tác chiến lược.",
+                "Chủ động tiếp cận khách hàng để giới thiệu các giải pháp Marketing, Activation, Event, Sampling, Workshop và các dịch vụ khác của Agency.",
+                "Tham gia họp với khách hàng để tiếp nhận brief, khai thác nhu cầu và xác định mục tiêu dự án.",
+                "Phối hợp với các bộ phận nội bộ xây dựng proposal, báo giá và giải pháp phù hợp với yêu cầu khách hàng.",
+                "Trực tiếp trình bày proposal, tư vấn giải pháp và thuyết phục khách hàng lựa chọn dịch vụ.",
+                "Đàm phán chi phí, quyền lợi hợp tác và các điều khoản hợp đồng.",
+                "Theo dõi quá trình ký kết hợp đồng và bàn giao thông tin cho bộ phận triển khai.",
+                "Duy trì mối quan hệ với khách hàng hiện hữu và phát triển cơ hội hợp tác mới.",
+                "Thực hiện báo cáo kinh doanh theo yêu cầu quản lý."
+            ]
+        },
+
+        {
+            type: "subheading",
+            value: "Yêu cầu ứng viên"
         },
         {
-            type: "text",
-            value: "<strong>Cách ứng tuyển:</strong> Gửi CV về <a href='mailto:cskh@congdongbau.com'>cskh@congdongbau.com</a> với tiêu đề <strong>[Thực tập sinh Sự kiện] - Họ và tên</strong>."
+            type: "list",
+            items: [
+                "Tốt nghiệp Cao đẳng hoặc Đại học các chuyên ngành Kinh doanh, Marketing, Truyền thông hoặc các ngành liên quan.",
+                "Tối thiểu 01 năm kinh nghiệm ở vị trí Sales B2B, Business Development, Account Executive hoặc vị trí tương đương.",
+                "Ưu tiên ứng viên có kinh nghiệm trong lĩnh vực Agency, Event, Activation hoặc Truyền thông.",
+                "Có khả năng giao tiếp và làm việc bằng tiếng Anh với khách hàng, đối tác.",
+                "Có kỹ năng thuyết trình, đàm phán, thương lượng và xây dựng quan hệ khách hàng.",
+                "Có tư duy kinh doanh, khả năng nắm bắt nhu cầu và đề xuất giải pháp.",
+                "Thành thạo PowerPoint, Google Slides và các công cụ văn phòng.",
+                "Biết sử dụng công cụ AI như ChatGPT, Gemini, Claude, Gamma, Canva AI là một lợi thế.",
+                "Chủ động, trách nhiệm, có tinh thần chinh phục mục tiêu doanh số và làm việc độc lập."
+            ]
+        },
+
+        {
+            type: "info",
+            title: "💰 Thu nhập & quyền lợi",
+            items: [
+                "Thu nhập: 10.000.000 – 12.000.000 VNĐ/tháng.",
+                "Thưởng hoa hồng theo giá trị hợp đồng dự án từ 1.5% – 2%.",
+                "Được làm việc trực tiếp với các thương hiệu lớn, tập đoàn và đối tác uy tín.",
+                "Có cơ hội phát triển lên Account Manager hoặc Business Development Manager.",
+                "Được đào tạo bài bản về sản phẩm, quy trình và kỹ năng.",
+                "Môi trường làm việc nhân văn, gắn liền giá trị cộng đồng.",
+                "Cơ hội phát triển lâu dài trong lĩnh vực Giáo dục, Mẹ & Bé và Digital."
+            ]
+        },
+
+        {
+            type: "info",
+            title: "📍 Thời gian & địa điểm làm việc",
+            items: [
+                "Thời gian: Thứ 2 đến Thứ 7, 08:30 – 17:30.",
+                "Nghỉ trưa: 12:00 – 13:00.",
+                "Địa điểm: 33/3 Bùi Đình Tuý, Bình Thạnh, Hồ Chí Minh."
+            ]
+        },
+
+        {
+            type: "apply",
+            title: "📩 Ứng tuyển ngay",
+            email: "dinh.tran@otbcreatives.com",
+            hotline: "0947701010",
+            note: "Tiêu đề email: Ứng tuyển [Business Development Executive] – Họ tên"
+        },
+
+        {
+            type: "highlight",
+            value: "💚 Cộng Đồng Bầu trân trọng chào đón những ứng viên nhiệt huyết, trách nhiệm và mong muốn tạo giá trị tích cực cho thế hệ tương lai."
         }
     ]
-},
-
-"recruit-3": {
-    title: "Tuyển Nhân Viên Content Marketing - Viết Bằng Trái Tim, Làm Bằng Dữ Liệu",
-    date: "Thứ Ba, 28/01/2026",
-    author: "Cộng Đồng Bầu",
-    thumbnail: "./images/news-3.png",
-    excerpt: "Nếu bạn thích viết, thích tìm hiểu kiến thức mẹ và bé và muốn nâng tầm nội dung theo hướng giá trị...",
-    blocks: [
-        {
-            type: "text",
-            value: "Cộng Đồng Bầu cần thêm Nhân viên Content Marketing để xây dựng hệ thống bài viết, kịch bản truyền thông và hỗ trợ chiến dịch theo kế hoạch."
-        },
-        {
-            type: "image",
-            src: "./images/news-3.png",
-            alt: "Content Marketing",
-            caption: "Nội dung rõ ràng - nguồn tham khảo tốt - hiệu quả đo lường."
-        },
-        {
-            type: "text",
-            value: "<strong>Yêu cầu:</strong> Có tư duy nội dung, biết cách viết headline, nắm cơ bản SEO/Copywriting; ưu tiên người có kinh nghiệm mảng mẹ và bé."
-        },
-        {
-            type: "text",
-            value: "<strong>Thông tin ứng tuyển:</strong> Gửi portfolio hoặc bài viết mẫu về <a href='mailto:cskh@congdongbau.com'>cskh@congdongbau.com</a> với tiêu đề <strong>[Content Marketing] - Họ và tên</strong>."
-        }
-    ]
 }
 
-*/
+
 };
 
 function renderRecruitSidebar() {
@@ -169,11 +284,15 @@ list.innerHTML = Object.entries(recruitData).map(([id, item]) => `
                 <img src="${item.thumbnail}" alt="${item.title}">
             </div>
 
-            <span class="recruit-date">${item.date}</span>
+            <div class="recruit-card-body">
+                <span class="recruit-date">${item.date}</span>
 
-            <h2>${item.title}</h2>
+                <h2>${item.title}</h2>
 
-            <p>${item.excerpt}</p>
+                <p>${item.excerpt}</p>
+
+                <span class="recruit-readmore">Xem chi tiết →</span>
+            </div>
         </a>
     </article>
 `).join("");
@@ -188,8 +307,105 @@ return "";
 
 
 return blocks.map(block => {
+    if (block.type === "heading") {
+        return `<h2 class="recruit-section-title">${block.value}</h2>`;
+    }
+
+    if (block.type === "subheading") {
+        return `<h3 class="recruit-subtitle">${block.value}</h3>`;
+    }
+
     if (block.type === "text") {
         return `<p>${block.value}</p>`;
+    }
+
+    if (block.type === "highlight") {
+        return `<div class="recruit-highlight">${block.value}</div>`;
+    }
+
+    if (block.type === "list") {
+        return `
+            <ul class="recruit-list">
+                ${block.items.map(item => `<li>${item}</li>`).join("")}
+            </ul>
+        `;
+    }
+
+    if (block.type === "job") {
+        return `
+            <section class="recruit-job-card">
+                <h3>${block.title}</h3>
+
+                ${
+                    block.meta
+                    ? `<div class="recruit-job-meta">
+                        ${block.meta.map(item => `<span>${item}</span>`).join("")}
+                       </div>`
+                    : ""
+                }
+
+                ${
+                    block.areas
+                    ? `<div class="recruit-mini-section">
+                        <h4>📍 Khu vực phụ trách</h4>
+                        <ul>
+                            ${block.areas.map(item => `<li>${item}</li>`).join("")}
+                        </ul>
+                       </div>`
+                    : ""
+                }
+
+                ${
+                    block.tasks
+                    ? `<div class="recruit-mini-section">
+                        <h4>Mô tả công việc chính</h4>
+                        <ul>
+                            ${block.tasks.map(item => `<li>${item}</li>`).join("")}
+                        </ul>
+                       </div>`
+                    : ""
+                }
+            </section>
+        `;
+    }
+
+    if (block.type === "info") {
+        return `
+            <section class="recruit-info-box">
+                <h3>${block.title}</h3>
+                <ul>
+                    ${block.items.map(item => `<li>${item}</li>`).join("")}
+                </ul>
+            </section>
+        `;
+    }
+
+    if (block.type === "apply") {
+        return `
+            <section class="recruit-apply-box">
+                <h3>${block.title}</h3>
+
+                <p>Ứng viên quan tâm vui lòng gửi CV về:</p>
+
+                <p>
+                    <strong>Email:</strong>
+                    <a href="mailto:${block.email}">${block.email}</a>
+                </p>
+
+                <p>
+                    <strong>Hotline/Zalo:</strong>
+                    ${block.hotline}
+                </p>
+
+                <p>
+                    <strong>${block.note}</strong>
+                </p>
+
+                <a href="mailto:${block.email}" class="recruit-apply-btn">
+                    Gửi CV ngay
+                </a>
+            </section>
+        `;
     }
 
     if (block.type === "image") {
@@ -212,7 +428,6 @@ return blocks.map(block => {
 
     return "";
 }).join("");
-
 
 }
 
@@ -294,7 +509,6 @@ if (saveHistory) {
 
 }
 
-/* Cho script.js gọi được các hàm này */
 window.recruitData = recruitData;
 window.renderRecruitSidebar = renderRecruitSidebar;
 window.renderRecruitmentList = renderRecruitmentList;

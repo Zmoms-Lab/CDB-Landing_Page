@@ -376,3 +376,577 @@ height: 190px;
 
 
 }
+/* ================= IMPRESSIVE RECRUITMENT DESIGN ================= */
+
+/* HERO TUYỂN DỤNG */
+
+.recruit-hero {
+display: grid;
+grid-template-columns: minmax(0, 1fr) 320px;
+gap: 28px;
+align-items: stretch;
+
+
+margin-bottom: 28px;
+padding: 34px;
+
+background:
+    radial-gradient(circle at top right, rgba(236, 0, 140, 0.18), transparent 35%),
+    linear-gradient(135deg, #fff4fb, #fff);
+border: 1px solid #f4d6e8;
+box-shadow: 0 14px 40px rgba(0, 0, 0, 0.06);
+
+
+}
+
+.recruit-hero-content {
+min-width: 0;
+}
+
+.recruit-eyebrow {
+display: inline-block;
+margin-bottom: 12px;
+
+
+color: #ec008c;
+font-size: 14px;
+font-weight: 800;
+text-transform: uppercase;
+letter-spacing: 1.5px;
+
+
+}
+
+.recruit-hero h1 {
+margin: 0 0 16px;
+
+
+color: #111;
+font-size: 38px;
+font-weight: 900;
+line-height: 1.18;
+text-transform: uppercase;
+
+
+}
+
+.recruit-hero p {
+margin: 0 0 22px;
+
+
+color: #444;
+font-size: 17px;
+line-height: 1.7;
+
+
+}
+
+.recruit-hero-actions {
+display: flex;
+flex-wrap: wrap;
+gap: 12px;
+}
+
+.recruit-primary-btn,
+.recruit-secondary-btn {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+
+min-height: 44px;
+padding: 0 18px;
+
+font-size: 15px;
+font-weight: 800;
+text-decoration: none;
+
+transition: 0.25s ease;
+
+
+}
+
+.recruit-primary-btn {
+background: #ec008c;
+color: #fff;
+}
+
+.recruit-primary-btn:hover {
+background: #111;
+color: #fff;
+}
+
+.recruit-secondary-btn {
+background: #fff;
+color: #ec008c;
+border: 1px solid #ec008c;
+}
+
+.recruit-secondary-btn:hover {
+background: #ec008c;
+color: #fff;
+}
+
+.recruit-hero-card {
+padding: 24px;
+
+
+background: #fff;
+border-left: 5px solid #ec008c;
+box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+
+
+}
+
+.recruit-hero-card h3 {
+margin: 0 0 16px;
+
+color: #111;
+font-size: 20px;
+font-weight: 800;
+text-transform: uppercase;
+
+
+}
+
+.recruit-hero-card p {
+margin: 0 0 12px;
+
+
+color: #333;
+font-size: 15px;
+line-height: 1.6;
+
+}
+
+/* THỐNG KÊ */
+
+.recruit-stats {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 16px;
+
+
+margin-bottom: 34px;
+
+
+}
+
+.recruit-stat-item {
+padding: 20px;
+
+
+background: #fff;
+border: 1px solid #eee;
+text-align: center;
+transition: 0.25s ease;
+
+
+}
+
+.recruit-stat-item:hover {
+transform: translateY(-4px);
+border-color: #ec008c;
+box-shadow: 0 10px 28px rgba(0, 0, 0, 0.07);
+}
+
+.recruit-stat-item strong {
+display: block;
+
+
+color: #ec008c;
+font-size: 30px;
+font-weight: 900;
+line-height: 1;
+
+
+}
+
+.recruit-stat-item span {
+display: block;
+margin-top: 8px;
+
+
+color: #555;
+font-size: 15px;
+
+
+}
+
+/* TIÊU ĐỀ KHU VỰC TUYỂN DỤNG */
+
+.recruit-section-head {
+margin-bottom: 26px;
+}
+
+.recruit-section-head h2 {
+margin: 0 0 8px;
+
+
+color: #111;
+font-size: 28px;
+font-weight: 900;
+text-transform: uppercase;
+
+}
+
+.recruit-section-head p {
+margin: 0;
+
+
+color: #666;
+font-size: 16px;
+
+
+}
+
+/* CARD DANH SÁCH TUYỂN DỤNG */
+
+.recruit-card {
+background: #fff;
+border: 1px solid #eee;
+overflow: hidden;
+
+
+transition: 0.3s ease;
+
+
+}
+
+.recruit-card:hover {
+transform: translateY(-5px);
+border-color: #ec008c;
+box-shadow: 0 14px 35px rgba(0, 0, 0, 0.09);
+}
+
+.recruit-card-body {
+padding: 18px 0 0;
+}
+
+.recruit-readmore {
+display: inline-block;
+margin-top: 12px;
+
+
+color: #ec008c;
+font-size: 15px;
+font-weight: 800;
+
+
+}
+
+/* CHI TIẾT TUYỂN DỤNG */
+
+.recruit-meta {
+margin-bottom: 22px;
+
+
+color: #777;
+font-size: 15px;
+
+
+}
+
+.recruit-highlight {
+margin: 24px 0;
+padding: 22px 24px;
+
+
+color: #111;
+font-size: 18px;
+font-weight: 800;
+line-height: 1.65;
+
+background: #fff4fb;
+border-left: 5px solid #ec008c;
+
+
+}
+
+.recruit-section-title {
+margin: 38px 0 20px;
+padding-bottom: 12px;
+
+
+color: #ec008c;
+font-size: 25px;
+font-weight: 900;
+line-height: 1.35;
+text-transform: uppercase;
+
+border-bottom: 2px solid #f4d6e8;
+
+
+}
+
+.recruit-subtitle {
+margin: 28px 0 16px;
+
+
+color: #111;
+font-size: 21px;
+font-weight: 900;
+line-height: 1.4;
+
+}
+
+.recruit-list {
+margin: 0 0 24px 24px;
+padding-left: 20px;
+}
+
+.recruit-list li {
+margin-bottom: 10px;
+padding-left: 6px;
+
+
+color: #222;
+font-size: 17px;
+line-height: 1.65;
+
+
+}
+
+.recruit-list li::marker {
+color: #ec008c;
+}
+
+/* JOB CARD TRONG BÀI CHI TIẾT */
+
+.recruit-job-card,
+.recruit-info-box,
+.recruit-apply-box {
+margin: 24px 0;
+padding: 24px;
+
+background: #fff;
+border: 1px solid #eee;
+box-shadow: 0 10px 28px rgba(0, 0, 0, 0.05);
+
+
+}
+
+.recruit-job-card h3,
+.recruit-info-box h3,
+.recruit-apply-box h3 {
+margin: 0 0 16px;
+
+
+color: #111;
+font-size: 21px;
+font-weight: 900;
+line-height: 1.35;
+
+
+}
+
+.recruit-job-meta {
+display: grid;
+gap: 8px;
+
+
+margin-bottom: 18px;
+
+
+}
+
+.recruit-job-meta span {
+display: block;
+
+
+padding: 10px 12px;
+
+background: #fff4fb;
+color: #333;
+font-size: 15px;
+line-height: 1.5;
+
+
+}
+
+.recruit-mini-section {
+margin-top: 18px;
+}
+
+.recruit-mini-section h4 {
+margin: 0 0 10px;
+
+
+color: #ec008c;
+font-size: 17px;
+font-weight: 900;
+
+
+}
+
+.recruit-mini-section ul,
+.recruit-info-box ul {
+margin: 0;
+padding-left: 22px;
+}
+
+.recruit-mini-section li,
+.recruit-info-box li {
+margin-bottom: 9px;
+
+
+color: #222;
+font-size: 16px;
+line-height: 1.6;
+
+
+}
+
+/* BOX ỨNG TUYỂN */
+
+.recruit-apply-box {
+background: linear-gradient(135deg, #fff4fb, #fff);
+border-left: 5px solid #ec008c;
+}
+
+.recruit-apply-box p {
+margin: 0 0 12px;
+
+
+color: #222;
+font-size: 17px;
+line-height: 1.7;
+
+
+}
+
+.recruit-apply-box a {
+color: #ec008c;
+font-weight: 800;
+text-decoration: none;
+}
+
+.recruit-apply-box a:hover {
+text-decoration: underline;
+}
+
+.recruit-apply-btn {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+
+
+margin-top: 10px;
+min-height: 44px;
+padding: 0 18px;
+
+background: #ec008c;
+color: #fff !important;
+font-size: 15px;
+font-weight: 800;
+text-decoration: none;
+
+transition: 0.25s ease;
+
+
+}
+
+.recruit-apply-btn:hover {
+background: #111;
+text-decoration: none !important;
+}
+
+/* ẢNH + CAPTION */
+
+.recruit-figure {
+margin: 26px 0;
+}
+
+.recruit-figure .recruit-detail-image {
+margin: 0;
+}
+
+.recruit-caption {
+margin-top: 10px;
+
+
+color: #666;
+font-size: 14px;
+font-style: italic;
+line-height: 1.5;
+text-align: center;
+
+
+}
+
+/* LINK TRONG BÀI */
+
+.recruit-detail-content a {
+color: #ec008c;
+font-weight: 800;
+text-decoration: none;
+}
+
+.recruit-detail-content a:hover {
+text-decoration: underline;
+}
+
+/* RESPONSIVE BỔ SUNG */
+
+@media (max-width: 900px) {
+.recruit-hero {
+grid-template-columns: 1fr;
+padding: 28px 24px;
+}
+
+
+.recruit-stats {
+    grid-template-columns: 1fr;
+}
+
+.recruit-hero h1 {
+    font-size: 28px;
+}
+
+
+}
+
+@media (max-width: 576px) {
+.recruit-hero {
+padding: 24px 18px;
+}
+
+
+.recruit-hero h1 {
+    font-size: 24px;
+}
+
+.recruit-hero p {
+    font-size: 15px;
+}
+
+.recruit-primary-btn,
+.recruit-secondary-btn {
+    width: 100%;
+}
+
+.recruit-job-card,
+.recruit-info-box,
+.recruit-apply-box,
+.recruit-highlight {
+    padding: 20px 16px;
+}
+
+.recruit-section-title {
+    font-size: 21px;
+}
+
+.recruit-subtitle,
+.recruit-job-card h3,
+.recruit-info-box h3,
+.recruit-apply-box h3 {
+    font-size: 18px;
+}
+
+.recruit-list li,
+.recruit-mini-section li,
+.recruit-info-box li {
+    font-size: 15px;
+}
+
+
+}

@@ -456,3 +456,6 @@
         bottom:22px;
     }
 }
+.dots {
+display: none !important;
+}
