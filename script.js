@@ -37,6 +37,9 @@ function loadPage(url, saveHistory = true, target = null) {
         })
         .then(html => {
             content.innerHTML = html;
+            if (url.includes("tuyendung-content.html") && typeof renderRecruitmentList === "function") {
+renderRecruitmentList();
+}
 
             if (target) {
                 const section = document.getElementById(target);
@@ -137,6 +140,18 @@ function setupPageLinks() {
             navMenu.classList.remove("show");
             if (menuToggle) menuToggle.textContent = "☰";
         }
+        if (page === "recruitment") {
+loadPage("./page/tuyendung-content.html", true, "tuyen-dung");
+}
+
+if (page === "recruit-detail") {
+if (typeof renderRecruitDetail === "function") {
+renderRecruitDetail(newsId, true);
+} else {
+console.log("Chưa có renderRecruitDetail. Kiểm tra file ./js/tuyendung.js");
+}
+}
+
     });
 }
 
@@ -238,6 +253,16 @@ function loadPageFromHash() {
     if (typeof newsData !== "undefined" && newsData[hash]) {
         renderNewsDetail(hash, false);
     }
+    if (hash === "tuyen-dung") {
+loadPage("./page/tuyendung-content.html", false, "tuyen-dung");
+return;
+}
+
+if (typeof recruitData !== "undefined" && recruitData[hash]) {
+renderRecruitDetail(hash, false);
+return;
+}
+
 }
 
 /* Khởi chạy */
