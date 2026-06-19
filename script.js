@@ -1,93 +1,70 @@
 const isPageFolder = window.location.pathname.includes("/page/");
-
-// =====================================================
-// script.js chỉ dùng để: load page + load header/footer
-// newsData + renderNewsDetail phải nằm trong ./js/news.js
-// =====================================================
 const basePath = isPageFolder ? "../" : "./";
 
-/* Sửa đường dẫn ảnh/link khi load header footer */
 function fixPath(html) {
-    if (isPageFolder) {
-        return html
-            .replaceAll("./images/", "../images/")
-            .replaceAll("./page/", "./")
-            .replaceAll("./index.html", "../index.html");
+    if (!isPageFolder) {
+        return html;
     }
 
-    return html;
+    return html
+        .replaceAll("./images/", "../images/")
+        .replaceAll("./page/", "./")
+        .replaceAll("./index.html", "../index.html");
 }
 
-/* Load nội dung vào main */
+function pageUrl(fileName) {
+    return basePath + "page/" + fileName;
+}
+
 function loadPage(url, saveHistory = true, target = null) {
     const content = document.getElementById("content");
 
     if (!content) {
-        console.log("Không tìm thấy #content");
+        console.log("Khong tim thay #content");
         return;
     }
 
     fetch(url)
         .then(response => {
             if (!response.ok) {
-                throw new Error("Không tải được trang: " + url);
+                throw new Error("Khong tai duoc trang: " + url);
             }
 
             return response.text();
         })
         .then(html => {
-            content.innerHTML = html;
+            content.innerHTML = fixPath(html);
+
             if (url.includes("tuyendung-content.html") && typeof renderRecruitmentList === "function") {
-renderRecruitmentList();
-}
-
-            if (target) {
-                const section = document.getElementById(target);
-
-                if (section) {
-                    section.scrollIntoView({
-                        behavior: "smooth",
-                        block: "start"
-                    });
-                } else {
-                    content.scrollIntoView({
-                        behavior: "smooth",
-                        block: "start"
-                    });
-                }
-            } else {
-                content.scrollIntoView({
-                    behavior: "smooth",
-                    block: "start"
-                });
+                renderRecruitmentList();
             }
 
-            if (saveHistory) {
-                const hash = target ? "#" + target : "#about";
+            if (url.includes("uu-dai-thanh-vien-content.html") && typeof initMemberOfferPage === "function") {
+                initMemberOfferPage();
+            }
 
-                history.pushState(
-                    {
-                        page: url,
-                        target: target
-                    },
-                    "",
-                    hash
-                );
+            const scrollTarget = target ? document.getElementById(target) : content;
+            (scrollTarget || content).scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+
+            if (saveHistory) {
+                history.pushState({ page: url, target }, "", target ? "#" + target : "#about");
             }
         })
         .catch(error => {
-            console.log("Lỗi load page:", error);
+            console.log("Loi load page:", error);
 
             content.innerHTML = `
                 <section style="padding:40px;text-align:center;">
-                    <h2>Không tải được nội dung</h2>
-                    <p>Kiểm tra lại đường dẫn file hoặc chạy bằng Live Server.</p>
+                    <h2>Khong tai duoc noi dung</h2>
+                    <p>Kiem tra lai duong dan file hoac chay bang Live Server.</p>
                 </section>
             `;
         });
 }
 
-/* Bắt sự kiện click menu / link */
 function setupPageLinks() {
     document.addEventListener("click", function (e) {
         const categoryToggle = e.target.closest(".category-toggle");
@@ -109,27 +86,49 @@ function setupPageLinks() {
 
         const link = e.target.closest("a[data-page]");
 
-        if (!link) return;
+        if (!link) {
+            return;
+        }
 
         e.preventDefault();
 
         const page = link.getAttribute("data-page");
         const target = link.getAttribute("data-target");
-        const newsId = link.getAttribute("data-id");
+        const itemId = link.getAttribute("data-id");
 
         if (page === "about") {
-            loadPage("./page/gioithieu-content.html", true, target || "about");
+            loadPage(pageUrl("gioithieu-content.html"), true, target || "about");
         }
 
         if (page === "activity") {
-            loadPage("./page/hoatdong-content.html", true, "hoat-dong");
+            loadPage(pageUrl("hoatdong-content.html"), true, "hoat-dong");
+        }
+
+        if (page === "recruitment") {
+            loadPage(pageUrl("tuyendung-content.html"), true, "tuyen-dung");
+        }
+
+        if (page === "member-offer") {
+            loadPage(pageUrl("uu-dai-thanh-vien-content.html"), true, "uu-dai-thanh-vien");
+        }
+
+        if (page === "privacy") {
+            loadPage(pageUrl("chinhsachbaomat-content.html"), true, "chinh-sach-bao-mat");
         }
 
         if (page === "news-detail") {
             if (typeof renderNewsDetail === "function") {
-                renderNewsDetail(newsId, true);
+                renderNewsDetail(itemId, true);
             } else {
-                console.log("Chưa có renderNewsDetail. Kiểm tra file ./js/news.js");
+                console.log("Chua co renderNewsDetail. Kiem tra file ./js/news.js");
+            }
+        }
+
+        if (page === "recruit-detail") {
+            if (typeof renderRecruitDetail === "function") {
+                renderRecruitDetail(itemId, true);
+            } else {
+                console.log("Chua co renderRecruitDetail. Kiem tra file ./js/tuyendung.js");
             }
         }
 
@@ -138,60 +137,44 @@ function setupPageLinks() {
 
         if (navMenu && navMenu.classList.contains("show")) {
             navMenu.classList.remove("show");
-            if (menuToggle) menuToggle.textContent = "☰";
+            if (menuToggle) {
+                menuToggle.textContent = "☰";
+            }
         }
-        if (page === "recruitment") {
-loadPage("./page/tuyendung-content.html", true, "tuyen-dung");
-}
-
-if (page === "recruit-detail") {
-if (typeof renderRecruitDetail === "function") {
-renderRecruitDetail(newsId, true);
-} else {
-console.log("Chưa có renderRecruitDetail. Kiểm tra file ./js/tuyendung.js");
-}
-}
-
     });
 }
+
 let heroSliderTimer = null;
 
 function initHeroSlider() {
-const slides = document.querySelectorAll(".hero-header .slide");
+    const slides = document.querySelectorAll(".hero-header .slide");
 
+    if (!slides.length) {
+        return;
+    }
 
-if (!slides || slides.length === 0) {
-    console.log("Không tìm thấy slide banner");
-    return;
+    let currentSlide = 0;
+
+    slides.forEach((slide, index) => {
+        slide.classList.toggle("active", index === 0);
+    });
+
+    if (heroSliderTimer) {
+        clearInterval(heroSliderTimer);
+    }
+
+    heroSliderTimer = setInterval(() => {
+        slides[currentSlide].classList.remove("active");
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add("active");
+    }, 4000);
 }
 
-let currentSlide = 0;
-
-slides.forEach((slide, index) => {
-    slide.classList.toggle("active", index === 0);
-});
-
-if (heroSliderTimer) {
-    clearInterval(heroSliderTimer);
-}
-
-heroSliderTimer = setInterval(() => {
-    slides[currentSlide].classList.remove("active");
-
-    currentSlide = (currentSlide + 1) % slides.length;
-
-    slides[currentSlide].classList.add("active");
-}, 4000);
-
-
-}
-
-/* Load Header */
 function loadHeader() {
     fetch(basePath + "container/header.html")
         .then(response => {
             if (!response.ok) {
-                throw new Error("Không tìm thấy header.html");
+                throw new Error("Khong tim thay header.html");
             }
 
             return response.text();
@@ -199,11 +182,12 @@ function loadHeader() {
         .then(data => {
             const header = document.getElementById("header");
 
-            if (!header) return;
+            if (!header) {
+                return;
+            }
 
             header.innerHTML = fixPath(data);
             initHeroSlider();
-
 
             const menuToggle = document.getElementById("menuToggle");
             const navMenu = document.getElementById("navMenu");
@@ -211,26 +195,20 @@ function loadHeader() {
             if (menuToggle && navMenu) {
                 menuToggle.addEventListener("click", () => {
                     navMenu.classList.toggle("show");
-
-                    if (navMenu.classList.contains("show")) {
-                        menuToggle.textContent = "×";
-                    } else {
-                        menuToggle.textContent = "☰";
-                    }
+                    menuToggle.textContent = navMenu.classList.contains("show") ? "×" : "☰";
                 });
             }
         })
         .catch(error => {
-            console.log("Không load được header:", error);
+            console.log("Khong load duoc header:", error);
         });
 }
 
-/* Load Footer */
 function loadFooter() {
     fetch(basePath + "container/footer.html")
         .then(response => {
             if (!response.ok) {
-                throw new Error("Không tìm thấy footer.html");
+                throw new Error("Khong tim thay footer.html");
             }
 
             return response.text();
@@ -238,24 +216,18 @@ function loadFooter() {
         .then(data => {
             const footer = document.getElementById("footer");
 
-            if (!footer) return;
-
-            footer.innerHTML = fixPath(data);
+            if (footer) {
+                footer.innerHTML = fixPath(data);
+            }
         })
         .catch(error => {
-            console.log("Không load được footer:", error);
+            console.log("Khong load duoc footer:", error);
         });
 }
 
-/* Xử lý nút Back / Forward */
 window.addEventListener("popstate", function (event) {
-    if (!event.state) return;
-
-    if (event.state.page === "news-detail") {
-        if (typeof renderNewsDetail === "function") {
-            renderNewsDetail(event.state.newsId, false);
-        }
-
+    if (!event.state) {
+        loadPageFromHash();
         return;
     }
 
@@ -264,41 +236,44 @@ window.addEventListener("popstate", function (event) {
     }
 });
 
-/* Load theo hash khi mở link trực tiếp */
 function loadPageFromHash() {
     const hash = window.location.hash.replace("#", "");
 
     if (hash === "about") {
-        loadPage("./page/gioithieu-content.html", false, "about");
+        loadPage(pageUrl("gioithieu-content.html"), false, "about");
         return;
     }
 
     if (hash === "tuyen-dung") {
-        loadPage("./page/gioithieu-content.html", false, "tuyen-dung");
+        loadPage(pageUrl("tuyendung-content.html"), false, "tuyen-dung");
         return;
     }
 
     if (hash === "hoat-dong") {
-        loadPage("./page/hoatdong-content.html", false, "hoat-dong");
+        loadPage(pageUrl("hoatdong-content.html"), false, "hoat-dong");
         return;
     }
 
-    if (typeof newsData !== "undefined" && newsData[hash]) {
-        renderNewsDetail(hash, false);
+    if (hash === "uu-dai-thanh-vien") {
+        loadPage(pageUrl("uu-dai-thanh-vien-content.html"), false, "uu-dai-thanh-vien");
+        return;
     }
-    if (hash === "tuyen-dung") {
-loadPage("./page/tuyendung-content.html", false, "tuyen-dung");
-return;
+
+    if (hash === "chinh-sach-bao-mat" || hash === "chinhsachbaomat") {
+        loadPage(pageUrl("chinhsachbaomat-content.html"), false, "chinh-sach-bao-mat");
+        return;
+    }
+
+    if (typeof newsData !== "undefined" && newsData[hash] && typeof renderNewsDetail === "function") {
+        renderNewsDetail(hash, false);
+        return;
+    }
+
+    if (typeof recruitData !== "undefined" && recruitData[hash] && typeof renderRecruitDetail === "function") {
+        renderRecruitDetail(hash, false);
+    }
 }
 
-if (typeof recruitData !== "undefined" && recruitData[hash]) {
-renderRecruitDetail(hash, false);
-return;
-}
-
-}
-
-/* Khởi chạy */
 loadHeader();
 loadFooter();
 setupPageLinks();
