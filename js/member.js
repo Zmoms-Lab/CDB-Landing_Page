@@ -27,6 +27,20 @@ function initMemberOfferPage() {
             });
         });
     });
+
+    document.querySelectorAll(".member-detail-btn").forEach(button => {
+        button.addEventListener("click", () => {
+            const card = button.closest(".member-offer-card");
+
+            if (!card) {
+                return;
+            }
+
+            const isOpen = card.classList.toggle("open");
+            button.setAttribute("aria-expanded", String(isOpen));
+            button.textContent = isOpen ? "Thu gọn" : "Xem chi tiết";
+        });
+    });
 }
 
 window.initMemberOfferPage = initMemberOfferPage;

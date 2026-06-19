@@ -79,56 +79,122 @@ const newsData = {
         title: "5 PHÒNG KHÁM ĐÃ HỢP TÁC CÙNG CỘNG ĐỒNG BẦU TRONG THÁNG 12/2025",
         date: "Thứ Sáu, 02/01/2026",
         author: "Cộng Đồng Bầu",
-        thumbnail: "../images/banner.png",
+        thumbnail: "./images/banner.png",
 
         blocks: [
             {
                 type: "text",
-                value: "DANH SÁCH CÁC PHÒNG KHÁM ĐÃ HỢP TÁC"
+                value: "<strong>DANH SÁCH CÁC PHÒNG KHÁM ĐÃ HỢP TÁC</strong>"
             },
             {
-                type:"text",
-                value: "<strong>1. BS CKII Đoàn Định</strong>",
+                type: "text",
+                value: "<strong>1. BS CKII Đoàn Định</strong>"
             },
             {
-                type:"text",
-                value: "Địa chỉ: 138 Đặng Văn Ngữ, Phường 14, Quận Phú Nhuận, TP. Hồ Chí Minh."
+                type: "text",
+                value: "<strong>Địa chỉ:</strong> 138 Đặng Văn Ngữ, Phường 14, Quận Phú Nhuận, TP. Hồ Chí Minh."
             },
             {
-                type:"text",
+                type: "text",
                 value: "<strong>Chuyên môn:</strong> Sản phụ khoa (khám và điều trị các bệnh lý sản phụ khoa)."
             },
             {
-                type:"text",
-                value: "<strong>Khinh nghiệm:</strong> Hơn 20 năm, đã học tập và thực tế tại BV Từ Dũ, BV Hùng Vương, BV Quốc tế Hoàn Mỹ."
+                type: "text",
+                value: "<strong>Kinh nghiệm:</strong> Hơn 20 năm, đã học tập và thực tế tại BV Từ Dũ, BV Hùng Vương, BV Quốc tế Hoàn Mỹ."
             },
             {
-                type:"text",
+                type: "text",
                 value: "<strong>Điện thoại:</strong> 0903 011 796."
             },
             {
-                type:"text",
-                value: "<strong>Website:<strong> phusanbsdoandinh.com (cũng có thể là phusanbsdoandinh.com)."
+                type: "text",
+                value: "<strong>Website:</strong> <a href=\"https://www.phusanbsdoandinh.com/\" target=\"_blank\" rel=\"noopener\">phusanbsdoandinh.com</a> (cũng có thể là phusanbsdoandinh.com)."
             },
             {
-                type:"text",
-                value: "<strong>Giờ làm việc (tham khảo):",
-                type:"list",
-                items: [
-                "Thứ Hai, Thứ Tư, Thứ Sáu: 8h – 18h.",
-                "Thứ Ba, Thứ Năm, Thứ Bảy: 10h – 16h.",
-                "Chủ Nhật: Nghỉ."
-                ]
+                type: "text",
+                value: "<strong>Giờ làm việc (tham khảo):</strong><br>Thứ Hai, Thứ Tư, Thứ Sáu: 8h - 18h.<br>Thứ Ba, Thứ Năm, Thứ Bảy: 10h - 16h.<br>Chủ Nhật: Nghỉ."
             },
             {
-            type:"text",
-            value: "<strong>2. PK CK Sản Nguyễn Thị Thu BA</strong>",
-            value:"<strong>Chuyên khoa:</strong>Sản phụ khoa, chăm sóc thai sản, tư vấn sản phụ khoa.",
-            value:"<strong>Đặc biệt:</strong> Bác sĩ Nguyễn Thị Thu Ba cũng công tác tại Bệnh viện Hùng Vương, với vai trò Trưởng khoa Sanh và Trưởng khoa Phòng khám."
+                type: "text",
+                value: "<strong>2. PK CK Sản Nguyễn Thị Thu Ba</strong>"
+            },
+            {
+                type: "text",
+                value: "<strong>Địa chỉ:</strong> 77C-79 Lạc Long Quân, Phường 1, Quận 11, TP. Hồ Chí Minh."
+            },
+            {
+                type: "text",
+                value: "<strong>Chuyên khoa:</strong> Sản phụ khoa, chăm sóc thai sản, tư vấn sản phụ khoa."
+            },
+            {
+                type: "text",
+                value: "<strong>Lưu ý:</strong> Bác sĩ Nguyễn Thị Thu Ba cũng công tác tại Bệnh viện Hùng Vương, với vai trò Trưởng khoa Sanh và Trưởng khoa Phòng khám."
+            },
+            {
+                type: "text",
+                value: "<strong>3. PK SPK Và Siêu âm Trần Thị Trúc Phương</strong>"
+            },
+            {
+                type: "text",
+                value: "<strong>Địa chỉ:</strong> 285B Phạm Hữu Lầu, Phường Phú Mỹ, Quận 7, TP. Hồ Chí Minh."
+            },
+            {
+                type: "text",
+                value: "<strong>Chuyên môn:</strong> Khám và quản lý thai sản, siêu âm thai, khám sản phụ khoa, tầm soát dị tật thai nhi."
+            },
+            {
+                type: "text",
+                value: "<strong>Giờ làm việc:</strong> Thường từ 17h30 - 20h00 hoặc 20h30 (Thứ 2 - Chủ Nhật)."
+            },
+            {
+                type: "text",
+                value: "<strong>4. PK SPK BS Lê Đăng Đại</strong>"
+            },
+            {
+                type: "text",
+                value: "<strong>Địa chỉ:</strong> 21 Nguyễn Văn Thạnh, Long Thạnh Mỹ, Thủ Đức, Thành phố Hồ Chí Minh."
+            },
+            {
+                type: "text",
+                value: "<strong>Website:</strong> sanphukhoaledangdai.com"
+            },
+            {
+                type: "text",
+                value: "<strong>5. PK SPK Ngọc Lệ</strong>"
+            },
+            {
+                type: "text",
+                value: "<strong>Địa chỉ:</strong> 1121 TL43, Khu phố 2, Thủ Đức, Thành phố Hồ Chí Minh."
+            },
+            {
+                type: "text",
+                value: "<strong>Thời gian làm việc:</strong><br>THỨ 2 - THỨ 7: 17:00 - 21:00<br>CHỦ NHẬT: 8:00 - 12:00 & 14:00 - 18:00"
             }
-
         ]
     },
+
+    /*"news-3": {
+        title: "RA MẮT 12 THẺ DIGITAL DÀNH CHO MẸ VÀ BÉ",
+        date: "Thứ Sáu, 02/01/2026",
+        author: "Cộng Đồng Bầu",
+        thumbnail: "./images/news-3.png",
+
+        blocks: [
+            {
+                type: "text",
+                value: "Bộ thẻ Digital hỗ trợ cha mẹ đồng hành cùng con trong việc phát triển kỹ năng và trí thông minh từ những năm tháng đầu đời."
+            },
+            {
+                type: "image",
+                src: "./images/news-3.png",
+                alt: "Ra mắt thẻ Digital Cộng Đồng Bầu"
+            },
+            {
+                type: "text",
+                value: "Chương trình hướng đến việc giúp phụ huynh tiếp cận nội dung giáo dục sớm một cách trực quan, dễ ứng dụng và phù hợp với hành trình 1.000 ngày vàng đầu đời."
+            }
+        ]
+    },*/
 
     "news-4": {
         title: "CỘNG ĐỒNG BẦU: MỘT THẬP KỶ ĐỒNG HÀNH, TRIỆU ĐIỀU YÊU THƯƠNG",
@@ -221,7 +287,7 @@ const newsData = {
         title: "RA MẮT TRUNG TÂM 1.000 NGÀY VÀNG ĐẦU ĐỜI IPD 8",
         date: "Thứ Sáu, 27/06/2025",
         author: "Cộng Đồng Bầu",
-        thumbnail: "./images/news-5.jpg",
+        thumbnail: "../images/news-9.png",
 
         blocks: [
             {
@@ -304,7 +370,7 @@ const newsData = {
         title: "Hội Thảo Khởi Động Dự Án EM-THRIVE: Cột Mốc Ý Nghĩa Cho Sự Phát Triển Trẻ Thơ Toàn Diện",
         date: "Thứ Tư, 25/06/2025",
         author: "Cộng Đồng Bầu",
-        thumbnail: "./images/news-6.jpg",
+        thumbnail: "../images/news-13.png",
 
         blocks: [
            {
@@ -380,6 +446,136 @@ const newsData = {
     }
 };
 
+const NEWS_PAGE_SIZE = 6;
+
+function getNewsEntries() {
+    return Object.entries(newsData);
+}
+
+function getNewsImageSrc(src) {
+    if (!src) {
+        return "./images/banner.png";
+    }
+
+    const imageName = src.split("/").pop();
+    const imageBase = window.location.pathname.includes("/page/") ? "../images/" : "./images/";
+
+    return imageBase + imageName;
+}
+
+function getNewsExcerpt(news) {
+    const textBlock = news.blocks && news.blocks.find(block => block.type === "text" && block.value);
+
+    if (!textBlock) {
+        return "";
+    }
+
+    const plainText = textBlock.value
+        .replace(/<[^>]*>/g, "")
+        .replace(/\s+/g, " ")
+        .trim();
+
+    return plainText.length > 150 ? plainText.slice(0, 147) + "..." : plainText;
+}
+
+function renderNewsCard(id, news) {
+    return `
+        <article class="news-card">
+            <a href="#${id}" data-page="news-detail" data-id="${id}" class="news-card-link">
+                <div class="news-thumb">
+                    <img src="${getNewsImageSrc(news.thumbnail)}" alt="${news.title}">
+                </div>
+
+                <div class="news-card-body">
+                    <span class="news-date">${news.date}</span>
+
+                    <h2>${news.title}</h2>
+
+                    <p>${getNewsExcerpt(news)}</p>
+
+                    <span class="news-readmore">Xem chi tiết →</span>
+                </div>
+            </a>
+        </article>
+    `;
+}
+
+function renderNewsPagination(currentPage, totalPages) {
+    if (totalPages <= 1) {
+        return "";
+    }
+
+    const pageButtons = Array.from({ length: totalPages }, (_, index) => {
+        const page = index + 1;
+
+        return `
+            <button
+                type="button"
+                class="news-page-btn ${page === currentPage ? "active" : ""}"
+                data-news-page="${page}"
+                aria-label="Trang ${page}"
+            >
+                ${page}
+            </button>
+        `;
+    }).join("");
+
+    return `
+        <div class="news-pagination" aria-label="Chuyển trang tin tức">
+            <button type="button" class="news-page-btn" data-news-page="${currentPage - 1}" ${currentPage === 1 ? "disabled" : ""}>
+                Trước
+            </button>
+
+            ${pageButtons}
+
+            <button type="button" class="news-page-btn" data-news-page="${currentPage + 1}" ${currentPage === totalPages ? "disabled" : ""}>
+                Sau
+            </button>
+        </div>
+    `;
+}
+
+function renderNewsList(page = 1) {
+    const grid = document.querySelector(".news-grid");
+
+    if (!grid) {
+        return;
+    }
+
+    const entries = getNewsEntries();
+    const totalPages = Math.max(1, Math.ceil(entries.length / NEWS_PAGE_SIZE));
+    const currentPage = Math.min(Math.max(Number(page) || 1, 1), totalPages);
+    const start = (currentPage - 1) * NEWS_PAGE_SIZE;
+    const visibleEntries = entries.slice(start, start + NEWS_PAGE_SIZE);
+
+    grid.innerHTML = visibleEntries.map(([id, news]) => renderNewsCard(id, news)).join("");
+
+    let pagination = document.querySelector(".news-pagination");
+
+    if (!pagination) {
+        pagination = document.createElement("div");
+        grid.insertAdjacentElement("afterend", pagination);
+    }
+
+    pagination.outerHTML = renderNewsPagination(currentPage, totalPages);
+
+    document.querySelectorAll(".news-page-btn[data-news-page]").forEach(button => {
+        button.addEventListener("click", () => {
+            if (button.disabled) {
+                return;
+            }
+
+            renderNewsList(button.getAttribute("data-news-page"));
+
+            const sectionHead = document.getElementById("news-list");
+            (sectionHead || grid).scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        });
+    });
+}
+
 function renderNewsSidebar() {
     return `
         <aside class="news-sidebar">
@@ -404,7 +600,7 @@ function renderNewsSidebar() {
                 </li>
 
                 <li>
-                    <a href="#hoat-dong" data-page="activity" class="category-link">Hội thảo</a>
+                    <a href="#hoi-thao" data-page="seminar" class="category-link">Hội thảo</a>
                 </li>
 
                 <li>

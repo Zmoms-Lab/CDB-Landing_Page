@@ -39,6 +39,14 @@ function loadPage(url, saveHistory = true, target = null) {
                 renderRecruitmentList();
             }
 
+            if (url.includes("hoatdong-content.html") && typeof renderNewsList === "function") {
+                renderNewsList();
+            }
+
+            if (url.includes("hoithao-content.html") && typeof renderSeminarList === "function") {
+                renderSeminarList();
+            }
+
             if (url.includes("uu-dai-thanh-vien-content.html") && typeof initMemberOfferPage === "function") {
                 initMemberOfferPage();
             }
@@ -104,6 +112,10 @@ function setupPageLinks() {
             loadPage(pageUrl("hoatdong-content.html"), true, "hoat-dong");
         }
 
+        if (page === "seminar") {
+            loadPage(pageUrl("hoithao-content.html"), true, "hoi-thao");
+        }
+
         if (page === "recruitment") {
             loadPage(pageUrl("tuyendung-content.html"), true, "tuyen-dung");
         }
@@ -121,6 +133,14 @@ function setupPageLinks() {
                 renderNewsDetail(itemId, true);
             } else {
                 console.log("Chua co renderNewsDetail. Kiem tra file ./js/news.js");
+            }
+        }
+
+        if (page === "seminar-detail") {
+            if (typeof renderSeminarDetail === "function") {
+                renderSeminarDetail(itemId, true);
+            } else {
+                console.log("Chua co renderSeminarDetail. Kiem tra file ./js/news.js");
             }
         }
 
@@ -231,6 +251,16 @@ window.addEventListener("popstate", function (event) {
         return;
     }
 
+    if (event.state.page === "news-detail" && typeof renderNewsDetail === "function") {
+        renderNewsDetail(event.state.newsId, false);
+        return;
+    }
+
+    if (event.state.page === "seminar-detail" && typeof renderSeminarDetail === "function") {
+        renderSeminarDetail(event.state.seminarId, false);
+        return;
+    }
+
     if (event.state.page) {
         loadPage(event.state.page, false, event.state.target);
     }
@@ -254,6 +284,11 @@ function loadPageFromHash() {
         return;
     }
 
+    if (hash === "hoi-thao") {
+        loadPage(pageUrl("hoithao-content.html"), false, "hoi-thao");
+        return;
+    }
+
     if (hash === "uu-dai-thanh-vien") {
         loadPage(pageUrl("uu-dai-thanh-vien-content.html"), false, "uu-dai-thanh-vien");
         return;
@@ -266,6 +301,11 @@ function loadPageFromHash() {
 
     if (typeof newsData !== "undefined" && newsData[hash] && typeof renderNewsDetail === "function") {
         renderNewsDetail(hash, false);
+        return;
+    }
+
+    if (typeof seminarData !== "undefined" && seminarData[hash] && typeof renderSeminarDetail === "function") {
+        renderSeminarDetail(hash, false);
         return;
     }
 
