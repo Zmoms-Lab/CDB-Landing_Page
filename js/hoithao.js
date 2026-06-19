@@ -618,29 +618,12 @@ const seminarData = {
                 src: "./images/hoithao8_1.png",
                 alt: "Ngày hội Em Bé FV"
             },
-            {
-                type: "text",
-                value: "Khép lại Ngày hội, những món quà nhỏ nhưng đong đầy ý nghĩa tri ân đã được trao tận tay các gia đình - như một lời cảm ơn chân thành từ FV dành cho sự tin tưởng và đồng hành trong suốt hành trình vượt cạn và nuôi dưỡng con yêu."
-            },
-            {
-                type: "text",
-                value: "Từ giây phút con cất tiếng khóc chào đời, hành trình yêu thương đã bắt đầu. Và tại Ngày hội “Em Bé FV”, hành trình ấy được nhắc lại, sẻ chia và tiếp nối - bằng ký ức, bằng cảm xúc và bằng sự gắn kết bền chặt giữa bệnh viện và các gia đình."
-            },
-            {
-                type: "text",
-                value: "Cộng Đồng Bầu rất vinh dự khi được đồng hành cùng Bệnh viện FV trong sự kiện đầy nhân văn này - nơi ký ức được hồi sinh, tình yêu được lan tỏa và cộng đồng cha mẹ được kết nối bằng những giá trị tốt đẹp nhất."
-            },
-            {
-                type: "text",
-                value: "Ngày hội khép lại, nhưng những câu chuyện “Em Bé FV” sẽ còn ở lại - trong trái tim của mỗi gia đình, mỗi nhân viên y tế và trong hành trình trưởng thành của các con."
-            }
+            
         ]
-    },
-    /*"hoi-thao-9": {
+    },    /*"hoi-thao-9": {
         title: "Sơ cứu cơ bản cho trẻ nhỏ tại nhà",
         date: "Thứ Bảy, 11/04/2026",
         author: "Cộng Đồng Bầu",
-        thumbnail: "./images/news-15.png",
         blocks: [
             {
                 type: "text",
