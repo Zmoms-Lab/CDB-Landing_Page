@@ -475,16 +475,6 @@ const sponsorData = {
                     src: "./images/taitroquatang27.png",
                     alt: "Cộng Đồng Bầu x Johnson's Baby đào tạo nữ hộ sinh"
                  },
-                  {
-                    type: "image",
-                    src: "./images/taitroquatang28.png",
-                    alt: "Cộng Đồng Bầu x Johnson's Baby đào tạo nữ hộ sinh"
-                },
-                 {
-                    type: "image",
-                    src: "./images/taitroquatang29.png",
-                    alt: "Cộng Đồng Bầu x Johnson's Baby đào tạo nữ hộ sinh"
-                },
                  {
                     type: "image",
                     src: "./images/taitroquatang30.png",
@@ -500,11 +490,6 @@ const sponsorData = {
                     src: "./images/taitroquatang32.png",
                     alt: "Cộng Đồng Bầu x Johnson's Baby đào tạo nữ hộ sinh"
                 },
-                 {
-                    type: "image",
-                    src: "./images/taitroquatang33.png",
-                    alt: "Cộng Đồng Bầu x Johnson's Baby đào tạo nữ hộ sinh"
-                }
             ]
         },
         "tai-tro-hoi-thao-khoa-hoc-2": {

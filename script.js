@@ -180,6 +180,10 @@ function setupPageLinks() {
             loadPage(pageUrl("chinhsachbaomat-content.html"), true, "chinh-sach-bao-mat");
         }
 
+        if (page === "terms") {
+            loadPage(pageUrl("dieu-khoan-dich-vu-content.html"), true, "dieu-khoan-dich-vu");
+        }
+
         if (page === "contact") {
             loadPage(pageUrl("lienhe-content.html"), true, "lien-he");
         }
@@ -237,6 +241,7 @@ function setupPageLinks() {
 }
 
 let heroSliderTimer = null;
+let homeTestimonialTimer = null;
 
 function initHeroSlider() {
     const slides = document.querySelectorAll(".hero-header .slide");
@@ -260,6 +265,73 @@ function initHeroSlider() {
         currentSlide = (currentSlide + 1) % slides.length;
         slides[currentSlide].classList.add("active");
     }, 4000);
+}
+
+function initHomeTestimonials() {
+    const section = document.querySelector(".home-testimonials");
+
+    if (!section) {
+        return;
+    }
+
+    const track = section.querySelector(".home-testimonial-track");
+    const slides = Array.from(section.querySelectorAll(".home-testimonial-slide"));
+    const dots = Array.from(section.querySelectorAll(".home-testimonial-dots button"));
+    const prevButton = section.querySelector(".home-testimonial-prev");
+    const nextButton = section.querySelector(".home-testimonial-next");
+
+    if (!track || slides.length === 0) {
+        return;
+    }
+
+    let currentIndex = Math.max(0, slides.findIndex(slide => slide.classList.contains("active")));
+
+    function renderSlide(index) {
+        currentIndex = (index + slides.length) % slides.length;
+        track.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+        slides.forEach((slide, slideIndex) => {
+            slide.classList.toggle("active", slideIndex === currentIndex);
+        });
+
+        dots.forEach((dot, dotIndex) => {
+            dot.classList.toggle("active", dotIndex === currentIndex);
+        });
+    }
+
+    function restartTimer() {
+        if (homeTestimonialTimer) {
+            clearInterval(homeTestimonialTimer);
+        }
+
+        homeTestimonialTimer = setInterval(() => {
+            renderSlide(currentIndex + 1);
+        }, 6000);
+    }
+
+    if (prevButton) {
+        prevButton.addEventListener("click", () => {
+            renderSlide(currentIndex - 1);
+            restartTimer();
+        });
+    }
+
+    if (nextButton) {
+        nextButton.addEventListener("click", () => {
+            renderSlide(currentIndex + 1);
+            restartTimer();
+        });
+    }
+
+    dots.forEach((dot, index) => {
+        dot.addEventListener("click", () => {
+            renderSlide(index);
+            restartTimer();
+        });
+    });
+
+    renderSlide(currentIndex);
+    restartTimer();
 }
 
 function loadHeader() {
@@ -411,6 +483,11 @@ function loadPageFromHash() {
         return;
     }
 
+    if (hash === "dieu-khoan-dich-vu" || hash === "dieukhoandichvu") {
+        loadPage(pageUrl("dieu-khoan-dich-vu-content.html"), false, "dieu-khoan-dich-vu");
+        return;
+    }
+
     if (hash === "lien-he") {
         loadPage(pageUrl("lienhe-content.html"), false, "lien-he");
         return;
@@ -444,4 +521,5 @@ function loadPageFromHash() {
 loadHeader();
 loadFooter();
 setupPageLinks();
+initHomeTestimonials();
 loadPageFromHash();
