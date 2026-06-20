@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./css/member.css">
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/Privacy.css">
+    <link rel="stylesheet" href="./css/chatbox.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
@@ -324,6 +325,48 @@
     </main>
 
     <div id="footer"></div>
+
+    <section class="ai-chatbox" aria-label="Tro ly AI Cong Dong Bau">
+        <button type="button" class="ai-chatbox-toggle" aria-label="Mo tro ly AI" aria-expanded="false">
+            <i class="fas fa-comment-dots"></i>
+            <span class="ai-chatbox-pulse"></span>
+        </button>
+
+        <div class="ai-chatbox-panel" aria-hidden="true">
+            <div class="ai-chatbox-header">
+                <div>
+                    <span>Tro ly AI</span>
+                    <strong>Cong Dong Bau</strong>
+                </div>
+
+                <button type="button" class="ai-chatbox-close" aria-label="Dong tro ly AI">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <div class="ai-chatbox-messages" role="log" aria-live="polite">
+                <article class="ai-message ai-message-bot">
+                    <span class="ai-message-avatar">
+                        <i class="fas fa-robot"></i>
+                    </span>
+                    <p>Xin chao! Minh co the ho tro ban tim thong tin ve hoi thao, uu dai thanh vien, tuyen dung va lien he voi Cong Dong Bau.</p>
+                </article>
+            </div>
+
+            <div class="ai-chatbox-suggestions" aria-label="Cau hoi goi y">
+                <button type="button" data-question="Toi muon xem uu dai thanh vien">Uu dai</button>
+                <button type="button" data-question="Cong Dong Bau co hoi thao nao khong">Hoi thao</button>
+                <button type="button" data-question="Toi muon lien he tu van">Lien he</button>
+            </div>
+
+            <form class="ai-chatbox-form">
+                <input type="text" class="ai-chatbox-input" placeholder="Nhap cau hoi cua ban..." aria-label="Nhap cau hoi">
+                <button type="submit" aria-label="Gui cau hoi">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </section>
 
     <script src="./js/news.js"></script>
     <script src="./js/hoithao.js"></script>

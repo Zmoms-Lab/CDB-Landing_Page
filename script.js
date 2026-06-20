@@ -334,6 +334,124 @@ function initHomeTestimonials() {
     restartTimer();
 }
 
+function initAiChatbox() {
+    const chatbox = document.querySelector(".ai-chatbox");
+
+    if (!chatbox) {
+        return;
+    }
+
+    const toggleButton = chatbox.querySelector(".ai-chatbox-toggle");
+    const closeButton = chatbox.querySelector(".ai-chatbox-close");
+    const panel = chatbox.querySelector(".ai-chatbox-panel");
+    const messages = chatbox.querySelector(".ai-chatbox-messages");
+    const form = chatbox.querySelector(".ai-chatbox-form");
+    const input = chatbox.querySelector(".ai-chatbox-input");
+    const suggestionButtons = chatbox.querySelectorAll(".ai-chatbox-suggestions button");
+
+    function setOpen(isOpen) {
+        chatbox.classList.toggle("open", isOpen);
+        toggleButton.setAttribute("aria-expanded", String(isOpen));
+        panel.setAttribute("aria-hidden", String(!isOpen));
+
+        if (isOpen) {
+            input.focus();
+        }
+    }
+
+    function cleanText(value) {
+        return value
+            .toLowerCase()
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "")
+            .replace(/đ/g, "d")
+            .replace(/Đ/g, "d");
+    }
+
+    function addMessage(text, type) {
+        const article = document.createElement("article");
+        article.className = `ai-message ai-message-${type}`;
+
+        if (type === "bot") {
+            const avatar = document.createElement("span");
+            avatar.className = "ai-message-avatar";
+            avatar.innerHTML = '<i class="fas fa-robot"></i>';
+            article.appendChild(avatar);
+        }
+
+        const paragraph = document.createElement("p");
+        paragraph.textContent = text;
+        article.appendChild(paragraph);
+        messages.appendChild(article);
+        messages.scrollTop = messages.scrollHeight;
+    }
+
+    function getBotReply(question) {
+        const text = cleanText(question);
+
+        if (text.includes("uu dai") || text.includes("thanh vien") || text.includes("the")) {
+            return "Ban co the xem muc Uu dai thanh vien de tim cac quyen loi tu benh vien, phong kham, cua hang me va be, spa va doi tac lien ket.";
+        }
+
+        if (text.includes("hoi thao") || text.includes("lop") || text.includes("tien san") || text.includes("su kien")) {
+            return "Cong Dong Bau thuong cap nhat hoi thao va lop tien san trong muc Hoat dong. Minh co the dua ban den trang do neu ban bam lien ket Hoat dong tren menu.";
+        }
+
+        if (text.includes("lien he") || text.includes("tu van") || text.includes("hotline") || text.includes("so dien thoai")) {
+            return "Ban co the lien he hotline 0947 70 10 10 hoac gui thong tin o trang Lien he. Doi ngu Cong Dong Bau se tu van cu the hon.";
+        }
+
+        if (text.includes("tuyen dung") || text.includes("viec lam") || text.includes("ung vien")) {
+            return "Ban hay vao muc Tuyen dung de xem vi tri dang mo va thong tin ung tuyen moi nhat cua Cong Dong Bau.";
+        }
+
+        if (text.includes("dia chi") || text.includes("o dau")) {
+            return "Van phong Cong Dong Bau o Tang 8, Toa nha Vietnam Business Center, 57-59 Ho Tung Mau, TP. Ho Chi Minh.";
+        }
+
+        if (text.includes("chao") || text.includes("hello") || text.includes("hi")) {
+            return "Xin chao ban! Ban dang quan tam den hoi thao, uu dai thanh vien, tuyen dung hay can lien he tu van?";
+        }
+
+        return "Minh da ghi nhan cau hoi cua ban. Hien tro ly AI tren website dang ho tro nhanh cac thong tin ve hoi thao, uu dai, tuyen dung va lien he. Voi cau hoi chuyen sau, ban nen gui form Lien he de duoc tu van chinh xac.";
+    }
+
+    function submitQuestion(question) {
+        const trimmedQuestion = question.trim();
+
+        if (!trimmedQuestion) {
+            return;
+        }
+
+        addMessage(trimmedQuestion, "user");
+        input.value = "";
+
+        window.setTimeout(() => {
+            addMessage(getBotReply(trimmedQuestion), "bot");
+        }, 450);
+    }
+
+    toggleButton.addEventListener("click", () => {
+        setOpen(!chatbox.classList.contains("open"));
+    });
+
+    closeButton.addEventListener("click", () => {
+        setOpen(false);
+    });
+
+    form.addEventListener("submit", event => {
+        event.preventDefault();
+        submitQuestion(input.value);
+    });
+
+    suggestionButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            setOpen(true);
+            submitQuestion(button.getAttribute("data-question") || button.textContent);
+        });
+    });
+}
+
 function loadHeader() {
     fetch(basePath + "container/header.html")
         .then(response => {
@@ -522,4 +640,5 @@ loadHeader();
 loadFooter();
 setupPageLinks();
 initHomeTestimonials();
+initAiChatbox();
 loadPageFromHash();
