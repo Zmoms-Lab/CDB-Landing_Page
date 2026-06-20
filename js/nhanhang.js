@@ -593,7 +593,7 @@ const sponsorData = {
                 },
                 {
                     type: "image",
-                    src: "./images/taitrokhoahoc_6",
+                    src: "./images/taitrokhoahoc_6.png",
                     alt: "Chương Trình Đồng Hành Cùng Mẹ Và Bé: Johnson's Baby – Nâng Niu Làn Da Bé Yêu"
                 },
                 {
@@ -630,7 +630,7 @@ const sponsorData = {
                 },
                  {
                     type: "image",
-                    src: "./images/taitrokhoahoc_7",
+                    src: "./images/taitrokhoahoc_7.png",
                     alt: "Chương Trình Đồng Hành Cùng Mẹ Và Bé: Johnson's Baby – Nâng Niu Làn Da Bé Yêu"
                 },
                 {
