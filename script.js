@@ -347,6 +347,7 @@ function initAiChatbox() {
     const messages = chatbox.querySelector(".ai-chatbox-messages");
     const form = chatbox.querySelector(".ai-chatbox-form");
     const input = chatbox.querySelector(".ai-chatbox-input");
+    const submitButton = form.querySelector("button[type='submit']");
     const suggestionButtons = chatbox.querySelectorAll(".ai-chatbox-suggestions button");
 
     function setOpen(isOpen) {
@@ -384,6 +385,8 @@ function initAiChatbox() {
         article.appendChild(paragraph);
         messages.appendChild(article);
         messages.scrollTop = messages.scrollHeight;
+
+        return article;
     }
 
     function getBotReply(question) {
@@ -416,7 +419,45 @@ function initAiChatbox() {
         return "Minh da ghi nhan cau hoi cua ban. Hien tro ly AI tren website dang ho tro nhanh cac thong tin ve hoi thao, uu dai, tuyen dung va lien he. Voi cau hoi chuyen sau, ban nen gui form Lien he de duoc tu van chinh xac.";
     }
 
-    function submitQuestion(question) {
+    async function getGeminiReply(question) {
+        const response = await fetch("/api/chat", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                message: question
+            })
+        });
+
+        if (!response.ok) {
+            let errorMessage = "Gemini request failed";
+
+            try {
+                const errorData = await response.json();
+                errorMessage = errorData.error || errorMessage;
+            } catch (error) {
+                errorMessage = response.statusText || errorMessage;
+            }
+
+            throw new Error(errorMessage);
+        }
+
+        const data = await response.json();
+        const reply = (data.reply || "").trim();
+
+        return reply || getBotReply(question);
+    }
+
+    function setChatboxBusy(isBusy) {
+        input.disabled = isBusy;
+        submitButton.disabled = isBusy;
+        suggestionButtons.forEach(button => {
+            button.disabled = isBusy;
+        });
+    }
+
+    async function submitQuestion(question) {
         const trimmedQuestion = question.trim();
 
         if (!trimmedQuestion) {
@@ -425,10 +466,19 @@ function initAiChatbox() {
 
         addMessage(trimmedQuestion, "user");
         input.value = "";
+        setChatboxBusy(true);
+        const loadingMessage = addMessage("Minh dang tra loi...", "bot");
 
-        window.setTimeout(() => {
-            addMessage(getBotReply(trimmedQuestion), "bot");
-        }, 450);
+        try {
+            const reply = await getGeminiReply(trimmedQuestion);
+            loadingMessage.querySelector("p").textContent = reply;
+        } catch (error) {
+            console.error("AI chatbox error:", error);
+            loadingMessage.querySelector("p").textContent = "AI hien chua ket noi duoc. Minh tra loi nhanh theo du lieu co san: " + getBotReply(trimmedQuestion);
+        } finally {
+            setChatboxBusy(false);
+            input.focus();
+        }
     }
 
     toggleButton.addEventListener("click", () => {
