@@ -47,8 +47,36 @@ function loadPage(url, saveHistory = true, target = null) {
                 renderSeminarList();
             }
 
+            if (url.includes("tai-tro-qua-tang-content.html") && typeof initSponsorPage === "function") {
+                initSponsorPage("gift-sponsor");
+            }
+
+            if (url.includes("tai-tro-hoi-thao-content.html") && typeof initSponsorPage === "function") {
+                initSponsorPage("seminar-sponsor");
+            }
+
+            if (url.includes("tai-tro-hoi-thao-khoa-hoc-content.html") && typeof initSponsorPage === "function") {
+                initSponsorPage("science-sponsor");
+            }
+
+            if (url.includes("phong-kham-content.html") && typeof initDistributionPage === "function") {
+                initDistributionPage("clinic");
+            }
+
+            if (url.includes("benh-vien-content.html") && typeof initDistributionPage === "function") {
+                initDistributionPage("hospital");
+            }
+
+            if (url.includes("truong-mam-non-content.html") && typeof initDistributionPage === "function") {
+                initDistributionPage("preschool");
+            }
+
             if (url.includes("uu-dai-thanh-vien-content.html") && typeof initMemberOfferPage === "function") {
                 initMemberOfferPage();
+            }
+
+            if (url.includes("lienhe-content.html") && typeof initContactPage === "function") {
+                initContactPage();
             }
 
             const scrollTarget = target ? document.getElementById(target) : content;
@@ -124,8 +152,36 @@ function setupPageLinks() {
             loadPage(pageUrl("uu-dai-thanh-vien-content.html"), true, "uu-dai-thanh-vien");
         }
 
+        if (page === "gift-sponsor") {
+            loadPage(pageUrl("tai-tro-qua-tang-content.html"), true, "tai-tro-qua-tang");
+        }
+
+        if (page === "seminar-sponsor") {
+            loadPage(pageUrl("tai-tro-hoi-thao-content.html"), true, "tai-tro-hoi-thao");
+        }
+
+        if (page === "science-sponsor") {
+            loadPage(pageUrl("tai-tro-hoi-thao-khoa-hoc-content.html"), true, "tai-tro-hoi-thao-khoa-hoc");
+        }
+
+        if (page === "clinic") {
+            loadPage(pageUrl("phong-kham-content.html"), true, "phong-kham");
+        }
+
+        if (page === "hospital") {
+            loadPage(pageUrl("benh-vien-content.html"), true, "benh-vien");
+        }
+
+        if (page === "preschool") {
+            loadPage(pageUrl("truong-mam-non-content.html"), true, "truong-mam-non");
+        }
+
         if (page === "privacy") {
             loadPage(pageUrl("chinhsachbaomat-content.html"), true, "chinh-sach-bao-mat");
+        }
+
+        if (page === "contact") {
+            loadPage(pageUrl("lienhe-content.html"), true, "lien-he");
         }
 
         if (page === "news-detail") {
@@ -141,6 +197,22 @@ function setupPageLinks() {
                 renderSeminarDetail(itemId, true);
             } else {
                 console.log("Chua co renderSeminarDetail. Kiem tra file ./js/news.js");
+            }
+        }
+
+        if (page === "sponsor-detail") {
+            if (typeof renderSponsorDetail === "function") {
+                renderSponsorDetail(itemId, true);
+            } else {
+                console.log("Chua co renderSponsorDetail. Kiem tra file ./js/nhanhang.js");
+            }
+        }
+
+        if (page === "distribution-detail") {
+            if (typeof renderDistributionDetail === "function") {
+                renderDistributionDetail(itemId, true);
+            } else {
+                console.log("Chua co renderDistributionDetail. Kiem tra file ./js/kenhphanphoi.js");
             }
         }
 
@@ -261,6 +333,16 @@ window.addEventListener("popstate", function (event) {
         return;
     }
 
+    if (event.state.page === "sponsor-detail" && typeof renderSponsorDetail === "function") {
+        renderSponsorDetail(event.state.sponsorId, false);
+        return;
+    }
+
+    if (event.state.page === "distribution-detail" && typeof renderDistributionDetail === "function") {
+        renderDistributionDetail(event.state.distributionId, false);
+        return;
+    }
+
     if (event.state.page) {
         loadPage(event.state.page, false, event.state.target);
     }
@@ -294,8 +376,43 @@ function loadPageFromHash() {
         return;
     }
 
+    if (hash === "tai-tro-qua-tang") {
+        loadPage(pageUrl("tai-tro-qua-tang-content.html"), false, "tai-tro-qua-tang");
+        return;
+    }
+
+    if (hash === "tai-tro-hoi-thao") {
+        loadPage(pageUrl("tai-tro-hoi-thao-content.html"), false, "tai-tro-hoi-thao");
+        return;
+    }
+
+    if (hash === "tai-tro-hoi-thao-khoa-hoc") {
+        loadPage(pageUrl("tai-tro-hoi-thao-khoa-hoc-content.html"), false, "tai-tro-hoi-thao-khoa-hoc");
+        return;
+    }
+
+    if (hash === "phong-kham") {
+        loadPage(pageUrl("phong-kham-content.html"), false, "phong-kham");
+        return;
+    }
+
+    if (hash === "benh-vien") {
+        loadPage(pageUrl("benh-vien-content.html"), false, "benh-vien");
+        return;
+    }
+
+    if (hash === "truong-mam-non") {
+        loadPage(pageUrl("truong-mam-non-content.html"), false, "truong-mam-non");
+        return;
+    }
+
     if (hash === "chinh-sach-bao-mat" || hash === "chinhsachbaomat") {
         loadPage(pageUrl("chinhsachbaomat-content.html"), false, "chinh-sach-bao-mat");
+        return;
+    }
+
+    if (hash === "lien-he") {
+        loadPage(pageUrl("lienhe-content.html"), false, "lien-he");
         return;
     }
 
@@ -306,6 +423,16 @@ function loadPageFromHash() {
 
     if (typeof seminarData !== "undefined" && seminarData[hash] && typeof renderSeminarDetail === "function") {
         renderSeminarDetail(hash, false);
+        return;
+    }
+
+    if (typeof getSponsorItem === "function" && getSponsorItem(hash) && typeof renderSponsorDetail === "function") {
+        renderSponsorDetail(hash, false);
+        return;
+    }
+
+    if (typeof getDistributionItem === "function" && getDistributionItem(hash) && typeof renderDistributionDetail === "function") {
+        renderDistributionDetail(hash, false);
         return;
     }
 
