@@ -1,6 +1,248 @@
 const SEMINAR_PAGE_SIZE = 6;
 
 const seminarData = {
+    "hoi-thao-19": {
+        title: "[Âu Cơ] Lớp tiền sản miễn phí 20/06",
+        date: "19/06/2026",
+        author: "Cộng Đồng Bầu",
+        thumbnail: "./images/hoithao19thang6.png",
+        blocks: [
+            {
+                type: "text",
+                value: "<strong>🌷 [ÂU CƠ] LỚP TIỀN SẢN MIỄN PHÍ 20/06</strong>"
+            },
+            {
+                type: "text",
+                value: "Mang thai là hành trình đặc biệt, và kiến thức đúng sẽ giúp ba mẹ thêm tự tin trong quá trình chuẩn bị đón bé yêu."
+            },
+            {
+                type: "text",
+                value: "Tham gia Lớp Tiền sản Bệnh viện Âu Cơ để cùng các bác sĩ chuyên khoa cập nhật những thông tin hữu ích cho mẹ và bé."
+            },
+            {
+                type: "text",
+                value: "<strong>Một buổi học - hai bác sĩ chuyên khoa đồng hành:</strong><br>👩‍⚕️ <strong>Chủ đề 1:</strong> Bé yêu đang lớn đúng chuẩn hay chậm hơn tuổi thai?<br>ThS.BS.CKII Nguyễn Thị Thu Hà<br><em>Trưởng khoa Phụ Sản</em><br><br>👩‍⚕️ <strong>Chủ đề 2:</strong> Nhận biết sớm các bệnh thường gặp ở trẻ sơ sinh<br>TTƯT.BS.CKII Phạm Thị Thu Thủy<br><em>Chuyên gia Nhi khoa</em>"
+            },
+            {
+                type: "text",
+                value: "<strong>🎁 Đặc quyền dành riêng cho khách tham dự:</strong><br>✨ Ưu đãi lên đến <strong>3.500.000 VNĐ</strong><br>✨ <strong>Quà tặng + đặc quyền kép</strong> duy nhất tại lớp học"
+            },
+            {
+                type: "text",
+                value: "<strong>📅 Thời gian:</strong> 09:00 - 11:15 | Thứ Bảy, ngày 20/06/2026<br><strong>📍 Địa điểm:</strong> Hội trường lầu 3 - Bệnh viện Âu Cơ<br>(47/19A Đường Điểu Xiển, Khu phố 25, P. Long Bình, Đồng Nai)"
+            },
+            {
+                type: "text",
+                value: "📲 Quét mã <strong>QR</strong> để đăng ký Lớp Tiền sản ngay hôm nay!"
+            },
+            {
+                type: "text",
+                value: "💚 Một buổi học nhỏ - hành trang lớn, giúp ba mẹ thêm hiểu biết, chủ động và an tâm hơn trên hành trình chào đón con yêu."
+            },
+            {
+                type: "text",
+                value: "<strong>📞 Liên hệ:</strong> 0947 701 010<br>💬 Hoặc kết nối Zalo OA của Zmoms để được hỗ trợ nhanh hơn nhé!<br><strong>Zmoms - ĐỂ CON HƠN TÔI</strong>"
+            },
+            {
+                type: "image",
+                src: "./images/hoithao19thang6.png",
+                alt: "Lớp tiền sản miễn phí 20/06 tại Bệnh viện Âu Cơ"
+            }
+        ]
+    },
+    "hoi-thao-18": {
+        title: "Lớp học tiền sản miễn phí 13/06: BVĐK Xuyên Á",
+        date: "11/06/2026",
+        author: "Cộng Đồng Bầu",
+        thumbnail: "./images/hoithao11thang6_1.png",
+        blocks: [
+            {
+                type: "text",
+                value: "<strong>🌷 Lớp học tiền sản miễn phí 13/06: BVĐK Xuyên Á</strong>"
+            },
+            {
+                type: "text",
+                value: "Mỗi em bé chào đời là một hành trình đặc biệt. Lớp Tiền sản tháng 6 sẽ mang đến những kiến thức thực tế và kỹ năng hữu ích, giúp mẹ hiểu hơn về quá trình chuyển dạ, sinh nở và tự tin hơn trên hành trình vượt cạn."
+            },
+            {
+                type: "text",
+                value: "<strong>CHỦ ĐỀ: CHUẨN BỊ CHO HÀNH TRÌNH VƯỢT CẠN</strong>"
+            },
+            {
+                type: "text",
+                value: "<strong>📅 Thời gian:</strong> 08:00 - 10:00 | Thứ Bảy, ngày 13/06/2026<br><strong>📍 Địa điểm:</strong> Sảnh Khu khám VIP, BVĐK Xuyên Á<br>(42 Phan Văn Khải - Quốc lộ 22 cũ, ấp Chợ, xã Củ Chi, TP.HCM)"
+            },
+            {
+                type: "text",
+                value: "<strong>Diễn giả:</strong><br>- BS. CKI. Lê Ngọc Hiền - Khoa Sản Phụ Khoa BVĐK Xuyên Á TP.HCM<br>- BS.CKI. Đàm Lê Kim Xuyến - Khoa Sản Phụ Khoa BVĐK Xuyên Á TP.HCM<br>- NHST. Lê Thị Thu Hà - Khoa Sản Phụ Khoa BVĐK Xuyên Á TP.HCM"
+            },
+            {
+                type: "text",
+                value: "<strong>💡 Những nội dung hữu ích dành cho mẹ bầu:</strong><br>✔️ Dấu hiệu chuyển dạ, thời điểm nhập viện và những điều cần chuẩn bị trước sinh<br>✔️ Chồng có nên đồng hành trong phòng sinh? Những lợi ích mẹ cần biết<br>✔️ Tìm hiểu về bệnh trĩ trong thai kỳ và cách phòng ngừa hiệu quả<br>✔️ Hướng dẫn bài tập thở giúp giảm căng thẳng khi chuyển dạ<br>✔️ Thực hành các tư thế sinh và massage thai kỳ dưới sự hướng dẫn của điều dưỡng hộ sinh<br>✔️ Giao lưu, đặt câu hỏi trực tiếp với đội ngũ bác sĩ giàu kinh nghiệm"
+            },
+            {
+                type: "text",
+                value: "<strong>🎁 Đặc quyền dành cho khách tham dự:</strong><br>🎀 Nhận ngay set quà tặng trị giá <strong>800.000 đồng</strong><br>🎀 Ưu đãi <strong>10% - 15%</strong> gói thai sản khi đăng ký tại sự kiện"
+            },
+            {
+                type: "text",
+                value: "📲 Đăng ký tham dự ngay tại:<br><a href=\"https://forms.gle/SLY1QKyNuoCFzCfSA\" target=\"_blank\" rel=\"noopener\">https://forms.gle/SLY1QKyNuoCFzCfSA</a>"
+            },
+            {
+                type: "text",
+                value: "💖 Chuẩn bị tốt cho ngày sinh không chỉ giúp mẹ an tâm hơn mà còn mang đến cho bé yêu một khởi đầu trọn vẹn. Hẹn gặp mẹ tại Hội thảo Tiền sản tháng 6 nhé! 💖"
+            },
+            {
+                type: "text",
+                value: "<strong>📞 Liên hệ:</strong> 0325 171 734<br>💬 Hoặc kết nối Zalo OA để được hỗ trợ nhanh hơn nhé!<br><strong>Zmoms - ĐỂ CON HƠN TÔI</strong>"
+            },
+            {
+                type: "image",
+                src: "./images/hoithao11thang6_1.png",
+                alt: "Lớp học tiền sản miễn phí 13/06 tại BVĐK Xuyên Á - hình 1"
+            },
+
+            {
+                type: "image",
+                src: "./images/hoithao11thang6_2.png",
+                alt: "Lớp học tiền sản miễn phí 13/06 tại BVĐK Xuyên Á - hình 2"
+            },
+            {
+                type: "image",
+                src: "./images/hoithao11thang6_3.png",
+                alt: "Lớp học tiền sản miễn phí 13/06 tại BVĐK Xuyên Á - hình 3"
+            }
+        ]
+    },
+    "hoi-thao-20": {
+        title: "Recap lớp học tiền sản 30/05 tại Bệnh viện Shing Mark",
+        date: "01/06/2026",
+        author: "Cộng Đồng Bầu",
+        thumbnail: "./images/hoithao30thang5_1.png",
+        blocks: [
+            {
+                type: "text",
+                value: "<strong>🌸 RECAP LỚP HỌC TIỀN SẢN 30/05 TẠI BỆNH VIỆN SHING MARK 🌸</strong>"
+            },
+            {
+                type: "text",
+                value: "Ngày 30/05 vừa qua, ZMoms đã có cơ hội đồng hành cùng Bệnh viện Shing Mark trong lớp học tiền sản dành cho các mẹ bầu với nhiều kiến thức thiết thực và hữu ích."
+            },
+            {
+                type: "image",
+                src: "./images/hoithao30thang5_1.png",
+                alt: "Lớp học tiền sản 30/05 tại Bệnh viện Shing Mark - hình 1"
+            },
+            {
+                type: "text",
+                value: "👩‍⚕️ Tại chương trình, các mẹ đã được lắng nghe những chia sẻ từ đội ngũ chuyên gia về thai kỳ, sinh nở và chăm sóc em bé, đồng thời giải đáp những băn khoăn thường gặp trong hành trình làm mẹ."
+            },
+            {
+                type: "image",
+                src: "./images/hoithao30thang5_2.png",
+                alt: "Lớp học tiền sản 30/05 tại Bệnh viện Shing Mark - hình 2"
+            },
+            {
+                type: "text",
+                value: "💝 Không chỉ được trang bị thêm kiến thức, các mẹ còn nhận được những phần quà ý nghĩa từ chương trình và có cơ hội giao lưu, kết nối cùng cộng đồng mẹ bầu."
+            },
+            {
+                type: "image",
+                src: "./images/hoithao30thang5_3.png",
+                alt: "Lớp học tiền sản 30/05 tại Bệnh viện Shing Mark - hình 3"
+            },
+            {
+                type: "text",
+                value: "ZMoms xin chân thành cảm ơn Bệnh viện Shing Mark cùng tất cả các mẹ đã dành thời gian tham dự, góp phần tạo nên một buổi học ấm áp và nhiều giá trị."
+            },
+            {
+                type: "text",
+                value: "💛 Hẹn gặp lại các mẹ trong những lớp học tiền sản tiếp theo để cùng chuẩn bị hành trang vững vàng chào đón con yêu nhé!"
+            },
+            {
+                type: "image",
+                src: "./images/hoithao30thang5_4.png",
+                alt: "Lớp học tiền sản 30/05 tại Bệnh viện Shing Mark - hình 4"
+            },
+            {
+                type: "image",
+                src: "./images/hoithao30thang5_5.png",
+                alt: "Lớp học tiền sản 30/05 tại Bệnh viện Shing Mark - hình 5"
+            },
+            {
+                type: "image",
+                src: "./images/hoithao30thang5_6.png",
+                alt: "Lớp học tiền sản 30/05 tại Bệnh viện Shing Mark - hình 6"
+            },
+            {
+                type: "image",
+                src: "./images/hoithao30thang5_7.png",
+                alt: "Lớp học tiền sản 30/05 tại Bệnh viện Shing Mark - hình 7"
+            },
+            {
+                type: "image",
+                src: "./images/hoithao30thang5_8.png",
+                alt: "Lớp học tiền sản 30/05 tại Bệnh viện Shing Mark - hình 8"
+            }
+        ]
+    },
+    "hoi-thao-21": {
+        title: "Lớp học tiền sản miễn phí 30/05: Bệnh viện Quốc tế City",
+        date: "26/05/2026",
+        author: "Cộng Đồng Bầu",
+        thumbnail: "./images/hoithao26thang5.png",
+        blocks: [
+            {
+                type: "text",
+                value: "<strong>LỚP HỌC TIỀN SẢN MIỄN PHÍ 30/05: BỆNH VIỆN QUỐC TẾ CITY 🌸</strong>"
+            },
+            {
+                type: "text",
+                value: "<strong>CHỦ ĐỀ: CÁC DẤU HIỆU NHẬN BIẾT CHUYỂN DẠ</strong>"
+            },
+            {
+                type: "text",
+                value: "<strong>ZMoms</strong> hân hạnh được đồng hành cùng <strong>Bệnh viện Quốc tế City (CIH)</strong> mang đến lớp học tiền sản miễn phí với chủ đề:<br><strong>✨ DINH DƯỠNG THAI KỲ KHOA HỌC ✨</strong><br>Cho mẹ khỏe - bé phát triển tối ưu 🤰👶"
+            },
+            {
+                type: "text",
+                value: "Thai kỳ khỏe mạnh bắt đầu từ chế độ dinh dưỡng đúng cách! Tham gia lớp học để được các chuyên gia đầu ngành chia sẻ kiến thức khoa học giúp mẹ:"
+            },
+            {
+                type: "text",
+                value: "✔️ Xây dựng chế độ dinh dưỡng phù hợp theo từng giai đoạn thai kỳ<br>✔️ Bổ sung đúng dưỡng chất cho mẹ khỏe - bé tăng trưởng tối ưu<br>✔️ Giải đáp trực tiếp những thắc mắc thường gặp về dinh dưỡng khi mang thai"
+            },
+            {
+                type: "text",
+                value: "<strong>👩‍⚕️ Diễn giả:</strong><br>🔹 TTND.PGS.TS.BS Huỳnh Nguyễn Khánh Trang<br>Trưởng Bộ môn Sản Phụ khoa, ĐH Y khoa Phạm Ngọc Thạch; Trưởng khối Sản, BV Hùng Vương<br><br>🔹 BS.CKII. Đỗ Thị Ngọc Diệp<br>Phó Chủ tịch Hội Dinh dưỡng Việt Nam; Nguyên Giám đốc Trung tâm Dinh dưỡng TP.HCM<br><br>🔹 BS.CKII. Nguyễn Vũ Mỹ Linh<br>Phó khoa Phụ Sản - Bệnh viện Quốc tế City"
+            },
+            {
+                type: "text",
+                value: "<strong>🎁 ƯU ĐÃI & QUÀ TẶNG DÀNH RIÊNG CHO MẸ THAM DỰ:</strong><br>💝 Nhận quà tặng cho tất cả mẹ tham gia<br>💝 Cập nhật kiến thức dinh dưỡng thai kỳ chuẩn khoa học<br>💝 Giao lưu, giải đáp trực tiếp cùng chuyên gia Sản & Dinh dưỡng<br>💝 Tham gia nhiều hoạt động thú vị<br>💝 Ưu đãi đến 15% dành cho mẹ tham dự"
+            },
+            {
+                type: "text",
+                value: "<strong>🕣 Thời gian:</strong> 8:30 - 11:30, THỨ 7, Ngày 30/05/2026<br><strong>📍 Địa điểm:</strong> Hội trường Diamond - Lầu 10, BV Quốc tế City<br>Số 3 Đường 17A, P. An Lạc, TP. HCM"
+            },
+            {
+                type: "text",
+                value: "📩 Đăng ký tham gia ngay tại:<br><a href=\"https://forms.gle/TtnaqHZnprg8GqRt6\" target=\"_blank\" rel=\"noopener\">https://forms.gle/TtnaqHZnprg8GqRt6</a>"
+            },
+            {
+                type: "text",
+                value: "💖 Hẹn gặp mẹ tại lớp học để cùng cập nhật thật nhiều kiến thức bổ ích và nhận những phần quà hấp dẫn nhé!"
+            },
+            {
+                type: "text",
+                value: "<strong>📞 Liên hệ:</strong> 0325 171 734<br>💬 Hoặc kết nối Zalo OA để được hỗ trợ nhanh hơn nhé!<br><strong>Zmoms - ĐỂ CON HƠN TÔI</strong>"
+            },
+            {
+                type: "image",
+                src: "./images/hoithao26thang5.png",
+                alt: "Lớp học tiền sản miễn phí 30/05 tại Bệnh viện Quốc tế City"
+            }
+        ]
+    },
     "hoi-thao-1": {
         title: " 🩺Trao yêu thương - Sáng biên cương",
         date: "Thứ Bảy, 21/01/2026",
@@ -869,9 +1111,9 @@ const seminarData = {
     },
     "hoi-thao-15": {
         title: "Mẹ bầu ơi! Tháng 3 này cùng Cộng Đồng Bầu sẵn sàng cho hành trình chào đón bé yêu",
-        date: "21/03/2026",
+        date: "18/03/2026",
         author: "Cộng Đồng Bầu",
-        thumbnail: "./images/hoithao15_1.png",
+        thumbnail: "./images/hoithaothang3.png",
         blocks: [
             {
                 type: "text",
@@ -883,7 +1125,7 @@ const seminarData = {
             },
             {
                 type: "image",
-                src: "./images/hoithao15_1.png",
+                src: "./images/hoithaothang3.png",
                 alt: "Lớp học tiền sản cùng Cộng Đồng Bầu tại Bệnh viện Columbia Asia Bình Dương"
             },
             {
@@ -956,6 +1198,47 @@ const seminarData = {
                 type: "image",
                 src: "./images/hoithao15_3.png",
                 alt: "Cộng Đồng Bầu kết nối Y học hiện đại và Giáo dục sớm khoa học"
+            }
+        ]
+    },
+    "hoi-thao-17": {
+        title: "Chúng ta có hẹn ở Câu lạc bộ Cộng Đồng Bầu ba mẹ nhé",
+        date: "21/01/2026",
+        author: "Cộng Đồng Bầu",
+        thumbnail: "./images/hoithao17_1.png",
+        blocks: [
+            {
+                type: "text",
+                value: "<strong>⏰ CHÚNG TA CÓ HẸN Ở CÂU LẠC BỘ CỘNG ĐỒNG BẦU BA MẸ NHÉ ⏰</strong>"
+            },
+            {
+                type: "text",
+                value: "Ba mẹ ơi, Câu lạc bộ CĐB diễn ra vào thứ 7 này hiện đã gần kín chỗ. BTC xin chốt danh sách sớm để đảm bảo chất lượng chương trình."
+            },
+            {
+                type: "text",
+                value: "🗓 <strong>Thời gian:</strong> 09h00 - 11h00 | Thứ 7, ngày 24.01.2026"
+            },
+            {
+                type: "text",
+                value: "✨ Chia sẻ kiến thức thai giáo đúng cách<br>✨ Hiểu con - đồng hành cùng con ngay từ 1.000 ngày đầu đời<br>✨ Giao lưu cộng đồng ba mẹ & nhận quà tặng từ CĐB"
+            },
+            {
+                type: "text",
+                value: "📌 Ưu tiên ba mẹ đăng ký sớm - hết chỗ BTC sẽ đóng form"
+            },
+            {
+                type: "text",
+                value: "👉 Ba mẹ nhanh tay quét mã bên dưới bài viết hoặc inbox fanpage CĐB để giữ chỗ ngay hôm nay."
+            },
+            {
+                type: "text",
+                value: "CĐB hẹn gặp ba mẹ vào sáng thứ 7 thật ấm áp và ý nghĩa."
+            },
+            {
+                type: "image",
+                src: "./images/hoithao17_1.png",
+                alt: "Câu lạc bộ Cộng Đồng Bầu"
             }
         ]
     }
