@@ -478,6 +478,89 @@ const seminarData = {
             }
         ]
     },
+    "hoi-thao-26": {
+        title: "[10/5] Lớp tiền sản tại Phòng khám Đa khoa Ái Nghĩa",
+        date: "11/05/2026",
+        author: "Cộng Đồng Bầu",
+        thumbnail: "./images/hoithao10thang5.png",
+        blocks: [
+            {
+                type: "text",
+                value: "<strong>[10/5] LỚP TIỀN SẢN TẠI PHÒNG KHÁM ĐA KHOA ÁI NGHĨA</strong>"
+            },
+            {
+                type: "text",
+                value: "Vừa qua, cộng đồng bầu Zmoms đã có mặt tại lớp tiền sản tổ chức tại Phòng khám Ái Nghĩa với thật nhiều khoảnh khắc ý nghĩa cùng các mẹ bầu 💕"
+            },
+            {
+                type: "text",
+                value: "Zmoms rất vui khi được đồng hành cùng các mẹ trên hành trình mang thai và chuẩn bị chào đón thiên thần nhỏ 💖"
+            },
+            {
+                type: "text",
+                value: "Cảm ơn các mẹ đã dành thời gian tham gia và lan tỏa thật nhiều năng lượng tích cực tại lớp tiền sản lần này. Hẹn gặp lại các mẹ trong những chương trình tiếp theo với nhiều hoạt động thú vị hơn nữa nhé! 🌸"
+            },
+            {
+                type: "text",
+                value: "<strong>📞 Liên hệ:</strong> 0947.701.010<br>💬 Kết nối Zalo OA bằng cách scan QR trên ảnh để được hỗ trợ nhanh hơn<br><strong>Zmoms - ĐỂ CON HƠN TÔI</strong>"
+            },
+            {
+                type: "image",
+                src: "./images/hoithao10thang5.png",
+                alt: "Lớp tiền sản tại Phòng khám Đa khoa Ái Nghĩa - hình 1"
+            },
+            {
+                type: "image",
+                src: "./images/hoithao10thang5_1.png",
+                alt: "Lớp tiền sản tại Phòng khám Đa khoa Ái Nghĩa - hình 2"
+            }
+        ]
+    },
+    "hoi-thao-27": {
+        title: "Zmoms | Lớp tiền sản Xuyên Á - Hành trang cho mẹ an tâm về đích",
+        date: "09/05/2026",
+        author: "Cộng Đồng Bầu",
+        thumbnail: "./images/hoithao9thang5.png",
+        blocks: [
+            {
+                type: "text",
+                value: "<strong>🌿 Zmoms | Lớp tiền sản Xuyên Á - Hành trang cho mẹ an tâm về đích</strong>"
+            },
+            {
+                type: "text",
+                value: "Mang thai là một hành trình nhiều cảm xúc, nhưng cũng đi kèm không ít băn khoăn:<br>🤍 Khám khi nào là đúng?<br>🤍 Ăn uống sao cho đủ chất?<br>🤍 Khi nào cần đi khám ngay?"
+            },
+            {
+                type: "text",
+                value: "Hiểu được điều đó, <strong>Zmoms</strong> đồng hành cùng lớp tiền sản tại BVĐK Xuyên Á, mang đến những chia sẻ thiết thực từ đội ngũ bác sĩ giàu kinh nghiệm 💛"
+            },
+            {
+                type: "text",
+                value: "<strong>Sự góp mặt của 2 bác sĩ:</strong><br>👩‍⚕️ <strong>BS CKI. Đỗ Thị Thuý Nga</strong> - Khoa Sản phụ khoa, BVĐK Xuyên Á TP.HCM<br>Chuyên đề I: “Các mốc khám thai quan trọng, xét nghiệm sàng lọc dị tật & Dấu hiệu nguy hiểm cần đi khám ngay”<br><br>👩‍⚕️ <strong>BS CKII. Châu Thị Anh</strong> - Khoa Dinh dưỡng, BVĐK Xuyên Á TP.HCM<br>Chuyên đề II: “Dinh dưỡng trong thai kỳ và những điều nên tránh”"
+            },
+            {
+                type: "text",
+                value: "Với <strong>Zmoms</strong>, lớp tiền sản không chỉ là nơi cung cấp kiến thức, mà còn là nơi giúp mẹ cảm thấy an tâm và sẵn sàng hơn cho hành trình phía trước."
+            },
+            {
+                type: "text",
+                value: "Tham gia lớp để được lắng nghe trực tiếp từ bác sĩ và chuẩn bị tốt nhất cho ngày đón con yêu nhé!"
+            },
+            {
+                type: "text",
+                value: "👉 Đăng ký tham dự <strong>MIỄN PHÍ</strong> ngay tại:<br><a href=\"https://forms.gle/decSYgtEpxVnaXgw8\" target=\"_blank\" rel=\"noopener\">https://forms.gle/decSYgtEpxVnaXgw8</a>"
+            },
+            {
+                type: "text",
+                value: "<strong>📞 Liên hệ:</strong> 0947.701.010<br>💬 Hoặc kết nối Zalo OA để được hỗ trợ nhanh hơn nhé!"
+            },
+            {
+                type: "image",
+                src: "./images/hoithao9thang5.png",
+                alt: "Lớp tiền sản Xuyên Á - Hành trang cho mẹ an tâm về đích"
+            }
+        ]
+    },
     "hoi-thao-1": {
         title: " 🩺Trao yêu thương - Sáng biên cương",
         date: "Thứ Bảy, 21/01/2026",
