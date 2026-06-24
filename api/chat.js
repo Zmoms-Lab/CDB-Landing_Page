@@ -1,4 +1,4 @@
-const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-2.0-flash";
+const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-flash-latest";
 const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent`;
 
 function getRequestBody(request) {
@@ -44,7 +44,7 @@ module.exports = async function handler(request, response) {
                 "x-goog-api-key": apiKey
             },
             body: JSON.stringify({
-                system_instruction: {
+                systemInstruction: {
                     parts: [{
                         text: "Ban la tro ly AI cua website Cong Dong Bau. Tra loi ngan gon, than thien bang tieng Viet khong dau neu nguoi dung viet khong dau. Uu tien thong tin ve hoi thao, uu dai thanh vien, tuyen dung, lien he, benh vien, phong kham, truong mam non va doi tac. Neu cau hoi can tu van y te/phap ly/chuyen sau, hay khuyen nguoi dung lien he Cong Dong Bau de duoc ho tro chinh xac."
                     }]

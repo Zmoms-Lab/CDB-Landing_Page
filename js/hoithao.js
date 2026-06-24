@@ -620,73 +620,111 @@ const seminarData = {
             },
             
         ]
-    },    /*"hoi-thao-9": {
-        title: "Sơ cứu cơ bản cho trẻ nhỏ tại nhà",
-        date: "Thứ Bảy, 11/04/2026",
+    },
+    "hoi-thao-9": {
+        title: "Talkshow \"1000 ngày vàng đầu đời của con\" - Trang bị nền tảng vững chắc cho tương lai con trẻ",
+        date: "Chủ Nhật, 19/04/2026",
         author: "Cộng Đồng Bầu",
+        thumbnail: "./images/news-hoithao9.png",
         blocks: [
             {
                 type: "text",
-                value: "Phụ huynh được hướng dẫn các nguyên tắc sơ cứu ban đầu khi trẻ sốt cao, hóc dị vật, té ngã hoặc gặp tai nạn thường gặp trong gia đình."
+                value: "<strong>TALKSHOW \"1000 NGÀY VÀNG ĐẦU ĐỜI CỦA CON\" - TRANG BỊ NỀN TẢNG VỮNG CHẮC CHO TƯƠNG LAI CON TRẺ</strong>"
+            },
+            {
+                type: "text",
+                value: "Trong hành trình lớn khôn của con, 1000 ngày vàng đầu đời chính là giai đoạn đặt nền móng quan trọng cho thể chất, trí tuệ và sức đề kháng về sau."
+            },
+            {
+                type: "text",
+                value: "Thế nhưng giữa thực tế hiện nay, không ít Ba Mẹ vẫn luôn băn khoăn:<br>🔷Đâu là thực phẩm sạch, đáng tin cậy cho con?<br>🔷Chăm sóc con thế nào mới đúng và đủ?<br>🔷Làm sao để xây dựng nền tảng vững chắc cho sự phát triển lâu dài của trẻ?"
+            },
+            {
+                type: "text",
+                value: "Nằm trong khuôn khổ sự kiện “Ươm Mầm Hữu Cơ”, Zmoms mong muốn mang đến cho Ba Mẹ một không gian kết nối, lắng nghe và cập nhật những kiến thức thiết thực trong hành trình nuôi con khỏe mạnh, an toàn và khoa học."
+            },
+            {
+                type: "text",
+                value: "Đặc biệt, talkshow “1000 ngày vàng đầu đời của con” sẽ là điểm nhấn nổi bật của chương trình, nơi Ba Mẹ được lắng nghe những chia sẻ giá trị từ các khách mời giàu chuyên môn và đầy tâm huyết:"
+            },
+            {
+                type: "text",
+                value: "👨‍⚕️ <strong>ThS.BS Nguyễn Tố Na</strong><br>- 15 năm công tác tại Bệnh viện Nhi Đồng II<br>- Chuyên sâu chăm sóc và điều trị trẻ sơ sinh: non tháng, nhẹ cân, bệnh lý<br>- Chuyên môn hồi sức sơ sinh nâng cao<br>- Khám Nhi tổng quát, Nhi phát triển, theo dõi trẻ nguy cơ cao<br>- Đào tạo chuyên môn tại ĐH Sydney, N.R.P, S.T.A.B.L.E, ĐH Boston"
+            },
+            {
+                type: "text",
+                value: "👩‍💼 <strong>Trần Ngọc Diệp</strong><br>- Co-founder Happy Vegi<br>- 10 năm kinh nghiệm trong lĩnh vực nông nghiệp hữu cơ<br>- Nền tảng chuyên môn: ThS-BS (ĐH Y Hà Nội), Coach ICF & John Maxwell Team"
+            },
+            {
+                type: "text",
+                value: "☘️ <strong>Chị Trường Thi</strong><br>- CEO Ba Lành<br>- Từ nỗi lo thực phẩm bẩn cho chính gia đình mình, chị đã xây dựng Ba Lành cách đây 8 năm<br>- Hiện nay, Ba Lành đang phục vụ bữa ăn cho hàng nghìn gia đình mỗi tháng với thực phẩm rõ nguồn gốc, đạt tiêu chuẩn chất lượng"
+            },
+            {
+                type: "text",
+                value: "Với sự đồng hành của những khách mời “có tâm - có tầm”, Zmoms tin rằng buổi trò chuyện sẽ mang đến cho Ba Mẹ nhiều góc nhìn giá trị, kiến thức thiết thực và nguồn cảm hứng tích cực trong hành trình chăm con từ những năm tháng đầu đời."
+            },
+            {
+                type: "text",
+                value: "👉 <strong>Đặc biệt, số lượng chỗ ngồi buổi sáng CÓ HẠN</strong><br>Cách thức đăng ký: Mẹ cmt “QUAN TÂM” để không bỏ lỡ những PHẦN QUÀ giá trị của chương trình!"
+            },
+            {
+                type: "text",
+                value: "<strong>THÔNG TIN CHI TIẾT SỰ KIỆN TP.HCM</strong><br>▪️ Hoạt động: Talkshow - Workshop - Gian hàng trưng bày - Khu trưng bày - Game show<br>▪️ Chặng TP. Hồ Chí Minh: Chủ Nhật, ngày 19.04.2026 - Phòng Hall, Tầng 3, AEON Mall Bình Tân, TP. HCM"
             },
             {
                 type: "image",
-                src: "./images/news-15.png",
-                alt: "Sơ cứu cho trẻ nhỏ"
+                src: "./images/news-hoithao9.png",
+                alt: "Talkshow 1000 ngày vàng đầu đời của con"
             }
         ]
     },
     "hoi-thao-10": {
-        title: "Giấc ngủ của trẻ: Thiết lập nhịp sinh hoạt lành mạnh",
+        title: "[Sự kiện hoàn toàn MIỄN PHÍ] TP.HCM ơi, “Ươm Mầm Hữu Cơ” sắp có mặt rồi đây!",
         date: "Chủ Nhật, 19/04/2026",
         author: "Cộng Đồng Bầu",
-        thumbnail: "./images/news-16.png",
+        thumbnail: "./images/hoithao10_1.png",
         blocks: [
             {
                 type: "text",
-                value: "Buổi học giúp cha mẹ hiểu nhịp ngủ của trẻ, xây dựng thói quen ngủ an toàn và giảm căng thẳng trong quá trình chăm con."
+                value: "<strong>[SỰ KIỆN HOÀN TOÀN MIỄN PHÍ] TP.HCM ƠI, “ƯƠM MẦM HỮU CƠ” SẮP CÓ MẶT RỒI ĐÂY!</strong>"
+            },
+            {
+                type: "text",
+                value: "Chỉ còn ít ngày nữa, “Ươm mầm hữu cơ” sẽ chính thức có mặt tại TP.HCM - mang theo một không gian trải nghiệm trọn vẹn dành cho gia đình và những ai quan tâm đến lối sống xanh 💚"
+            },
+            {
+                type: "text",
+                value: "<strong>Đến với sự kiện, bạn sẽ được:</strong><br>👶 <strong>Tham gia talkshow “1000 NGÀY VÀNG ĐẦU ĐỜI CỦA CON”</strong><br>Lắng nghe những chia sẻ quan trọng giúp cha mẹ hiểu đúng và chăm sóc con ngay từ giai đoạn nền tảng<br><br>📲 <strong>Khám phá khu trưng bày hữu cơ tích hợp AR</strong><br>Chạm - quét - trải nghiệm kiến thức hữu cơ theo cách hoàn toàn mới, trực quan và dễ hiểu"
             },
             {
                 type: "image",
-                src: "./images/news-16.png",
-                alt: "Giấc ngủ của trẻ"
+                src: "./images/hoithao10_2.png",
+                alt: "Ươm Mầm Hữu Cơ tại TP.HCM"
+            },
+            {
+                type: "text",
+                value: "🎨 <strong>Workshop tô chậu - trồng sen đá</strong><br>Tự tay sáng tạo một chậu cây nhỏ xinh, mang về một “mầm xanh” cho riêng mình<br><br>🛍️ <strong>Tham quan gian hàng trải nghiệm hữu cơ</strong><br>Trải nghiệm đa dạng sản phẩm hướng tới lối sống lành mạnh cho cả gia đình<br><br>🎁 <strong>Minigame & quà tặng hấp dẫn</strong><br>Vừa chơi - vừa nhận quà, thêm niềm vui cho cả nhà"
+            },
+            {
+                type: "text",
+                value: "👉 <strong>Đặc biệt, số lượng chỗ ngồi buổi sáng CÓ HẠN</strong><br>Cách thức đăng ký: Mẹ cmt “QUAN TÂM” để không bỏ lỡ những PHẦN QUÀ giá trị của chương trình!"
+            },
+            {
+                type: "text",
+                value: "<strong>THÔNG TIN CHI TIẾT SỰ KIỆN TP.HCM</strong><br>▪️ Hoạt động: Talkshow - Workshop - Gian hàng trưng bày - Khu trưng bày - Game show.<br>▪️ Chặng TP. Hồ Chí Minh: Chủ Nhật, ngày 19.04.2026 - Phòng Hall, Tầng 3, AEON Mall Bình Tân, TP. HCM."
+            },
+            {
+                type: "text",
+                value: "🌿 Hẹn gặp bạn tại AEON Mall Bình Tân - nơi những “mầm xanh” bắt đầu được gieo từ những điều nhỏ nhất!"
+            },
+            {
+                type: "image",
+                src: "./images/hoithao10_1.png",
+                alt: "Sự kiện Ươm Mầm Hữu Cơ"
             }
         ]
-    },
-    "hoi-thao-11": {
-        title: "Đồng hành cùng con phát triển cảm xúc",
-        date: "Thứ Bảy, 02/05/2026",
-        author: "Cộng Đồng Bầu",
-        thumbnail: "./images/news-1.png",
-        blocks: [
-            {
-                type: "text",
-                value: "Chuyên gia chia sẻ cách cha mẹ phản hồi cảm xúc của trẻ, xây dựng sự gắn kết và tạo nền tảng an toàn tâm lý cho con."
-            },
-            {
-                type: "image",
-                src: "./images/news-1.png",
-                alt: "Phát triển cảm xúc cho trẻ"
-            }
-        ]
-    },
-    "hoi-thao-12": {
-        title: "Gia đình cùng học: Vai trò của ba trong hành trình chăm con",
-        date: "Chủ Nhật, 10/05/2026",
-        author: "Cộng Đồng Bầu",
-        thumbnail: "./images/news-2.png",
-        blocks: [
-            {
-                type: "text",
-                value: "Hội thảo khuyến khích ba cùng tham gia chăm sóc mẹ và bé, chia sẻ trách nhiệm trong gia đình và đồng hành với con từ những ngày đầu."
-            },
-            {
-                type: "image",
-                src: "./images/news-2.png",
-                alt: "Vai trò của ba trong chăm con"
-            }
-        ]*/
     }
+};
 function getSeminarEntries() {
     return Object.entries(seminarData);
 }
