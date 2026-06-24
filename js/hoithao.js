@@ -866,6 +866,98 @@ const seminarData = {
                 alt: "Cộng Đồng Bầu đồng hành cùng mẹ bầu Hải Phòng"
             }
         ]
+    },
+    "hoi-thao-15": {
+        title: "Mẹ bầu ơi! Tháng 3 này cùng Cộng Đồng Bầu sẵn sàng cho hành trình chào đón bé yêu",
+        date: "21/03/2026",
+        author: "Cộng Đồng Bầu",
+        thumbnail: "./images/hoithao15_1.png",
+        blocks: [
+            {
+                type: "text",
+                value: "<strong>MẸ BẦU ƠI! - THÁNG 3 NÀY CÙNG “CỘNG ĐỒNG BẦU” SẴN SÀNG CHO HÀNH TRÌNH CHÀO ĐÓN BÉ YÊU NHÉ!</strong>"
+            },
+            {
+                type: "text",
+                value: "Cộng Đồng Bầu hiểu rằng, hành trình mang thai là lúc cơ thể Mẹ trải qua những biến đổi vô cùng kỳ diệu. Và để đồng hành cùng những nỗi niềm đó, tháng 3 này, Bầu có kết hợp cùng Bệnh viện Columbia Asia Bình Dương trân trọng mời Ba Mẹ tham dự LỚP HỌC TIỀN SẢN cùng Bầu nha!"
+            },
+            {
+                type: "image",
+                src: "./images/hoithao15_1.png",
+                alt: "Lớp học tiền sản cùng Cộng Đồng Bầu tại Bệnh viện Columbia Asia Bình Dương"
+            },
+            {
+                type: "text",
+                value: "Đây sẽ là nơi mang đến giải pháp chăm sóc toàn diện để Mẹ khỏe mạnh, Bé phát triển tối ưu hơn đó!"
+            },
+            {
+                type: "text",
+                value: "<strong>THÔNG TIN CHƯƠNG TRÌNH</strong><br>🕘 Thời gian: 9h00 - 11h00, Thứ Bảy, ngày 21/03/2026<br>📍 Địa điểm: Tầng 2 - Bệnh viện Quốc tế Columbia Asia Bình Dương"
+            },
+            {
+                type: "text",
+                value: "<strong>Tham gia lớp học, Ba Mẹ sẽ nhận được:</strong><br>✅ Kiến thức khoa học về chăm sóc và dinh dưỡng cho thai kỳ khỏe mạnh<br>✅ Hỗ trợ giảm đau cổ vai gáy & thắt lưng trong thai kỳ<br>✅ Chia sẻ trực tiếp từ chuyên gia - giải đáp mọi thắc mắc của mẹ<br>✅ Combo quà tặng hấp dẫn từ Cộng Đồng Bầu<br>✅ Minigame vui nhộn với nhiều phần quà xinh xắn"
+            },
+            {
+                type: "text",
+                value: "Đừng ngại comment hoặc inbox nếu Mẹ có câu hỏi nhé! Cộng Đồng Bầu luôn sẵn sàng đồng hành cùng mẹ trên hành trình thiêng liêng này."
+            },
+            {
+                type: "text",
+                value: "🎫 Chương trình miễn phí tham gia<br>Mẹ hãy đến sự kiện, và chuẩn bị hành trang chào đón các thiên thần của mình nhé!<br>Ba Mẹ lưu lại lịch tham gia ngay nhé!!!<br>☎️ Hotline: 0947.701.010"
+            }
+        ]
+    },
+    "hoi-thao-16": {
+        title: "Đoàn công tác Cộng Đồng Bầu làm việc tại Trung tâm Chăm sóc ở cữ VinNest - Vinmec Smart City",
+        date: "26/01/2026",
+        author: "Cộng Đồng Bầu",
+        thumbnail: "./images/hoithao15_1.png",
+        blocks: [
+            {
+                type: "text",
+                value: "<strong>ĐOÀN CÔNG TÁC CỘNG ĐỒNG BẦU LÀM VIỆC TẠI TRUNG TÂM CHĂM SÓC Ở CỮ VINNEST - VINMEC SMART CITY</strong>"
+            },
+            {
+                type: "text",
+                value: "Vừa qua, Đoàn công tác Cộng Đồng Bầu đã có buổi đến thăm và làm việc tại Trung tâm Chăm sóc ở cữ VinNest - Bệnh viện Vinmec Smart City."
+            },
+            {
+                type: "image",
+                src: "./images/hoithao15_1.png",
+                alt: "Cộng Đồng Bầu làm việc tại VinNest - Vinmec Smart City"
+            },
+            {
+                type: "text",
+                value: "Trong không khí trao đổi thân mật và cởi mở, đại diện Cộng Đồng Bầu đã chia sẻ tới các lãnh đạo khoa, đội ngũ y bác sĩ về Chương trình đào tạo liên ngành Y học - Giáo dục sớm trong 1.000 ngày đầu đời, với trọng tâm là sự phối hợp chặt chẽ giữa chăm sóc y khoa, nuôi dưỡng cảm xúc và giáo dục sớm khoa học cho mẹ và em bé ngay từ giai đoạn thai kỳ - sơ sinh."
+            },
+            {
+                type: "text",
+                value: "Chương trình nhận được sự quan tâm và đón nhận tích cực từ phía các y bác sĩ Vinmec, đặc biệt ở góc nhìn liên ngành, nhân văn và dự phòng sớm, góp phần nâng cao chất lượng chăm sóc toàn diện cho mẹ và bé trong giai đoạn nền tảng của cuộc đời."
+            },
+            {
+                type: "image",
+                src: "./images/hoithao15_2.png",
+                alt: "Đoàn công tác Cộng Đồng Bầu trao đổi cùng đội ngũ VinNest - Vinmec Smart City"
+            },
+            {
+                type: "text",
+                value: "Buổi làm việc đã mở ra nhiều cơ hội hợp tác tiềm năng giữa Cộng Đồng Bầu và VinNest - Vinmec Smart City trong thời gian tới, hướng tới mục tiêu chung:<br>👉 Đồng hành cùng cha mẹ kiến tạo nền tảng thể chất - trí tuệ - cảm xúc vững vàng cho trẻ ngay từ 1.000 ngày đầu đời."
+            },
+            {
+                type: "text",
+                value: "Cộng Đồng Bầu trân trọng cảm ơn sự tiếp đón nồng hậu và tinh thần hợp tác cởi mở từ Ban lãnh đạo cùng đội ngũ y bác sĩ VinNest - Vinmec Smart City."
+            },
+            {
+                type: "text",
+                value: "Chúng tôi tin rằng, với sự kết nối giữa Y học hiện đại và Giáo dục sớm khoa học, hành trình làm cha mẹ của các gia đình Việt sẽ ngày càng vững vàng và an tâm hơn."
+            },
+            {
+                type: "image",
+                src: "./images/hoithao15_3.png",
+                alt: "Cộng Đồng Bầu kết nối Y học hiện đại và Giáo dục sớm khoa học"
+            }
+        ]
     }
 };
 function getSeminarTime(dateText) {
