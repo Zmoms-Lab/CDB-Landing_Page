@@ -243,6 +243,241 @@ const seminarData = {
             }
         ]
     },
+    "hoi-thao-22": {
+        title: "24/5 - Hội thảo tiền sản miễn phí tại Bệnh viện Hoàn Hảo Kei Mei Kai",
+        date: "24/05/2026",
+        author: "Cộng Đồng Bầu",
+        thumbnail: "./images/hoithao21thang5.png",
+        blocks: [
+            {
+                type: "text",
+                value: "<strong>24/5 - HỘI THẢO TIỀN SẢN MIỄN PHÍ TẠI BỆNH VIỆN HOÀN HẢO KEI MEI KAI</strong>"
+            },
+            {
+                type: "text",
+                value: "Mang thai là hành trình hạnh phúc nhưng cũng đầy những nỗi lo:<br>💕 “Mốc này cần khám gì?”<br>💕 “Xét nghiệm nào quan trọng cho bé?”<br>💕 “Vì sao có những kiểm tra phải làm đúng thời điểm?”"
+            },
+            {
+                type: "text",
+                value: "✨ Tất cả sẽ được bác sĩ giải đáp chi tiết trong buổi Hội thảo tiền sản dành riêng cho mẹ bầu và gia đình với chủ đề:<br><strong>“CÁC XÉT NGHIỆM QUAN TRỌNG TRONG THAI KỲ MÀ MẸ CẦN NHỚ”</strong>"
+            },
+            {
+                type: "text",
+                value: "👨‍⚕️ Chia sẻ cùng <strong>BS.CKI Bùi Văn Tùng</strong><br>(Chuyên khoa Sản - Hoàn Hảo Kei Mei Kai Nhật Bản)"
+            },
+            {
+                type: "text",
+                value: "<strong>⏰ Thời gian:</strong> 8:00 - 11:00 | Chủ nhật, ngày 24/05/2026<br><strong>🏥 Địa điểm:</strong> Bệnh viện Đa khoa Hoàn Hảo<br><strong>📍 Địa chỉ:</strong> 02 Kha Vạn Cân, KP Bình Đường 2, Phường Dĩ An, TP.HCM"
+            },
+            {
+                type: "text",
+                value: "<strong>Tham gia hội thảo, mẹ sẽ được:</strong><br>✔ Hiểu rõ các xét nghiệm quan trọng trong từng giai đoạn thai kỳ<br>✔ Biết các mốc khám thai cần nhớ để theo dõi bé yêu tốt hơn<br>✔ Được bác sĩ giải đáp trực tiếp những thắc mắc thường gặp khi mang thai<br>✔ Bổ sung thêm nhiều kiến thức hữu ích để an tâm vượt cạn"
+            },
+            {
+                type: "text",
+                value: "<strong>ĐẶC BIỆT:</strong><br>💖 Tham dự hoàn toàn <strong>MIỄN PHÍ</strong><br>💖 Nhận nhiều phần quà hấp dẫn dành riêng cho mẹ bầu"
+            },
+            {
+                type: "text",
+                value: "👉 Link đăng ký tham dự:<br><a href=\"https://forms.gle/S3uky9dg73R3XhBE7\" target=\"_blank\" rel=\"noopener\">https://forms.gle/S3uky9dg73R3XhBE7</a>"
+            },
+            {
+                type: "text",
+                value: "✨ Mẹ nhớ đăng ký sớm để giữ chỗ và chuẩn bị hành trang thật vững vàng cho hành trình chào đón bé yêu nhé!"
+            },
+            {
+                type: "text",
+                value: "<strong>📞 Liên hệ:</strong> 0325 171 734<br>💬 Hoặc kết nối Zalo OA để được hỗ trợ nhanh hơn nhé!<br><strong>Zmoms - ĐỂ CON HƠN TÔI</strong>"
+            },
+            {
+                type: "image",
+                src: "./images/hoithao21thang5.png",
+                alt: "Hội thảo tiền sản miễn phí 24/5 tại Bệnh viện Hoàn Hảo Kei Mei Kai"
+            }
+        ]
+    },
+    "hoi-thao-23": {
+        title: "Hoàn toàn miễn phí - Lớp tiền sản ngày 23/05",
+        date: "19/05/2026",
+        author: "Cộng Đồng Bầu",
+        thumbnail: "./images/hoithao23thang5.png",
+        blocks: [
+            {
+                type: "text",
+                value: "<strong>HOÀN TOÀN MIỄN PHÍ - LỚP TIỀN SẢN NGÀY 23/05</strong>"
+            },
+            {
+                type: "text",
+                value: "Mẹ bầu đã sẵn sàng cho hành trình vượt cạn an tâm chưa? 💕"
+            },
+            {
+                type: "text",
+                value: "Đừng bỏ lỡ lớp học tiền sản với những kiến thức cực kỳ hữu ích từ đội ngũ bác sĩ chuyên môn tại Bệnh viện Âu Cơ cùng <strong>Zmoms</strong> nhé!"
+            },
+            {
+                type: "text",
+                value: "✨ <strong>Chủ đề 1: THEO DÕI ĐÚNG MỐC - AN TÂM TRỌN HÀNH TRÌNH</strong><br>👨‍⚕️ BS. CKI Đặng Ngọc Tuyên - Khoa Chẩn đoán hình ảnh"
+            },
+            {
+                type: "text",
+                value: "✨ <strong>Chủ đề 2: BÍ QUYẾT VƯỢT CẠN ÊM ÁI CÙNG CHUYÊN GIA</strong><br>👨‍⚕️ THS. BS Nguyễn Hữu Anh - Trưởng khoa Gây mê hồi sức"
+            },
+            {
+                type: "text",
+                value: "<strong>🎁 ĐẶC QUYỀN DÀNH CHO MẸ THAM GIA:</strong><br>- Voucher ưu đãi lên đến <strong>3.500.000 VNĐ</strong><br>- Kiến thức hữu ích giúp mẹ vượt cạn nhẹ nhàng hơn<br>- Quà tặng đặc quyền hấp dẫn tại lớp học"
+            },
+            {
+                type: "text",
+                value: "<strong>🕘 Thời gian:</strong> 09:00 - 11:15 | Thứ Bảy, ngày 23/05/2026<br><strong>📍 Địa điểm:</strong> Hội trường lầu 3 - Bệnh viện Âu Cơ<br><strong>📌 Địa chỉ:</strong> 47/19A Đường Điểu Xiển, KP25, P. Long Bình, Đồng Nai"
+            },
+            {
+                type: "text",
+                value: "Đăng ký tham dự <strong>MIỄN PHÍ</strong> ngay bằng cách <strong>quét QR</strong> trên ảnh."
+            },
+            {
+                type: "text",
+                value: "<strong>📞 Liên hệ:</strong> 0947.701.010<br>💬 Hoặc kết nối Zalo OA để được hỗ trợ nhanh hơn nhé!<br><strong>Zmoms - ĐỂ CON HƠN TÔI</strong>"
+            },
+            {
+                type: "image",
+                src: "./images/hoithao23thang5.png",
+                alt: "Lớp tiền sản miễn phí ngày 23/05 tại Bệnh viện Âu Cơ"
+            }
+        ]
+    },
+    "hoi-thao-24": {
+        title: "Lớp tiền sản 16/05 tại Columbia Asia Bình Dương",
+        date: "16/05/2026",
+        author: "Cộng Đồng Bầu",
+        thumbnail: "./images/hoithao16thang5_1.png",
+        blocks: [
+            {
+                type: "text",
+                value: "<strong>💖 LỚP TIỀN SẢN 16/05 TẠI COLUMBIA ASIA BÌNH DƯƠNG 💖</strong>"
+            },
+            {
+                type: "text",
+                value: "Vừa qua, Cộng Đồng Bầu Zmoms đã đồng hành cùng các ba mẹ tại lớp tiền sản với vô vàn kiến thức bổ ích và khoảnh khắc đáng nhớ ✨"
+            },
+            {
+                type: "text",
+                value: "<strong>Không khí lớp học ngập tràn sự hào hứng khi các mẹ được:</strong><br>- Học hỏi thêm nhiều kiến thức chăm sóc mẹ & bé<br>- Giao lưu cùng chuyên gia và các ba mẹ khác<br>- Nhận vô số phần quà hấp dẫn với tổng giá trị cực xịn"
+            },
+            {
+                type: "text",
+                value: "Zmoms xin cảm ơn các ba mẹ đã dành thời gian tham gia và đồng hành cùng chương trình 💕"
+            },
+            {
+                type: "text",
+                value: "Chúc các mom luôn có một thai kỳ khỏe mạnh, thật nhiều năng lượng tích cực để sẵn sàng chào đón thiên thần nhỏ nhé! ✨"
+            },
+            {
+                type: "image",
+                src: "./images/hoithao16thang5_1.png",
+                alt: "Lớp tiền sản 16/05 tại Columbia Asia Bình Dương - hình 1"
+            },
+            {
+                type: "image",
+                src: "./images/hoithao16thang5_2.png",
+                alt: "Lớp tiền sản 16/05 tại Columbia Asia Bình Dương - hình 2"
+            },
+            {
+                type: "image",
+                src: "./images/hoithao16thang5_3.png",
+                alt: "Lớp tiền sản 16/05 tại Columbia Asia Bình Dương - hình 3"
+            },
+            {
+                type: "image",
+                src: "./images/hoithao16thang5_4.png",
+                alt: "Lớp tiền sản 16/05 tại Columbia Asia Bình Dương - hình 4"
+            },
+            {
+                type: "image",
+                src: "./images/hoithao16thang5_5.png",
+                alt: "Lớp tiền sản 16/05 tại Columbia Asia Bình Dương - hình 5"
+            },
+            {
+                type: "image",
+                src: "./images/hoithao16thang5_6.png",
+                alt: "Lớp tiền sản 16/05 tại Columbia Asia Bình Dương - hình 6"
+            },
+            {
+                type: "image",
+                src: "./images/hoithao16thang5_7.png",
+                alt: "Lớp tiền sản 16/05 tại Columbia Asia Bình Dương - hình 7"
+            },
+            {
+                type: "image",
+                src: "./images/hoithao16thang5_8.png",
+                alt: "Lớp tiền sản 16/05 tại Columbia Asia Bình Dương - hình 8"
+            },
+            {
+                type: "image",
+                src: "./images/hoithao16thang5_9.png",
+                alt: "Lớp tiền sản 16/05 tại Columbia Asia Bình Dương - hình 9"
+            },
+            {
+                type: "image",
+                src: "./images/hoithao16thang5_10.png",
+                alt: "Lớp tiền sản 16/05 tại Columbia Asia Bình Dương - hình 10"
+            },
+            {
+                type: "image",
+                src: "./images/hoithao16thang5_11.png",
+                alt: "Lớp tiền sản 16/05 tại Columbia Asia Bình Dương - hình 11"
+            },
+            {
+                type: "image",
+                src: "./images/hoithao16thang5_12.png",
+                alt: "Lớp tiền sản 16/05 tại Columbia Asia Bình Dương - hình 12"
+            }
+        ]
+    },
+    "hoi-thao-25": {
+        title: "Lớp học tiền sản 16/05: Học cách chăm sóc trẻ sơ sinh tại nhà cùng chuyên gia",
+        date: "13/05/2026",
+        author: "Cộng Đồng Bầu",
+        thumbnail: "./images/hoithao13thang5.png",
+        blocks: [
+            {
+                type: "text",
+                value: "<strong>LỚP HỌC TIỀN SẢN 16/05: HỌC CÁCH CHĂM SÓC TRẺ SƠ SINH TẠI NHÀ CÙNG CHUYÊN GIA</strong>"
+            },
+            {
+                type: "text",
+                value: "<strong>Cộng Đồng Bầu ZMoms</strong> hân hạnh đồng hành cùng ba mẹ trong hành trình chuẩn bị chào đón thiên thần nhỏ với <strong>lớp học tiền sản</strong> vô cùng hữu ích và thiết thực 🌷"
+            },
+            {
+                type: "text",
+                value: "🎁 Ngập tràn quà tặng với tổng giá trị hơn <strong>25.000.000 VNĐ</strong> dành cho ba mẹ tham dự chương trình!"
+            },
+            {
+                type: "text",
+                value: "<strong>📚 CHỦ ĐỀ LỚP HỌC</strong><br>- Chăm sóc trẻ sơ sinh tại nhà<br>👩‍⚕️ Diễn giả: <strong>ThS.BS Mai Đào Ái Như</strong> - Trưởng Khoa Nhi, Bệnh viện Columbia Asia Bình Dương<br><br>- Thực hành tắm bé chuẩn y khoa<br>👩‍⚕️ Hướng dẫn: <strong>Điều dưỡng Trần Thị Len</strong> - Khoa Nhi, Bệnh viện Columbia Asia Bình Dương"
+            },
+            {
+                type: "text",
+                value: "<strong>THÔNG TIN CHƯƠNG TRÌNH</strong><br>🕘 Thời gian: <strong>9h00 - 11h30</strong>, ngày 16/05/2026 (Thứ Bảy)<br>🏥 Địa điểm: Tầng 3 - <strong>Bệnh viện Quốc tế Columbia Asia Bình Dương</strong><br>📌 Địa chỉ: Đ. 22 Tháng 12 1, Khu Phố Hòa Lân, Thuận Giao, Hồ Chí Minh, Việt Nam"
+            },
+            {
+                type: "text",
+                value: "💞 Ba mẹ đừng bỏ lỡ cơ hội gặp gỡ chuyên gia, học thêm nhiều kiến thức chăm sóc bé sơ sinh chuẩn y khoa và mang về thật nhiều quà hấp dẫn nhé!"
+            },
+            {
+                type: "text",
+                value: "Đăng ký tham dự <strong>MIỄN PHÍ</strong> ngay bằng cách <strong>INBOX</strong> trực tiếp qua Fanpage."
+            },
+            {
+                type: "text",
+                value: "<strong>📞 Liên hệ:</strong> 0947.701.010<br>💬 Hoặc kết nối Zalo OA bằng cách scan QR trên ảnh để được hỗ trợ nhanh hơn nhé!<br><strong>Zmoms - ĐỂ CON HƠN TÔI</strong>"
+            },
+            {
+                type: "image",
+                src: "./images/hoithao13thang5.png",
+                alt: "Lớp học tiền sản 16/05 tại Columbia Asia Bình Dương"
+            }
+        ]
+    },
     "hoi-thao-1": {
         title: " 🩺Trao yêu thương - Sáng biên cương",
         date: "Thứ Bảy, 21/01/2026",
