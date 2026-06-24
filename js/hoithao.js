@@ -623,7 +623,7 @@ const seminarData = {
     },
     "hoi-thao-9": {
         title: "Talkshow \"1000 ngày vàng đầu đời của con\" - Trang bị nền tảng vững chắc cho tương lai con trẻ",
-        date: "Chủ Nhật, 19/04/2026",
+        date: "17/04/2026",
         author: "Cộng Đồng Bầu",
         thumbnail: "./images/news-hoithao9.png",
         blocks: [
@@ -680,7 +680,7 @@ const seminarData = {
     },
     "hoi-thao-10": {
         title: "[Sự kiện hoàn toàn MIỄN PHÍ] TP.HCM ơi, “Ươm Mầm Hữu Cơ” sắp có mặt rồi đây!",
-        date: "Chủ Nhật, 19/04/2026",
+        date: "Chủ Nhật, 17/04/2026",
         author: "Cộng Đồng Bầu",
         thumbnail: "./images/hoithao10_1.png",
         blocks: [
@@ -723,10 +723,172 @@ const seminarData = {
                 alt: "Sự kiện Ươm Mầm Hữu Cơ"
             }
         ]
+    },
+    "hoi-thao-11": {
+        title: "Cộng Đồng Bầu Zmoms & BV QT Green Hải Phòng",
+        date: "16/03/2026",
+        author: "Cộng Đồng Bầu",
+        thumbnail: "./images/hoithao11_1.png",
+        blocks: [
+            {
+                type: "text",
+                value: "<strong>CỘNG ĐỒNG BẦU ZMOMS & BV QT GREEN HẢI PHÒNG</strong><br>Cộng Đồng Bầu đồng hành cùng Hội thảo tiền sản bệnh viện quốc tế Green Hải Phòng."
+            },
+            {
+                type: "image",
+                src: "./images/hoithao11_1.png",
+                alt: "Cộng Đồng Bầu Zmoms tại BV QT Green Hải Phòng"
+            },
+            {
+                type: "text",
+                value: "Bệnh viện quốc tế Green là một địa chỉ y tế chất lượng cao tại TP Hải Phòng được rất nhiều mẹ bầu tin tưởng và sử dụng dịch vụ thai sản. Các Hội thảo tiền sản của bệnh viện được tổ chức định kỳ với các nội dung chất lượng nên luôn thu hút được đông đảo các cha mẹ tham gia và phản hồi rất tốt."
+            },
+            {
+                type: "image",
+                src: "./images/hoithao11_2.png",
+                alt: "Hội thảo tiền sản tại Bệnh viện quốc tế Green Hải Phòng"
+            },
+            {
+                type: "text",
+                value: "Hội thảo tiền sản tại BV Green sáng ngày 14/03 vui mừng có sự hiện diện lần đầu tiên của Cộng Đồng Bầu với chương trình tri ân Thành viên Bạc, cùng với phần chia sẻ nhanh về 1.000 ngày đầu đời và minigame rất cảm xúc đến từ chuyên gia giáo dục Nguyễn Mai Anh."
+            },
+            {
+                type: "image",
+                src: "./images/hoithao11_3.png",
+                alt: "Chương trình tri ân Thành viên Bạc Cộng Đồng Bầu"
+            },
+            {
+                type: "text",
+                value: "Sau hội thảo, nhiều cha mẹ đã ngay lập tức đăng ký trở thành thành viên Bạc của Cộng Đồng Bầu, nhận những phần quà tri ân giá trị và chuẩn bị tham gia khóa học 1.000 ngày vàng đầu đời của Trung tâm IPD8, nuôi dạy con thông minh từ trong bụng mẹ."
+            },
+            {
+                type: "image",
+                src: "./images/hoithao11_4.png",
+                alt: "Cha mẹ tham gia hội thảo và nhận quà tri ân"
+            },
+            {
+                type: "text",
+                value: "Bệnh viện Green là đối tác chiến lược của Cộng Đồng Bầu, hai bên sẽ hợp tác triển khai nhiều hoạt động mang lại lợi ích thiết thực cho mẹ và bé Hải Phòng trong thời gian tới."
+            },
+            {
+                type: "image",
+                src: "./images/hoithao11_5.png",
+                alt: "Cộng Đồng Bầu và Bệnh viện Green hợp tác đồng hành cùng mẹ và bé"
+            }
+        ]
+    },
+    "hoi-thao-12": {
+        title: "Lịch lớp học tiền sản tháng 03 - Cùng Bầu chăm sóc thai kỳ",
+        date: "28/03/2026",
+        author: "Cộng Đồng Bầu",
+        thumbnail: "./images/hoithao12_1.png",
+        blocks: [
+            {
+                type: "text",
+                value: "<strong>🌸 LỊCH LỚP HỌC TIỀN SẢN THÁNG 03 - CÙNG BẦU CHĂM SÓC THAI KỲ NHA!</strong>"
+            },
+            {
+                type: "text",
+                value: "Hành trình đón bé yêu sẽ trở nên nhẹ nhàng và an tâm hơn bao giờ hết. Ba Mẹ đừng quên lịch hẹn “vàng” cùng Bầu tại các bệnh viện đối tác trong tháng 3 này nhé."
+            },
+            {
+                type: "image",
+                src: "./images/hoithao12_1.png",
+                alt: "Lịch lớp học tiền sản tháng 03 cùng Cộng Đồng Bầu"
+            },
+            {
+                type: "text",
+                value: "<strong>DANH SÁCH CÁC LỚP HỌC:</strong><br>🗓 24/03: BV Phụ sản Thái Bình<br>🗓 26/03: BV Sản nhi Quảng Ninh<br>🗓 28/03 (08:30): BV ĐH Y Dược Shing Mark<br>🗓 28/03 (08:30): BV Hoàn Hảo<br>🗓 31/03: BV Phụ sản Hải Dương"
+            },
+            {
+                type: "text",
+                value: "<strong>ĐẶC QUYỀN KHI THAM GIA:</strong><br>✅ Check-in nhận quà tặng hấp dẫn từ CĐB<br>✅ Tham gia Mini Game vui nhộn và nhận quà từ Cộng Đồng Bầu<br>✅ BỐC THĂM MAY MẮN: Cơ hội nhận ưu đãi khủng khi đặt cọc gói sanh ngay tại chương trình<br>✅ Giải đáp trực tiếp mọi thắc mắc cùng các bác sĩ chuyên khoa giàu kinh nghiệm"
+            },
+            {
+                type: "text",
+                value: "<strong>CÁCH THỨC ĐĂNG KÝ:</strong> Ba Mẹ vui lòng quét mã QR trên ảnh để điền thông tin giữ chỗ miễn phí nhé!"
+            },
+            {
+                type: "text",
+                value: "⚠️ Số lượng quà tặng có hạn, Mẹ nhanh tay đăng ký sớm.<br>💖 Ba mẹ nhớ follow page để cập nhật tin tức mới nhất nhé!"
+            }
+        ]
+    },
+    "hoi-thao-13": {
+        title: "Cộng Đồng Bầu Zmoms & BV PS Tâm Phúc Hải Phòng",
+        date: "08/03/2026",
+        author: "Cộng Đồng Bầu",
+        thumbnail: "./images/hoithao13_1.png",
+        blocks: [
+            {
+                type: "text",
+                value: "<strong>CỘNG ĐỒNG BẦU ZMOMS & BV PS TÂM PHÚC HẢI PHÒNG</strong><br><strong>HỘI THẢO TIỀN SẢN TẠI BV PHỤ SẢN TÂM PHÚC - HẢI PHÒNG. CHÚC MỪNG NGÀY QUỐC TẾ PHỤ NỮ.</strong>"
+            },
+            {
+                type: "image",
+                src: "./images/hoithao13_1.png",
+                alt: "Cộng Đồng Bầu Zmoms tại BV Phụ sản Tâm Phúc Hải Phòng"
+            },
+            {
+                type: "text",
+                value: "Sáng ngày 7/3, hơn một trăm bà bầu đã cùng với người thân đến tham dự buổi Hội thảo tiền sản rất ý nghĩa tại BV Phụ sản Tâm Phúc, thành phố Hải Phòng."
+            },
+            {
+                type: "image",
+                src: "./images/hoithao13_2.png",
+                alt: "Hội thảo tiền sản tại BV Phụ sản Tâm Phúc Hải Phòng"
+            },
+            {
+                type: "text",
+                value: "Tại buổi hội thảo, chuyên gia Mai Anh và Cộng Đồng Bầu đã mang tới cho các mẹ những câu chuyện, những clip để truyền tải một cách nhẹ nhàng thông điệp về nuôi dạy con trong 1000 ngày đầu đời. Các mẹ bầu Hải Phòng đã thật sự đón nhận nhiệt tình nội dung này với những phản hồi tích cực trên trang tin của bệnh viện."
+            },
+            {
+                type: "image",
+                src: "./images/hoithao13_3.png",
+                alt: "Chuyên gia Mai Anh chia sẻ tại hội thảo tiền sản"
+            },
+            {
+                type: "text",
+                value: "Rất nhiều mẹ bầu đã trở thành thành viên của Cộng Đồng Bầu và có những mẹ ngay lập tức đăng ký là thành viên bạc để có thể tiếp nhận những kiến thức về phương pháp Giáo dục sớm 1000 ngày đầu đời IPD8."
+            },
+            {
+                type: "image",
+                src: "./images/hoithao13_4.png",
+                alt: "Các mẹ bầu tham gia chương trình thành viên Cộng Đồng Bầu"
+            },
+            {
+                type: "text",
+                value: "Nhân dịp ngày Quốc tế Phụ nữ 8/3, những món quà, những điều bổ ích Cộng Đồng Bầu mang đến với Hội thảo chính là lời chúc mừng và cũng là cam kết đồng hành sâu hơn nữa, rộng hơn nữa, chăm sóc nhiều hơn nữa với những người mẹ Việt Nam."
+            },
+            {
+                type: "image",
+                src: "./images/hoithao13_5.png",
+                alt: "Cộng Đồng Bầu đồng hành cùng mẹ bầu Hải Phòng"
+            }
+        ]
     }
 };
+function getSeminarTime(dateText) {
+    const match = String(dateText || "").match(/(\d{1,2})[/.](\d{1,2})[/.](\d{4})/);
+
+    if (!match) {
+        return 0;
+    }
+
+    const [, day, month, year] = match;
+
+    return new Date(Number(year), Number(month) - 1, Number(day)).getTime();
+}
+
 function getSeminarEntries() {
-    return Object.entries(seminarData);
+    return Object.entries(seminarData)
+        .map((entry, index) => ({ entry, index }))
+        .sort((current, next) => {
+            const dateDiff = getSeminarTime(next.entry[1].date) - getSeminarTime(current.entry[1].date);
+
+            return dateDiff || current.index - next.index;
+        })
+        .map(({ entry }) => entry);
 }
 
 function renderSeminarCard(id, seminar) {

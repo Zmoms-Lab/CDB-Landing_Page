@@ -448,8 +448,27 @@ const newsData = {
 
 const NEWS_PAGE_SIZE = 6;
 
+function getNewsTime(dateText) {
+    const match = String(dateText || "").match(/(\d{1,2})[/.](\d{1,2})[/.](\d{4})/);
+
+    if (!match) {
+        return 0;
+    }
+
+    const [, day, month, year] = match;
+
+    return new Date(Number(year), Number(month) - 1, Number(day)).getTime();
+}
+
 function getNewsEntries() {
-    return Object.entries(newsData);
+    return Object.entries(newsData)
+        .map((entry, index) => ({ entry, index }))
+        .sort((current, next) => {
+            const dateDiff = getNewsTime(next.entry[1].date) - getNewsTime(current.entry[1].date);
+
+            return dateDiff || current.index - next.index;
+        })
+        .map(({ entry }) => entry);
 }
 
 function getNewsImageSrc(src) {
@@ -669,7 +688,7 @@ function renderNewsBlocks(blocks) {
 }
 
 function renderRelatedNews(currentId) {
-    const related = Object.entries(newsData)
+    const related = getNewsEntries()
         .filter(([id]) => id !== currentId)
         .slice(0, 3);
 

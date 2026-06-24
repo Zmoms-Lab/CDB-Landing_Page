@@ -280,8 +280,27 @@ const distributionData = {
 };*/
 
 
+function getDistributionTime(dateText) {
+    const match = String(dateText || "").match(/(\d{1,2})[/.](\d{1,2})[/.](\d{4})/);
+
+    if (!match) {
+        return 0;
+    }
+
+    const [, day, month, year] = match;
+
+    return new Date(Number(year), Number(month) - 1, Number(day)).getTime();
+}
+
 function getDistributionEntries(type) {
-    return Object.entries(distributionData[type] || {});
+    return Object.entries(distributionData[type] || {})
+        .map((entry, index) => ({ entry, index }))
+        .sort((current, next) => {
+            const dateDiff = getDistributionTime(next.entry[1].date) - getDistributionTime(current.entry[1].date);
+
+            return dateDiff || current.index - next.index;
+        })
+        .map(({ entry }) => entry);
 }
 
 function getDistributionTypeById(itemId) {

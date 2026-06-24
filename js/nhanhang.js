@@ -631,8 +631,27 @@ const sponsorData = {
     }
 };
 
+function getSponsorTime(dateText) {
+    const match = String(dateText || "").match(/(\d{1,2})[/.](\d{1,2})[/.](\d{4})/);
+
+    if (!match) {
+        return 0;
+    }
+
+    const [, day, month, year] = match;
+
+    return new Date(Number(year), Number(month) - 1, Number(day)).getTime();
+}
+
 function getSponsorEntries(type) {
-    return Object.entries(sponsorData[type] || {});
+    return Object.entries(sponsorData[type] || {})
+        .map((entry, index) => ({ entry, index }))
+        .sort((current, next) => {
+            const dateDiff = getSponsorTime(next.entry[1].date) - getSponsorTime(current.entry[1].date);
+
+            return dateDiff || current.index - next.index;
+        })
+        .map(({ entry }) => entry);
 }
 
 function getSponsorTypeById(sponsorId) {
