@@ -561,6 +561,271 @@ const seminarData = {
             }
         ]
     },
+    "hoi-thao-28": {
+    title: "Zmoms | Lịch lớp học tiền sản - Tháng 05/2026",
+    date: "20/04/2026",
+    author: "Cộng Đồng Bầu",
+    thumbnail: "./images/hoithao20thang4.png",
+    blocks: [
+        {
+            type: "text",
+            value: "<strong>🗓️ LỊCH LỚP HỌC TIỀN SẢN - THÁNG 05/2026</strong>"
+        },
+        {
+            type: "text",
+            value: "<strong>📍 Chặng 1: Thạnh Phú - Đồng Nai</strong><br>Địa điểm: Chuỗi Phòng khám Ái Nghĩa<br>Thời gian: 10/05/2026<br>Địa chỉ: 194 - 196 Đường Đồng Khởi, KP 4, P. Tân Hiệp, Biên Hòa, Đồng Nai."
+        },
+        {
+            type: "text",
+            value: "<strong>📍 Chặng 2: Thuận An - Bình Dương</strong><br>Địa điểm: Bệnh viện Columbia Asia Bình Dương<br>Thời gian: 16/05/2026<br>Địa chỉ: Đ. 22 Tháng 12, Khu Phố Hòa Lân, Thuận Giao, Bình Dương."
+        },
+        {
+            type: "text",
+            value: "<strong>📍 Chặng 3: Long Hưng - Đồng Nai</strong><br>Địa điểm: Bệnh viện Đại học Y Dược Shing Mark<br>Thời gian: 30/05/2026<br>Địa chỉ: Quốc lộ 51, Khu phố 5, Phường Long Hưng, Tỉnh Đồng Nai."
+        },
+        {
+            type: "text",
+            value: "<strong>BA MẸ SẼ NHẬN ĐƯỢC GÌ TẠI LỚP HỌC?</strong>"
+        },
+        {
+            type: "text",
+            value: "✔️ Kiến thức chuẩn Y khoa: Hướng dẫn dinh dưỡng, dấu hiệu chuyển dạ và cách chăm sóc trẻ sơ sinh đúng cách.<br>✔️ Thực hành thực tế: Trực tiếp trải nghiệm tắm bé, thay tã, massage cho con dưới sự hướng dẫn của chuyên gia.<br>✔️ Quà tặng độc quyền: Mỗi Ba Mẹ tham gia đều nhận được phần quà ý nghĩa từ Zmoms và các đối tác.<br>✔️ Giao lưu và chia sẻ: Kết nối cùng cộng đồng các ông bố bà mẹ thông thái."
+        },
+        {
+            type: "text",
+            value: "✨ Nhanh tay Đăng ký để không <strong>BỎ LỠ CƠ HỘI</strong> nhận nhiều <strong>QUÀ TẶNG HẤP DẪN</strong> nhé Ba Mẹ ơi!"
+        },
+        {
+            type: "text",
+            value: "👇 Form đăng ký nhanh cho Ba Mẹ tại đây:<br><a href=\"https://forms.gle/decSYgtEpxVnaXgw8\" target=\"_blank\" rel=\"noopener\">https://forms.gle/decSYgtEpxVnaXgw8</a>"
+        },
+        {
+            type: "text",
+            value: "<strong>📞 Liên hệ:</strong> 0947.701.010<br>💬 Hoặc kết nối Zalo OA bằng cách scan QR trên ảnh để được hỗ trợ nhanh hơn nhé!"
+        },
+        {
+            type: "text",
+            value: "<strong>Zmoms - ĐỂ CON HƠN TÔI</strong>"
+        },
+        {
+            type: "image",
+            src: "./images/hoithao20thang4.png",
+            alt: "Lịch lớp học tiền sản tháng 05/2026"
+        }
+    ]
+},
+"hoi-thao-29": {
+    title: "Zmoms | Hội thảo tiền sản: Sinh thường hay sinh mổ, đâu là lựa chọn phù hợp nhất?",
+    date: "15/04/2026",
+    author: "Cộng Đồng Bầu",
+    thumbnail: "./images/hoithao15thang4.png",
+    blocks: [
+        {
+            type: "text",
+            value: "<strong>| MIỄN PHÍ 100% | HỘI THẢO TIỀN SẢN: SINH THƯỜNG HAY SINH MỔ, ĐÂU LÀ LỰA CHỌN PHÙ HỢP NHẤT⁉️</strong>"
+        },
+        {
+            type: "text",
+            value: "Trước ngày đón bé yêu, chắc hẳn Ba Mẹ cũng từng ít nhất một lần tự hỏi:<br>💭 Sinh thường hay sinh mổ sẽ tốt hơn?<br>💭 Sinh thường có đau lắm không?<br>💭 Trường hợp nào cần sinh mổ để an toàn cho mẹ và bé?"
+        },
+        {
+            type: "text",
+            value: "Hiểu những băn khoăn đó, Bầu gửi Ba Mẹ buổi <strong>HỘI THẢO TIỀN SẢN MIỄN PHÍ</strong> với chủ đề cực kỳ thiết thực và cần thiết trước sinh."
+        },
+        {
+            type: "text",
+            value: "<strong>👨‍⚕️ Diễn giả: BS.CKI Võ Quốc Việt</strong><br>Chuyên khoa Sản - Hoàn Hảo Kei Mei Kai Nhật Bản"
+        },
+        {
+            type: "text",
+            value: "<strong>Thời gian:</strong> 8:00 – 11:00 | Thứ bảy, ngày 18/04/2026<br><strong>Địa điểm:</strong> Bệnh viện Đa khoa Hoàn Hảo<br>02 Kha Vạn Cân, KP Bình Đường 2, Phường Dĩ An, TP.HCM"
+        },
+        {
+            type: "text",
+            value: "<strong>Đến với buổi hội thảo MIỄN PHÍ, Ba Mẹ sẽ được:</strong>"
+        },
+        {
+            type: "text",
+            value: "✔️ Hiểu rõ khi nào có thể sinh thường an toàn<br>✔️ Biết lợi ích và những điều cần lưu ý của sinh thường<br>✔️ Cập nhật các trường hợp cần sinh mổ<br>✔️ So sánh ưu - nhược điểm của từng phương pháp<br>✔️ Được bác sĩ tư vấn để chọn phương pháp sinh phù hợp hơn<br>✔️ Giải đáp trực tiếp mọi thắc mắc trước sinh"
+        },
+        {
+            type: "text",
+            value: "Dù là sinh thường hay sinh mổ, điều quan trọng nhất vẫn là lựa chọn an toàn, phù hợp và tốt nhất cho mẹ & bé."
+        },
+        {
+            type: "text",
+            value: "Ba Mẹ đừng bỏ lỡ <strong>CƠ HỘI</strong> này nhé! Có rất nhiều phần quà hấp dẫn từ <strong>Cộng Đồng Bầu Zmoms</strong> đang chờ Ba Mẹ đến lấy đó ạ."
+        },
+        {
+            type: "text",
+            value: "👉 Đăng ký tham dự <strong>ĐỂ NHẬN QUÀ</strong> ngay tại:<br><a href=\"https://forms.gle/fMhS5wRTozM8mvK26\" target=\"_blank\" rel=\"noopener\">https://forms.gle/fMhS5wRTozM8mvK26</a>"
+        },
+        {
+            type: "text",
+            value: "💬 Hoặc kết nối Zalo OA bằng cách scan QR trên ảnh để được hỗ trợ nhanh hơn nhé!"
+        },
+        {
+            type: "image",
+            src: "./images/hoithao15thang4.png",
+            alt: "Hội thảo tiền sản sinh thường hay sinh mổ"
+        }
+    ]
+},
+"hoi-thao-30": {
+    title: "Zmoms | Lớp tiền sản đặc biệt - Thực hành massage cho bé",
+    date: "20/03/2026",
+    author: "Cộng Đồng Bầu",
+    thumbnail: "./images/hoithao20thang3.png",
+    blocks: [
+        {
+            type: "text",
+            value: "<strong>💌 [THƯ MỜI] MẸ LẠ LẪM ĐÔI CHÚT - CON TRÒN VẸN TỪNG NGÀY 🤱</strong>"
+        },
+        {
+            type: "text",
+            value: "Thân gửi những <strong>\"người mẹ vĩ đại\"</strong> đang trong hành trình đón thiên thần nhỏ! Cộng Đồng Bầu trân trọng mời Ba Mẹ đến với <strong>LỚP TIỀN SẢN ĐẶC BIỆT</strong> trong tháng 3 với chủ đề <strong>\"THỰC HÀNH MASSAGE CHO BÉ\"</strong>."
+        },
+        {
+            type: "text",
+            value: "Tại lớp học, Ba Mẹ sẽ được gặp gỡ các chuyên gia đến từ Bệnh viện Âu Cơ để giải đáp mọi băn khoăn trong hành trình chăm sóc bé yêu."
+        },
+        {
+            type: "text",
+            value: "<strong>👨‍⚕️ BS. CKI Ngô Bùi Phương Thảo</strong><br><strong>👩‍⚕️ NHS. Đặng Thị Thúy Nga</strong>"
+        },
+        {
+            type: "text",
+            value: "<strong>🎁 QUÀ TẶNG ĐẶC QUYỀN KHI THAM GIA</strong>"
+        },
+        {
+            type: "text",
+            value: "Đến với lớp học, mẹ không chỉ mang kiến thức về nhà mà còn nhận được nhiều phần quà ý nghĩa:<br><br>✅ Voucher xét nghiệm <strong>200.000đ</strong> (Group B Streptococcus Real time PCR) giúp mẹ kiểm soát rủi ro và bảo vệ bé yêu tốt hơn.<br>✅ Quà tặng hấp dẫn từ <strong>Cộng Đồng Bầu</strong> dành riêng cho tất cả mẹ bầu tham dự."
+        },
+        {
+            type: "text",
+            value: "<strong>📅 THÔNG TIN LỚP HỌC</strong><br>⏰ Thời gian: 09:00 - 11:15 | Thứ Bảy, ngày 21/03/2026<br>📍 Địa điểm: Hội trường Tầng 03 - Bệnh viện Âu Cơ (Sài Gòn - Biên Hòa)."
+        },
+        {
+            type: "text",
+            value: "<strong>👉 CÁCH THỨC ĐĂNG KÝ</strong><br>Quét mã QR trên ảnh để điền thông tin hoặc Inbox trực tiếp Fanpage để Cộng Đồng Bầu giữ chỗ miễn phí cho Ba Mẹ."
+        },
+        {
+            type: "text",
+            value: "Số lượng chỗ ngồi có hạn để đảm bảo chất lượng tương tác tốt nhất, Ba Mẹ hãy nhanh tay đăng ký nhé!"
+        },
+        {
+            type: "text",
+            value: "❤️ Hãy để <strong>Cộng Đồng Bầu</strong> đồng hành cùng Ba Mẹ, biến những <strong>\"lạ lẫm\"</strong> ban đầu thành sự <strong>\"tròn vẹn\"</strong> hạnh phúc cho con yêu mỗi ngày."
+        },
+        {
+            type: "image",
+            src: "./images/hoithao20thang3.png",
+            alt: "Lớp tiền sản đặc biệt - Thực hành massage cho bé"
+        }
+    ]
+},
+"hoi-thao-31": {
+    title: "Zmoms | Lớp học tiền sản cùng BV Columbia Asia Bình Dương",
+    date: "18/03/2026",
+    author: "Cộng Đồng Bầu",
+    thumbnail: "./images/hoithao18thang3.png",
+    blocks: [
+        {
+            type: "text",
+            value: "<strong>CỘNG ĐỒNG BẦU ZMOMS & BV COLUMBIA ASIA BÌNH DƯƠNG</strong>"
+        },
+        {
+            type: "text",
+            value: "<strong>MẸ BẦU ƠI! – THÁNG 3 NÀY CÙNG \"CỘNG ĐỒNG BẦU\" SẴN SÀNG CHO HÀNH TRÌNH CHÀO ĐÓN BÉ YÊU NHÉ!</strong>"
+        },
+        {
+            type: "text",
+            value: "Cộng Đồng Bầu hiểu rằng, hành trình mang thai là lúc cơ thể Mẹ trải qua những biến đổi vô cùng kỳ diệu. Và để đồng hành cùng những nỗi niềm đó, tháng 3 này, Bầu kết hợp cùng Bệnh viện Columbia Asia Bình Dương trân trọng mời Ba Mẹ tham dự <strong>LỚP HỌC TIỀN SẢN</strong> cùng Bầu nha!"
+        },
+        {
+            type: "text",
+            value: "Đây sẽ là nơi mang đến giải pháp chăm sóc toàn diện để Mẹ khỏe mạnh, Bé phát triển tối ưu hơn đó!"
+        },
+        {
+            type: "text",
+            value: "<strong>THÔNG TIN CHƯƠNG TRÌNH</strong><br>🕘 Thời gian: 9h00 - 11h00, Thứ Bảy, ngày 21/03/2026<br>📍 Địa điểm: Tầng 2 - Bệnh viện Quốc tế Columbia Asia Bình Dương"
+        },
+        {
+            type: "text",
+            value: "<strong>📍 Tham gia lớp học, Ba Mẹ sẽ nhận được:</strong><br>✔️ Kiến thức khoa học về chăm sóc và dinh dưỡng cho thai kỳ khỏe mạnh<br>✔️ Hỗ trợ giảm đau cổ vai gáy & thắt lưng trong thai kỳ<br>✔️ Chia sẻ trực tiếp từ chuyên gia – giải đáp mọi thắc mắc của mẹ<br>✔️ Combo quà tặng hấp dẫn từ Cộng Đồng Bầu<br>✔️ Minigame vui nhộn với nhiều phần quà xinh xắn"
+        },
+        {
+            type: "text",
+            value: "Đừng ngại comment hoặc inbox nếu Mẹ có câu hỏi nhé! Cộng Đồng Bầu luôn sẵn sàng đồng hành cùng mẹ trên hành trình thiêng liêng này."
+        },
+        {
+            type: "text",
+            value: "🎫 Chương trình <strong>miễn phí tham gia</strong>"
+        },
+        {
+            type: "text",
+            value: "Mẹ hãy đến sự kiện và chuẩn bị hành trang chào đón các thiên thần của mình nhé! Ba Mẹ lưu lại lịch tham gia ngay nhé!!!"
+        },
+        {
+            type: "text",
+            value: "☎️ Hotline: 0947.701.010"
+        },
+        {
+            type: "image",
+            src: "./images/hoithao18thang3.png",
+            alt: "Lớp học tiền sản cùng BV Columbia Asia Bình Dương"
+        }
+    ]
+},
+"hoi-thao-32": {
+    title: "Zmoms | Lớp tiền sản tháng 01/2026 - Nuôi con bằng sữa mẹ",
+    date: "27/01/2026",
+    author: "Cộng Đồng Bầu",
+    thumbnail: "./images/hoithao27thang1.png",
+    blocks: [
+        {
+            type: "text",
+            value: "<strong>🌟 CỘNG ĐỒNG BẦU x BỆNH VIỆN ĐHYD SHING MARK 🌟</strong>"
+        },
+        {
+            type: "text",
+            value: "<strong>LỚP TIỀN SẢN THÁNG 01/2026: \"NUÔI CON BẰNG SỮA MẸ\"</strong>"
+        },
+        {
+            type: "text",
+            value: "🤱 Nuôi con bằng sữa mẹ không chỉ là bản năng mà còn là một quá trình cần kiến thức đúng và thực hành đúng. Thực tế cho thấy, nhiều mẹ bầu gặp khó khăn ngay từ những ngày đầu sau sinh do thiếu sự chuẩn bị và hướng dẫn khoa học."
+        },
+        {
+            type: "text",
+            value: "Hiểu được điều đó, <strong>Bệnh viện ĐHYD Shing Mark</strong> tổ chức lớp tiền sản tháng 01/2026 với chủ đề <strong>\"Nuôi con bằng sữa mẹ\"</strong>, nhằm giúp mẹ bầu:<br>✔️ Hiểu đúng về lợi ích của sữa mẹ đối với trẻ sơ sinh<br>✔️ Biết cách cho bé bú đúng ngay từ sau sinh<br>✔️ Phòng tránh các vấn đề thường gặp như tắc tia sữa, ít sữa và đau đầu ti."
+        },
+        {
+            type: "text",
+            value: "<strong>🩺 DIỄN GIẢ: BS. CKI Chu Thị Thương</strong><br>Bác sĩ chuyên khoa với nhiều năm kinh nghiệm trong lĩnh vực Sản – Phụ khoa, trực tiếp tư vấn và giải đáp mọi thắc mắc cho mẹ bầu trong suốt buổi học."
+        },
+        {
+            type: "text",
+            value: "<strong>👩‍❤️‍👨 THÔNG TIN LỚP HỌC</strong><br>⏰ Thời gian: 08:00 sáng, Thứ Bảy - Ngày 31/01/2026<br>📍 Địa điểm: Hội trường lầu 2 - Bệnh viện ĐHYD Shing Mark"
+        },
+        {
+            type: "text",
+            value: "🎁 <strong>100% mẹ bầu tham dự đều có quà.</strong>"
+        },
+        {
+            type: "text",
+            value: "📲 Đăng ký tham dự <strong>MIỄN PHÍ</strong> tại đây:<br><a href=\"https://zalo.me/\" target=\"_blank\" rel=\"noopener\">https://zalo.me/...</a>"
+        },
+        {
+            type: "text",
+            value: "<strong>🏥 BỆNH VIỆN ĐẠI HỌC Y DƯỢC SHING MARK</strong><br>🚑 1054 Quốc Lộ 51, P. Long Hưng, Đồng Nai"
+        },
+        {
+            type: "image",
+            src: "./images/hoithao27thang1.png",
+            alt: "Lớp tiền sản tháng 01/2026 - Nuôi con bằng sữa mẹ"
+        }
+    ]
+},
     "hoi-thao-1": {
         title: " 🩺Trao yêu thương - Sáng biên cương",
         date: "Thứ Bảy, 21/01/2026",
@@ -788,6 +1053,68 @@ const seminarData = {
             }
         ]
     },
+    "hoi-thao-33": {
+    title: "Zmoms | Điều Ước Cho Con - Đồng hành cùng con từ những ngày đầu",
+    date: "16/01/2026",
+    author: "Cộng Đồng Bầu",
+    thumbnail: "./images/hoithao16thang1_1.png",
+    blocks: [
+        {
+            type: "text",
+            value: "<strong>💌 Điều Ước Cho Con - Đồng hành cùng con từ những ngày đầu</strong>"
+        },
+        {
+            type: "text",
+            value: "Ba/Mẹ thân mến,<br><br>⏰ Sự kiện <strong>\"Điều Ước Cho Con\"</strong> tại <strong>Phòng khám Bewell (17/01)</strong> và <strong>Câu lạc bộ Cộng Đồng Bầu (24/01)</strong> đang đến rất gần!"
+        },
+        {
+            type: "text",
+            value: "Cộng Đồng Bầu đã hoàn tất mọi khâu chuẩn bị và sẵn sàng đón tiếp Ba/Mẹ trong cuối tuần này. Đây là buổi gặp gỡ đặc biệt dành riêng cho những gia đình mong muốn đồng hành cùng con đúng cách ngay từ trong bụng mẹ."
+        },
+        {
+            type: "text",
+            value: "<strong>✨ Khi tham gia, Ba/Mẹ sẽ:</strong><br>✔️ Được chia sẻ kiến thức thai giáo và chăm sóc mẹ bầu khoa học, thực tiễn.<br>✔️ Trải nghiệm không gian tư vấn trực tiếp cùng các chuyên gia.<br>✔️ Nhận nhiều phần quà giá trị dành cho mẹ bầu và em bé như một lời chúc năm mới an lành."
+        },
+        {
+            type: "text",
+            value: "👉 Số lượng chỗ ngồi có hạn, Cộng Đồng Bầu xin phép chốt danh sách đăng ký sớm để chuẩn bị đón tiếp Ba/Mẹ chu đáo nhất."
+        },
+        {
+            type: "text",
+            value: "📌 Ba/Mẹ vui lòng đăng ký và xác nhận tham dự theo lịch đã gửi để giữ suất tham gia cho gia đình mình qua form:<br><a href=\"https://forms.gle/gZ5JT17EJ5TyTFEV7\" target=\"_blank\" rel=\"noopener\">https://forms.gle/gZ5JT17EJ5TyTFEV7</a>"
+        },
+        {
+            type: "text",
+            value: "❤️ Cộng Đồng Bầu rất mong được gặp Ba/Mẹ và cùng nhau gửi những <strong>\"điều ước đầu đời\"</strong> trọn vẹn nhất cho con."
+        },
+        {
+            type: "image",
+            src: "./images/hoithao16thang1_2.png",
+            alt: "Sự kiện Điều Ước Cho Con"
+        },
+        {
+            type: "image",
+            src: "./images/hoithao16thang1_3.png",
+            alt: "Sự kiện Điều Ước Cho Con"
+        },
+        {
+            type: "image",
+            src: "./images/hoithao16thang1_4.png",
+            alt: "Sự kiện Điều Ước Cho Con"
+        },
+        {
+            type: "image",
+            src: "./images/hoithao16thang1_5.png",
+            alt: "Sự kiện Điều Ước Cho Con"
+        },
+        {
+            type: "image",
+            src: "./images/hoithao16thang1_6.png",
+            alt: "Sự kiện Điều Ước Cho Con"
+        }
+
+    ]
+},
     "hoi-thao-4": {
         title: "Khởi phát chuyển dạ - Thong thả sanh thường",
         date: "28/12/2025",
@@ -1143,6 +1470,63 @@ const seminarData = {
             }
         ]
     },
+    "hoi-thao-34": {
+    title: "Zmoms | Hội thảo tiền sản lớn tháng 12 - Các xét nghiệm trong thai kỳ mẹ cần ghi nhớ",
+    date: "12/12/2025",
+    author: "Cộng Đồng Bầu",
+    thumbnail: "./images/hoithao12thang12.png",
+    blocks: [
+        {
+            type: "text",
+            value: "<strong>CỘNG ĐỒNG BẦU HÂN HẠNH ĐỒNG HÀNH CÙNG BỆNH VIỆN ĐA KHOA HOÀN HẢO KEI MEI KAI TỔ CHỨC</strong>"
+        },
+        {
+            type: "text",
+            value: "<strong>🌸 HỘI THẢO TIỀN SẢN LỚN THÁNG 12 - MẸ BẦU NHẤT ĐỊNH KHÔNG THỂ BỎ LỠ! 🌸</strong>"
+        },
+        {
+            type: "text",
+            value: "⏰ 8:00 – 11:00 | Ngày 21/12/2025<br>📍 Bệnh viện Đa khoa Hoàn Hảo Kei Mei Kai<br>26/14 Khu phố Bình Đường 2, phường Dĩ An, TP.HCM"
+        },
+        {
+            type: "text",
+            value: "Mẹ đang bước vào hành trình làm mẹ đầy thiêng liêng và muốn hiểu thật rõ về các xét nghiệm quan trọng trong thai kỳ? Hội thảo lần này chính là dành cho mẹ!"
+        },
+        {
+            type: "text",
+            value: "<strong>🎤 CHỦ ĐỀ CHÍNH</strong><br><strong>“Các xét nghiệm trong thai kỳ, mẹ cần ghi nhớ”</strong><br>Được chia sẻ bởi <strong>BS. CKI Võ Quốc Việt</strong> - Chuyên khoa Sản, Bệnh viện Đa khoa Hoàn Hảo Kei Mei Kai."
+        },
+        {
+            type: "text",
+            value: "Bác sĩ sẽ giúp mẹ:<br>✨ Nắm các xét nghiệm cần thiết ở từng giai đoạn<br>✨ Tự tin chăm sóc sức khỏe thai kỳ đúng cách<br>✨ Giải đáp mọi thắc mắc trực tiếp tại hội trường"
+        },
+        {
+            type: "text",
+            value: "<strong>🎤 Hiểu con để nuôi con dễ hơn</strong><br>Được chia sẻ bởi <strong>Cô Nguyễn Mai Anh</strong> - Giám đốc đào tạo Trung tâm 1.000 ngày vàng IPD8 trực thuộc Cộng Đồng Bầu."
+        },
+        {
+            type: "text",
+            value: "Chuyên gia sẽ giúp mẹ:<br>✨ Hiểu về não bộ – giác quan – cảm xúc của thai nhi và trẻ nhỏ<br>✨ Khám phá tiềm năng của con - cánh cửa đầu tiên cần mở trên hành trình nuôi dạy con"
+        },
+        {
+            type: "text",
+            value: "<strong>💗 NỘI DUNG HẤP DẪN TẠI SỰ KIỆN</strong><br>✔️ Phiên Hỏi – Đáp cùng bác sĩ<br>✔️ Thực hành “Vỗ Ợ Hơi” cho trẻ sơ sinh<br>✔️ Teabreak nhẹ nhàng & tham quan gian hàng<br>✔️ Mini Game với quà tặng dễ thương<br>✔️ Nhận quà lưu niệm & chụp hình check-in kỷ niệm"
+        },
+        {
+            type: "text",
+            value: "<strong>📝 ĐĂNG KÝ THAM GIA TẠI LINK BÊN DƯỚI</strong><br>Chỉ cần điền đầy đủ thông tin - đến đúng ngày mẹ ghé tham dự là được nhé! Nếu mẹ đã đăng ký trong Link Hội thảo tiền sản tháng 12 của Hoàn Hảo thì không cần đăng ký lại."
+        },
+        {
+            type: "text",
+            value: "💗 Một buổi sáng nhẹ nhàng - nhiều kiến thức hữu ích - nhiều niềm vui dành riêng cho mẹ bầu tháng 12.<br>Hẹn gặp mẹ tại hội thảo nhé!"
+        },
+        {
+            type: "image",
+            src: "./images/hoithao12thang12.png",
+            alt: "Hội thảo tiền sản lớn tháng 12"
+        }
+    ]
+},
     "hoi-thao-8": {
         title: "Ngày hội Em Bé FV",
         date: "13/12/2025",
