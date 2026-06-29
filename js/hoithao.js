@@ -1,6 +1,242 @@
 const SEMINAR_PAGE_SIZE = 6;
 
 const seminarData = {
+    "hoi-thao-35": {
+        title: "Tôn vinh sứ mệnh “Người bảo hộ da bé” cùng hơn 400 điều dưỡng, nữ hộ sinh",
+        date: "27/06/2026",
+        author: "Cộng Đồng Bầu",
+        thumbnail: "./images/hoithao35_1.png",
+        blocks: [
+            {
+                type: "text",
+                value: "<strong>💛 TÔN VINH SỨ MỆNH “NGƯỜI BẢO HỘ DA BÉ” – VỚI HƠN 400 ĐIỀU DƯỠNG, NỮ HỘ SINH TỪ CÁC BỆNH VIỆN TP.HCM, ĐỒNG NAI VÀ BÌNH DƯƠNG HỘI TỤ</strong>"
+            },
+            {
+                type: "text",
+                value: "Ngày 25/06 vừa qua, Cộng Đồng Bầu rất vinh dự được đồng hành cùng Johnson’s Baby và Trường Đại học Y khoa Phạm Ngọc Thạch tổ chức thành công Chương trình Đào tạo liên tục: <strong>“Tôn vinh sứ mệnh Người bảo hộ da bé”</strong>."
+            },
+            {
+                type: "text",
+                value: "Chương trình đã đón tiếp hơn 400 cán bộ là các điều dưỡng, nữ hộ sinh và kỹ thuật viên y tế đến từ hơn 15 bệnh viện khu vực TP.HCM và các tỉnh miền Đông như Bệnh viện Từ Dũ, Hùng Vương, FV, Đại học Y Dược, AIH, Tâm Anh..."
+            },
+            {
+                type: "text",
+                value: "<strong>CÁC HOẠT ĐỘNG CHÍNH TRONG CHƯƠNG TRÌNH:</strong>"
+            },
+            {
+                type: "text",
+                value: "✨ <strong>Đón tiếp & Trải nghiệm:</strong> Khách mời hoàn tất thủ tục check-in, cùng tham gia thí nghiệm “Cánh Hoa” mô phỏng cấu trúc da bé và dùng tiệc trà teabreak đầu giờ."
+            },
+            {
+                type: "text",
+                value: "✨ <strong>Cập nhật kiến thức chuyên môn:</strong> Lớp đào tạo diễn ra tập trung với các bài diễn giải từ BS CKII. Phạm Hồ Thúy Ái (Bệnh viện Từ Dũ); phần chia sẻ về khoa học sữa và gạo từ Dược sĩ Nguyễn Anh Thái (đại diện Johnson’s Baby); cùng chuyên đề hoạt động tắm bé và mối liên quan đến sự phát triển não bộ của trẻ sơ sinh từ BS CKI. Tăng Quang Thái."
+            },
+            {
+                type: "text",
+                value: "✨ <strong>Thi thực hành massage bé:</strong> Các đội thi đại diện cho các bệnh viện đã tham gia thực hành massage trên mô hình búp bê dưới sự quan sát và đánh giá chuyên môn từ ThS.ĐD. Lê Thị Thu Vân (Nữ hộ sinh trưởng – Phó Trưởng khoa Hậu sản, Bệnh viện Từ Dũ)."
+            },
+            {
+                type: "text",
+                value: "<strong>💝 BAN TỔ CHỨC XIN GỬI LỜI CẢM ƠN TRÂN TRỌNG ĐẾN:</strong>"
+            },
+            {
+                type: "text",
+                value: "GS.TS.BS. Ngô Minh Xuân – Chủ tịch Hội Chu sinh và Sơ sinh TP.HCM, Chủ tọa chương trình – cùng Hội đồng khoa học Trường Đại học Y khoa Phạm Ngọc Thạch."
+            },
+            {
+                type: "text",
+                value: "Quý tiến sĩ, bác sĩ chuyên khoa đầu ngành và thạc sĩ điều dưỡng đã tham gia báo cáo, chia sẻ kiến thức tại hội thảo; nhãn hàng Johnson’s Baby đã đồng hành tổ chức chương trình; và đặc biệt là hơn 400 anh chị điều dưỡng, nữ hộ sinh đã sắp xếp thời gian tham dự đầy đủ để cùng nâng cao năng lực chuyên môn."
+            },
+            {
+                type: "text",
+                value: "Xin kính chúc quý đại biểu, quý thầy cô và các anh chị đồng nghiệp nhiều sức khỏe, công tác tốt. Hẹn gặp lại mọi người trong các chương trình tiếp theo! 👇"
+            },
+            {
+                type: "text",
+                value: "<strong>#CongDongBau #JohnsonsBaby #DaiHocYKhoaPhamNgocThach #NguoiBaoHoDaBe #DaoTaoLienTuc #CME2026 #ChamSocDaSoSinh</strong>"
+            },
+                        {
+                type: "image",
+                src: "./images/hoithao35_2.png",
+                alt: "Cộng Đồng Bầu đồng hành cùng Johnson’s Baby trong chương trình Người bảo hộ da bé"
+            },
+                        {
+                type: "image",
+                src: "./images/hoithao35_3.png",
+                alt: "Cộng Đồng Bầu đồng hành cùng Johnson’s Baby trong chương trình Người bảo hộ da bé"
+            },
+                        {
+                type: "image",
+                src: "./images/hoithao35_4.png",
+                alt: "Cộng Đồng Bầu đồng hành cùng Johnson’s Baby trong chương trình Người bảo hộ da bé"
+            },
+                        {
+                type: "image",
+                src: "./images/hoithao35_5.png",
+                alt: "Cộng Đồng Bầu đồng hành cùng Johnson’s Baby trong chương trình Người bảo hộ da bé"
+            },
+                        {
+                type: "image",
+                src: "./images/hoithao35_6.png",
+                alt: "Cộng Đồng Bầu đồng hành cùng Johnson’s Baby trong chương trình Người bảo hộ da bé"
+            },
+                        {
+                type: "image",
+                src: "/images/hoithao35_7.png",
+                alt: "Cộng Đồng Bầu đồng hành cùng Johnson’s Baby trong chương trình Người bảo hộ da bé"
+            },
+                        {
+                type: "image",
+                src: "./images/hoithao35_8.png",
+                alt: "Cộng Đồng Bầu đồng hành cùng Johnson’s Baby trong chương trình Người bảo hộ da bé"
+            },
+                        {
+                type: "image",
+                src: "/images/hoithao35_9.png",
+                alt: "Cộng Đồng Bầu đồng hành cùng Johnson’s Baby trong chương trình Người bảo hộ da bé"
+            },
+                        {
+                type: "image",
+                src: "/images/hoithao35_10.png",
+                alt: "Cộng Đồng Bầu đồng hành cùng Johnson’s Baby trong chương trình Người bảo hộ da bé"
+            },
+                        {
+                type: "image",
+                src: "/images/hoithao35_11.png",
+                alt: "Cộng Đồng Bầu đồng hành cùng Johnson’s Baby trong chương trình Người bảo hộ da bé"
+            },
+                        {
+                type: "image",
+                src: "/images/hoithao35_12.png",
+                alt: "Cộng Đồng Bầu đồng hành cùng Johnson’s Baby trong chương trình Người bảo hộ da bé"
+            },
+                        {
+                type: "image",
+                src: "/images/hoithao35_13.png",
+                alt: "Cộng Đồng Bầu đồng hành cùng Johnson’s Baby trong chương trình Người bảo hộ da bé"
+            },
+                        {
+                type: "image",
+                src: "/images/hoithao35_14.png",
+                alt: "Cộng Đồng Bầu đồng hành cùng Johnson’s Baby trong chương trình Người bảo hộ da bé"
+            },
+                        {
+                type: "image",
+                src: "/images/hoithao35_15.png",
+                alt: "Cộng Đồng Bầu đồng hành cùng Johnson’s Baby trong chương trình Người bảo hộ da bé"
+            },
+                        {
+                type: "image",
+                src: "/images/hoithao35_16.png",
+                alt: "Cộng Đồng Bầu đồng hành cùng Johnson’s Baby trong chương trình Người bảo hộ da bé"
+            },
+                        {
+                type: "image",
+                src: "/images/hoithao35_17.png",
+                alt: "Cộng Đồng Bầu đồng hành cùng Johnson’s Baby trong chương trình Người bảo hộ da bé"
+            },
+                        {
+                type: "image",
+                src: "/images/hoithao35_18.png",
+                alt: "Cộng Đồng Bầu đồng hành cùng Johnson’s Baby trong chương trình Người bảo hộ da bé"
+            },
+                        {
+                type: "image",
+                src: "/images/hoithao35_19.png",
+                alt: "Cộng Đồng Bầu đồng hành cùng Johnson’s Baby trong chương trình Người bảo hộ da bé"
+            },
+                        {
+                type: "image",
+                src: "/images/hoithao35_20.png",
+                alt: "Cộng Đồng Bầu đồng hành cùng Johnson’s Baby trong chương trình Người bảo hộ da bé"
+            },
+                        {
+                type: "image",
+                src: "/images/hoithao35_21.png",
+                alt: "Cộng Đồng Bầu đồng hành cùng Johnson’s Baby trong chương trình Người bảo hộ da bé"
+            },
+                        {
+                type: "image",
+                src: "/images/hoithao35_22.png",
+                alt: "Cộng Đồng Bầu đồng hành cùng Johnson’s Baby trong chương trình Người bảo hộ da bé"
+            },
+                        {
+                type: "image",
+                src: "/images/hoithao35_23.png",
+                alt: "Cộng Đồng Bầu đồng hành cùng Johnson’s Baby trong chương trình Người bảo hộ da bé"
+            },
+                        {
+                type: "image",
+                src: "/images/hoithao35_24.png",
+                alt: "Cộng Đồng Bầu đồng hành cùng Johnson’s Baby trong chương trình Người bảo hộ da bé"
+            },
+                        {
+                type: "image",
+                src: "/images/hoithao35_25.png",
+                alt: "Cộng Đồng Bầu đồng hành cùng Johnson’s Baby trong chương trình Người bảo hộ da bé"
+            },
+                        {
+                type: "image",
+                src: "/images/hoithao35_26.png",
+                alt: "Cộng Đồng Bầu đồng hành cùng Johnson’s Baby trong chương trình Người bảo hộ da bé"
+            },
+                        {
+                type: "image",
+                src: "/images/hoithao35_27.png",
+                alt: "Cộng Đồng Bầu đồng hành cùng Johnson’s Baby trong chương trình Người bảo hộ da bé"
+            },
+                        {
+                type: "image",
+                src: "/images/hoithao35_28.png",
+                alt: "Cộng Đồng Bầu đồng hành cùng Johnson’s Baby trong chương trình Người bảo hộ da bé"
+            },
+                        {
+                type: "image",
+                src: "/images/hoithao35_29.png",
+                alt: "Cộng Đồng Bầu đồng hành cùng Johnson’s Baby trong chương trình Người bảo hộ da bé"
+            },
+                        {
+                type: "image",
+                src: "/images/hoithao35_30.png",
+                alt: "Cộng Đồng Bầu đồng hành cùng Johnson’s Baby trong chương trình Người bảo hộ da bé"
+            },
+                        {
+                type: "image",
+                src: "/images/hoithao35_31.png",
+                alt: "Cộng Đồng Bầu đồng hành cùng Johnson’s Baby trong chương trình Người bảo hộ da bé"
+            },
+                        {
+                type: "image",
+                src: "/images/hoithao35_32.png",
+                alt: "Cộng Đồng Bầu đồng hành cùng Johnson’s Baby trong chương trình Người bảo hộ da bé"
+            },
+                        {
+                type: "image",
+                src: "/images/hoithao35_33.png",
+                alt: "Cộng Đồng Bầu đồng hành cùng Johnson’s Baby trong chương trình Người bảo hộ da bé"
+            },
+                        {
+                type: "image",
+                src: "/images/hoithao35_34.png",
+                alt: "Cộng Đồng Bầu đồng hành cùng Johnson’s Baby trong chương trình Người bảo hộ da bé"
+            },
+                        {
+                type: "image",
+                src: "/images/hoithao35_35.png",
+                alt: "Cộng Đồng Bầu đồng hành cùng Johnson’s Baby trong chương trình Người bảo hộ da bé"
+            },
+                        {
+                type: "image",
+                src: "/images/hoithao35_36.png",
+                alt: "Cộng Đồng Bầu đồng hành cùng Johnson’s Baby trong chương trình Người bảo hộ da bé"
+            },
+                        {
+                type: "image",
+                src: "/images/hoithao35_37.png",
+                alt: "Cộng Đồng Bầu đồng hành cùng Johnson’s Baby trong chương trình Người bảo hộ da bé"
+            },
+        ]
+    },
     "hoi-thao-19": {
         title: "[Âu Cơ] Lớp tiền sản miễn phí 20/06",
         date: "19/06/2026",
